@@ -102,7 +102,7 @@ every generic serializer should support:</p>
 <li>It should be able to correctly (de-)serialize the special <a class="xref" href="../../api/ReqRest.Serializers.NoContent.html">NoContent</a> type.
 This type represents an empty HTTP content and is supposed to be used when an API returns no content
 (for example after deleting a resource).</li>
-<li>Serializers should throw a <a class="xref" href="../../api/ReqRest.Serializers.HttpContentSerializationException.html">HttpContentSerializationException</a>
+<li>Serializers should throw an <a class="xref" href="../../api/ReqRest.Serializers.HttpContentSerializationException.html">HttpContentSerializationException</a>
 when the (de-)serialization fails.
 This should be done so that users of the library only have to catch a single exception type without
 having to worry about what deserializing an API response may throw.</li>
