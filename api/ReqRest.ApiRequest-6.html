@@ -1,0 +1,916 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ApiRequest&lt;T1, T2, T3, T4, T5, T6&gt;
+   | ReqRest </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ApiRequest&lt;T1, T2, T3, T4, T5, T6&gt;
+   | ReqRest ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ReqRest.ApiRequest`6">
+  
+  
+  <h1 id="ReqRest_ApiRequest_6" data-uid="ReqRest.ApiRequest`6" class="text-break">Class ApiRequest&lt;T1, T2, T3, T4, T5, T6&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Encapsulates information for building and making a request to a RESTful HTTP API.
+A response to this request may lead to a response content of one of the generic type parameters.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="ReqRest.Builders.HttpRequestMessageBuilder.html">HttpRequestMessageBuilder</a></div>
+    <div class="level2"><a class="xref" href="ReqRest.ApiRequestBase.html">ApiRequestBase</a></div>
+    <div class="level3"><span class="xref">ApiRequest&lt;T1, T2, T3, T4, T5, T6&gt;</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="ReqRest.Builders.IHttpRequestMessageBuilder.html">IHttpRequestMessageBuilder</a></div>
+    <div><a class="xref" href="ReqRest.Builders.IHttpHeadersBuilder-1.html">IHttpHeadersBuilder</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.headers.httprequestheaders">HttpRequestHeaders</a>&gt;</div>
+    <div><a class="xref" href="ReqRest.Builders.IHttpHeadersBuilder.html">IHttpHeadersBuilder</a></div>
+    <div><a class="xref" href="ReqRest.Builders.IHttpRequestPropertiesBuilder.html">IHttpRequestPropertiesBuilder</a></div>
+    <div><a class="xref" href="ReqRest.Builders.IHttpContentBuilder.html">IHttpContentBuilder</a></div>
+    <div><a class="xref" href="ReqRest.Builders.IHttpProtocolVersionBuilder.html">IHttpProtocolVersionBuilder</a></div>
+    <div><a class="xref" href="ReqRest.Builders.IRequestUriBuilder.html">IRequestUriBuilder</a></div>
+    <div><a class="xref" href="ReqRest.Builders.IHttpMethodBuilder.html">IHttpMethodBuilder</a></div>
+    <div><a class="xref" href="ReqRest.Builders.IBuilder.html">IBuilder</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ReqRest.html">ReqRest</a></h6>
+  <h6><strong>Assembly</strong>: ReqRest.dll</h6>
+  <h5 id="ReqRest_ApiRequest_6_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class ApiRequest&lt;T1, T2, T3, T4, T5, T6&gt; : ApiRequestBase, IHttpRequestMessageBuilder, IHttpHeadersBuilder&lt;HttpRequestHeaders&gt;, IHttpHeadersBuilder, IHttpRequestPropertiesBuilder, IHttpContentBuilder, IHttpProtocolVersionBuilder, IRequestUriBuilder, IHttpMethodBuilder, IBuilder</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td><p>A type which may be returned by a response following this request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td><p>A type which may be returned by the response following this request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T3</span></td>
+        <td><p>A type which may be returned by the response following this request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T4</span></td>
+        <td><p>A type which may be returned by the response following this request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T5</span></td>
+        <td><p>A type which may be returned by the response following this request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T6</span></td>
+        <td><p>A type which may be returned by the response following this request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="ReqRest_ApiRequest_6_FetchAsync_" data-uid="ReqRest.ApiRequest`6.FetchAsync*"></a>
+  <h4 id="ReqRest_ApiRequest_6_FetchAsync_System_Net_Http_HttpCompletionOption_System_Threading_CancellationToken_" data-uid="ReqRest.ApiRequest`6.FetchAsync(System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)">FetchAsync(HttpCompletionOption, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sends the request, deserializes the HTTP content of the resulting HTTP response and
+returns both the response and the deserialized resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;(ApiResponse&lt;T1, T2, T3, T4, T5, T6&gt; Response, Variant&lt;T1, T2, T3, T4, T5, T6&gt; Resource)&gt; FetchAsync(HttpCompletionOption completionOption = HttpCompletionOption.ResponseContentRead, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.httpcompletionoption">HttpCompletionOption</a></td>
+        <td><span class="parametername">completionOption</span></td>
+        <td><p>Defines when the operation should complete (as soon as a response is
+available or after reading the whole response content).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A cancellation token which can be used to cancel the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetuple-2">ValueTuple</a>&lt;<a class="xref" href="ReqRest.ApiResponse-6.html">ApiResponse</a>&lt;T1, T2, T3, T4, T5, T6&gt;, <span class="xref">NCommons.Monads.Variant</span>&lt;T1, T2, T3, T4, T5, T6&gt;&gt;&gt;</td>
+        <td><p>A tuple which stores the response to the request and the resource which was deserialized
+from the response's HTTP content.</p>
+<p>The resource is represented through a <span class="xref">NCommons.Monads.Variant`6</span>
+which holds a value that matches the response type declared for the response's HTTP status code.
+This variant is empty if the response's HTTP status code doesn't match any declared one.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ReqRest_ApiRequest_6_FetchAsync_System_Net_Http_HttpCompletionOption_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is designed for developer convenience and simply combines calling
+<a class="xref" href="ReqRest.ApiRequest-6.html#ReqRest_ApiRequest_6_FetchResponseAsync_System_Net_Http_HttpCompletionOption_System_Threading_CancellationToken_">FetchResponseAsync(HttpCompletionOption, CancellationToken)</a> and
+deserializing the resource afterwards.</p>
+<p>Be aware that this method may throw an <a class="xref" href="ReqRest.Serializers.HttpContentSerializationException.html">HttpContentSerializationException</a>,
+because it runs the code of an arbitrary <a class="xref" href="ReqRest.Serializers.IHttpContentDeserializer.html">IHttpContentDeserializer</a>.</p>
+<p>This method uses the <a class="xref" href="ReqRest.ApiRequestBase.html#ReqRest_ApiRequestBase_HttpClientProvider">HttpClientProvider</a> function for retrieving an
+<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a> with which the request will be sent.</p>
+<p>See the example for how to ideally use this method.</p>
+</div>
+  <h5 id="ReqRest_ApiRequest_6_FetchAsync_System_Net_Http_HttpCompletionOption_System_Threading_CancellationToken__examples">Examples</h5>
+  <pre><code>var (response, resource) = await request.FetchAsync();
+
+// Note: The above is equivalent to calling these two lines manually:
+var response = await request.FetchResponseAsync();
+var resource = await response.DeserializeResourceAsync();
+
+Console.WriteLine($&quot;Received status {response.StatusCode}&quot;);
+Console.WriteLine($&quot;Received a resource of type {resource.Value?.GetType()}&quot;);</code></pre>
+
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.taskcanceledexception">TaskCanceledException</a></td>
+        <td><p>The operation was canceled via the <code data-dev-comment-type="paramref" class="paramref">cancellationToken</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ReqRest.Serializers.HttpContentSerializationException.html">HttpContentSerializationException</a></td>
+        <td><p>There was a resource to deserialize, but the underlying <a class="xref" href="ReqRest.Serializers.IHttpContentDeserializer.html">IHttpContentDeserializer</a>
+threw an exception while deserializing the resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The <a class="xref" href="ReqRest.ApiRequestBase.html#ReqRest_ApiRequestBase_HttpClientProvider">HttpClientProvider</a> returned <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ReqRest_ApiRequest_6_FetchAsync_System_Net_Http_HttpCompletionOption_System_Threading_CancellationToken__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ReqRest.ApiRequest-6.html#ReqRest_ApiRequest_6_FetchResponseAsync_System_Net_Http_HttpCompletionOption_System_Threading_CancellationToken_">FetchResponseAsync(HttpCompletionOption, CancellationToken)</a></div>
+      <div><a class="xref" href="ReqRest.ApiRequest-6.html#ReqRest_ApiRequest_6_FetchResourceAsync_System_Net_Http_HttpCompletionOption_System_Threading_CancellationToken_">FetchResourceAsync(HttpCompletionOption, CancellationToken)</a></div>
+  </div>
+  <a id="ReqRest_ApiRequest_6_FetchResourceAsync_" data-uid="ReqRest.ApiRequest`6.FetchResourceAsync*"></a>
+  <h4 id="ReqRest_ApiRequest_6_FetchResourceAsync_System_Net_Http_HttpCompletionOption_System_Threading_CancellationToken_" data-uid="ReqRest.ApiRequest`6.FetchResourceAsync(System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)">FetchResourceAsync(HttpCompletionOption, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sends the request, deserializes the HTTP content of the resulting HTTP response and
+then returns this deserialized resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Variant&lt;T1, T2, T3, T4, T5, T6&gt;&gt; FetchResourceAsync(HttpCompletionOption completionOption = HttpCompletionOption.ResponseContentRead, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.httpcompletionoption">HttpCompletionOption</a></td>
+        <td><span class="parametername">completionOption</span></td>
+        <td><p>Defines when the operation should complete (as soon as a response is
+available or after reading the whole response content).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A cancellation token which can be used to cancel the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">NCommons.Monads.Variant</span>&lt;T1, T2, T3, T4, T5, T6&gt;&gt;</td>
+        <td><p>The deserialized resource represented through a <span class="xref">NCommons.Monads.Variant`6</span>
+which holds a value that matches the response type declared for the response's HTTP status code.
+This variant is empty if the response's HTTP status code doesn't match any declared one.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ReqRest_ApiRequest_6_FetchResourceAsync_System_Net_Http_HttpCompletionOption_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method only returns the deserialized resource. Any other information about the
+HTTP response, for example the returned HTTP status code, is lost.
+If you are interested in any kind of information about the HTTP response, consider
+using the <a class="xref" href="ReqRest.ApiRequest-6.html#ReqRest_ApiRequest_6_FetchAsync_System_Net_Http_HttpCompletionOption_System_Threading_CancellationToken_">FetchAsync(HttpCompletionOption, CancellationToken)</a> method.</p>
+<p>Be aware that this method may throw an <a class="xref" href="ReqRest.Serializers.HttpContentSerializationException.html">HttpContentSerializationException</a>,
+because it runs the code of an arbitrary <a class="xref" href="ReqRest.Serializers.IHttpContentDeserializer.html">IHttpContentDeserializer</a>.</p>
+<p>This method uses the <a class="xref" href="ReqRest.ApiRequestBase.html#ReqRest_ApiRequestBase_HttpClientProvider">HttpClientProvider</a> function for retrieving an
+<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a> with which the request will be sent.</p>
+</div>
+  <h5 id="ReqRest_ApiRequest_6_FetchResourceAsync_System_Net_Http_HttpCompletionOption_System_Threading_CancellationToken__examples">Examples</h5>
+  <pre><code>var resource = await response.FetchResourceAsync();
+Console.WriteLine($&quot;Received a resource of type {resource.Value?.GetType()}&quot;);</code></pre>
+
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.taskcanceledexception">TaskCanceledException</a></td>
+        <td><p>The operation was canceled via the <code data-dev-comment-type="paramref" class="paramref">cancellationToken</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ReqRest.Serializers.HttpContentSerializationException.html">HttpContentSerializationException</a></td>
+        <td><p>There was a resource to deserialize, but the underlying <a class="xref" href="ReqRest.Serializers.IHttpContentDeserializer.html">IHttpContentDeserializer</a>
+threw an exception while deserializing the resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The <a class="xref" href="ReqRest.ApiRequestBase.html#ReqRest_ApiRequestBase_HttpClientProvider">HttpClientProvider</a> returned <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ReqRest_ApiRequest_6_FetchResourceAsync_System_Net_Http_HttpCompletionOption_System_Threading_CancellationToken__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ReqRest.ApiRequest-6.html#ReqRest_ApiRequest_6_FetchAsync_System_Net_Http_HttpCompletionOption_System_Threading_CancellationToken_">FetchAsync(HttpCompletionOption, CancellationToken)</a></div>
+      <div><a class="xref" href="ReqRest.ApiRequest-6.html#ReqRest_ApiRequest_6_FetchResponseAsync_System_Net_Http_HttpCompletionOption_System_Threading_CancellationToken_">FetchResponseAsync(HttpCompletionOption, CancellationToken)</a></div>
+  </div>
+  <a id="ReqRest_ApiRequest_6_FetchResponseAsync_" data-uid="ReqRest.ApiRequest`6.FetchResponseAsync*"></a>
+  <h4 id="ReqRest_ApiRequest_6_FetchResponseAsync_System_Net_Http_HttpCompletionOption_System_Threading_CancellationToken_" data-uid="ReqRest.ApiRequest`6.FetchResponseAsync(System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)">FetchResponseAsync(HttpCompletionOption, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sends the request and returns the resulting HTTP response without serializing its HTTP content.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;T1, T2, T3, T4, T5, T6&gt;&gt; FetchResponseAsync(HttpCompletionOption completionOption = HttpCompletionOption.ResponseContentRead, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.httpcompletionoption">HttpCompletionOption</a></td>
+        <td><span class="parametername">completionOption</span></td>
+        <td><p>Defines when the operation should complete (as soon as a response is
+available or after reading the whole response content).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A cancellation token which can be used to cancel the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="ReqRest.ApiResponse-6.html">ApiResponse</a>&lt;T1, T2, T3, T4, T5, T6&gt;&gt;</td>
+        <td><p>The response to the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ReqRest_ApiRequest_6_FetchResponseAsync_System_Net_Http_HttpCompletionOption_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method only returns the HTTP response itself and does not perform any deserialization logic.
+To access the underlying resource, use the
+<a class="xref" href="ReqRest.ApiResponse-6.html#ReqRest_ApiResponse_6_DeserializeResourceAsync">DeserializeResourceAsync()</a> method
+of the response.</p>
+<p>Consider using the <a class="xref" href="ReqRest.ApiRequest-6.html#ReqRest_ApiRequest_6_FetchAsync_System_Net_Http_HttpCompletionOption_System_Threading_CancellationToken_">FetchAsync(HttpCompletionOption, CancellationToken)</a> method if you
+are interested in both the response and the underlying resource.</p>
+<p>This method uses the <a class="xref" href="ReqRest.ApiRequestBase.html#ReqRest_ApiRequestBase_HttpClientProvider">HttpClientProvider</a> function for retrieving an
+<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a> with which the request will be sent.</p>
+</div>
+  <h5 id="ReqRest_ApiRequest_6_FetchResponseAsync_System_Net_Http_HttpCompletionOption_System_Threading_CancellationToken__examples">Examples</h5>
+  <pre><code>var response = await request.FetchResponseAsync();
+var resource = await response.DeserializeResourceAsync();
+
+Console.WriteLine($&quot;Received status {response.StatusCode}&quot;);
+Console.WriteLine($&quot;Received a resource of type {resource.Value?.GetType()}&quot;);</code></pre>
+
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.taskcanceledexception">TaskCanceledException</a></td>
+        <td><p>The operation was canceled via the <code data-dev-comment-type="paramref" class="paramref">cancellationToken</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The <a class="xref" href="ReqRest.ApiRequestBase.html#ReqRest_ApiRequestBase_HttpClientProvider">HttpClientProvider</a> returned <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ReqRest_ApiRequest_6_FetchResponseAsync_System_Net_Http_HttpCompletionOption_System_Threading_CancellationToken__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ReqRest.ApiRequest-6.html#ReqRest_ApiRequest_6_FetchAsync_System_Net_Http_HttpCompletionOption_System_Threading_CancellationToken_">FetchAsync(HttpCompletionOption, CancellationToken)</a></div>
+      <div><a class="xref" href="ReqRest.ApiRequest-6.html#ReqRest_ApiRequest_6_FetchResourceAsync_System_Net_Http_HttpCompletionOption_System_Threading_CancellationToken_">FetchResourceAsync(HttpCompletionOption, CancellationToken)</a></div>
+  </div>
+  <a id="ReqRest_ApiRequest_6_Receive_" data-uid="ReqRest.ApiRequest`6.Receive*"></a>
+  <h4 id="ReqRest_ApiRequest_6_Receive__1" data-uid="ReqRest.ApiRequest`6.Receive``1">Receive&lt;T7&gt;()</h4>
+  <div class="markdown level1 summary"><p>Declares that the response to this request may have a content of type <code data-dev-comment-type="typeparamref" class="typeparamref">T7</code>.
+This returns a builder instance which requires you to specify additional information about
+the possible response (for example, for which status codes the type is a possible result).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ResponseTypeInfoBuilder&lt;ApiRequest&lt;T1, T2, T3, T4, T5, T6, T7&gt;&gt; Receive&lt;T7&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ReqRest.ResponseTypeInfoBuilder-1.html">ResponseTypeInfoBuilder</a>&lt;<a class="xref" href="ReqRest.ApiRequest-7.html">ApiRequest</a>&lt;T1, T2, T3, T4, T5, T6, T7&gt;&gt;</td>
+        <td><p>An <a class="xref" href="ReqRest.ResponseTypeInfoBuilder-1.html">ResponseTypeInfoBuilder&lt;TRequest&gt;</a> instance which must be used
+to specify additional information about the possible response.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T7</span></td>
+        <td><p>The .NET type which may be returned by the response following this request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="ReqRest_ApiRequest_6_ReceiveByteArray_" data-uid="ReqRest.ApiRequest`6.ReceiveByteArray*"></a>
+  <h4 id="ReqRest_ApiRequest_6_ReceiveByteArray_ReqRest_Http_StatusCodeRange___" data-uid="ReqRest.ApiRequest`6.ReceiveByteArray(ReqRest.Http.StatusCodeRange[])">ReceiveByteArray(StatusCodeRange[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiRequest&lt;T1, T2, T3, T4, T5, T6, byte[]&gt; ReceiveByteArray(params StatusCodeRange[] forStatusCodes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ReqRest.Http.StatusCodeRange.html">StatusCodeRange</a>[]</td>
+        <td><span class="parametername">forStatusCodes</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ReqRest.ApiRequest-7.html">ApiRequest</a>&lt;T1, T2, T3, T4, T5, T6, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="ReqRest_ApiRequest_6_ReceiveByteArray_" data-uid="ReqRest.ApiRequest`6.ReceiveByteArray*"></a>
+  <h4 id="ReqRest_ApiRequest_6_ReceiveByteArray_System_Collections_Generic_IEnumerable_ReqRest_Http_StatusCodeRange__" data-uid="ReqRest.ApiRequest`6.ReceiveByteArray(System.Collections.Generic.IEnumerable{ReqRest.Http.StatusCodeRange})">ReceiveByteArray(IEnumerable&lt;StatusCodeRange&gt;)</h4>
+  <div class="markdown level1 summary"><p>Declares that the response to this request may have an HTTP content which can be
+read as a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a> array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiRequest&lt;T1, T2, T3, T4, T5, T6, byte[]&gt; ReceiveByteArray(IEnumerable&lt;StatusCodeRange&gt; forStatusCodes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="ReqRest.Http.StatusCodeRange.html">StatusCodeRange</a>&gt;</td>
+        <td><span class="parametername">forStatusCodes</span></td>
+        <td><p>A set of status codes for which the HTTP content may be read as a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a> array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ReqRest.ApiRequest-7.html">ApiRequest</a>&lt;T1, T2, T3, T4, T5, T6, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]&gt;</td>
+        <td><p>An <a class="xref" href="ReqRest.ApiRequestBase.html">ApiRequestBase</a>, upgraded with the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a> array type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><ul>
+<li><code data-dev-comment-type="paramref" class="paramref">forStatusCodes</code></li>
+</ul>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">forStatusCodes</code> is empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="ReqRest_ApiRequest_6_ReceiveNoContent_" data-uid="ReqRest.ApiRequest`6.ReceiveNoContent*"></a>
+  <h4 id="ReqRest_ApiRequest_6_ReceiveNoContent" data-uid="ReqRest.ApiRequest`6.ReceiveNoContent">ReceiveNoContent()</h4>
+  <div class="markdown level1 summary"><p>Declares that the response to this request may have an empty HTTP content when
+receiving a response with status code <code>204 No Content</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiRequest&lt;T1, T2, T3, T4, T5, T6, NoContent&gt; ReceiveNoContent()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ReqRest.ApiRequest-7.html">ApiRequest</a>&lt;T1, T2, T3, T4, T5, T6, <a class="xref" href="ReqRest.Serializers.NoContent.html">NoContent</a>&gt;</td>
+        <td><p>An <a class="xref" href="ReqRest.ApiRequestBase.html">ApiRequestBase</a>, upgraded with the <a class="xref" href="ReqRest.Serializers.NoContent.html">NoContent</a> type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="ReqRest_ApiRequest_6_ReceiveNoContent_" data-uid="ReqRest.ApiRequest`6.ReceiveNoContent*"></a>
+  <h4 id="ReqRest_ApiRequest_6_ReceiveNoContent_ReqRest_Http_StatusCodeRange___" data-uid="ReqRest.ApiRequest`6.ReceiveNoContent(ReqRest.Http.StatusCodeRange[])">ReceiveNoContent(StatusCodeRange[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiRequest&lt;T1, T2, T3, T4, T5, T6, NoContent&gt; ReceiveNoContent(params StatusCodeRange[] forStatusCodes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ReqRest.Http.StatusCodeRange.html">StatusCodeRange</a>[]</td>
+        <td><span class="parametername">forStatusCodes</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ReqRest.ApiRequest-7.html">ApiRequest</a>&lt;T1, T2, T3, T4, T5, T6, <a class="xref" href="ReqRest.Serializers.NoContent.html">NoContent</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="ReqRest_ApiRequest_6_ReceiveNoContent_" data-uid="ReqRest.ApiRequest`6.ReceiveNoContent*"></a>
+  <h4 id="ReqRest_ApiRequest_6_ReceiveNoContent_System_Collections_Generic_IEnumerable_ReqRest_Http_StatusCodeRange__" data-uid="ReqRest.ApiRequest`6.ReceiveNoContent(System.Collections.Generic.IEnumerable{ReqRest.Http.StatusCodeRange})">ReceiveNoContent(IEnumerable&lt;StatusCodeRange&gt;)</h4>
+  <div class="markdown level1 summary"><p>Declares that the response to this request may have an empty HTTP content, represented
+through the <a class="xref" href="ReqRest.Serializers.NoContent.html">NoContent</a> type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiRequest&lt;T1, T2, T3, T4, T5, T6, NoContent&gt; ReceiveNoContent(IEnumerable&lt;StatusCodeRange&gt; forStatusCodes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="ReqRest.Http.StatusCodeRange.html">StatusCodeRange</a>&gt;</td>
+        <td><span class="parametername">forStatusCodes</span></td>
+        <td><p>A set of status codes for which no content is received.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ReqRest.ApiRequest-7.html">ApiRequest</a>&lt;T1, T2, T3, T4, T5, T6, <a class="xref" href="ReqRest.Serializers.NoContent.html">NoContent</a>&gt;</td>
+        <td><p>An <a class="xref" href="ReqRest.ApiRequestBase.html">ApiRequestBase</a>, upgraded with the <a class="xref" href="ReqRest.Serializers.NoContent.html">NoContent</a> type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><ul>
+<li><code data-dev-comment-type="paramref" class="paramref">forStatusCodes</code></li>
+</ul>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">forStatusCodes</code> is empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="ReqRest_ApiRequest_6_ReceiveString_" data-uid="ReqRest.ApiRequest`6.ReceiveString*"></a>
+  <h4 id="ReqRest_ApiRequest_6_ReceiveString_ReqRest_Http_StatusCodeRange___" data-uid="ReqRest.ApiRequest`6.ReceiveString(ReqRest.Http.StatusCodeRange[])">ReceiveString(StatusCodeRange[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiRequest&lt;T1, T2, T3, T4, T5, T6, string&gt; ReceiveString(params StatusCodeRange[] forStatusCodes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ReqRest.Http.StatusCodeRange.html">StatusCodeRange</a>[]</td>
+        <td><span class="parametername">forStatusCodes</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ReqRest.ApiRequest-7.html">ApiRequest</a>&lt;T1, T2, T3, T4, T5, T6, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="ReqRest_ApiRequest_6_ReceiveString_" data-uid="ReqRest.ApiRequest`6.ReceiveString*"></a>
+  <h4 id="ReqRest_ApiRequest_6_ReceiveString_System_Collections_Generic_IEnumerable_ReqRest_Http_StatusCodeRange__" data-uid="ReqRest.ApiRequest`6.ReceiveString(System.Collections.Generic.IEnumerable{ReqRest.Http.StatusCodeRange})">ReceiveString(IEnumerable&lt;StatusCodeRange&gt;)</h4>
+  <div class="markdown level1 summary"><p>Declares that the response to this request may have an HTTP content which can be
+read as a raw string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiRequest&lt;T1, T2, T3, T4, T5, T6, string&gt; ReceiveString(IEnumerable&lt;StatusCodeRange&gt; forStatusCodes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="ReqRest.Http.StatusCodeRange.html">StatusCodeRange</a>&gt;</td>
+        <td><span class="parametername">forStatusCodes</span></td>
+        <td><p>A set of status codes for which the HTTP content may be read as a raw string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ReqRest.ApiRequest-7.html">ApiRequest</a>&lt;T1, T2, T3, T4, T5, T6, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><p>An <a class="xref" href="ReqRest.ApiRequestBase.html">ApiRequestBase</a>, upgraded with the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a> type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><ul>
+<li><code data-dev-comment-type="paramref" class="paramref">forStatusCodes</code></li>
+</ul>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">forStatusCodes</code> is empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="ReqRest.Builders.IHttpRequestMessageBuilder.html">IHttpRequestMessageBuilder</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.IHttpHeadersBuilder-1.html">IHttpHeadersBuilder&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.IHttpHeadersBuilder.html">IHttpHeadersBuilder</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.IHttpRequestPropertiesBuilder.html">IHttpRequestPropertiesBuilder</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.IHttpContentBuilder.html">IHttpContentBuilder</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.IHttpProtocolVersionBuilder.html">IHttpProtocolVersionBuilder</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.IRequestUriBuilder.html">IRequestUriBuilder</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.IHttpMethodBuilder.html">IHttpMethodBuilder</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.IBuilder.html">IBuilder</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="ReqRest.Serializers.NewtonsoftJson.JsonHttpContentBuilderExtensions.html#ReqRest_Serializers_NewtonsoftJson_JsonHttpContentBuilderExtensions_SetJsonContent__1___0_System_Nullable_System_Object__System_Nullable_System_Text_Encoding__System_Nullable_ReqRest_Serializers_NewtonsoftJson_JsonHttpContentSerializer__">JsonHttpContentBuilderExtensions.SetJsonContent&lt;T&gt;(T, Nullable&lt;Object&gt;, Nullable&lt;Encoding&gt;, Nullable&lt;JsonHttpContentSerializer&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Serializers.NewtonsoftJson.JsonHttpMethodBuilderExtensions.html#ReqRest_Serializers_NewtonsoftJson_JsonHttpMethodBuilderExtensions_PostJson__1___0_System_Nullable_System_Object__System_Nullable_System_Text_Encoding__System_Nullable_ReqRest_Serializers_NewtonsoftJson_JsonHttpContentSerializer__">JsonHttpMethodBuilderExtensions.PostJson&lt;T&gt;(T, Nullable&lt;Object&gt;, Nullable&lt;Encoding&gt;, Nullable&lt;JsonHttpContentSerializer&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Serializers.NewtonsoftJson.JsonHttpMethodBuilderExtensions.html#ReqRest_Serializers_NewtonsoftJson_JsonHttpMethodBuilderExtensions_PutJson__1___0_System_Nullable_System_Object__System_Nullable_System_Text_Encoding__System_Nullable_ReqRest_Serializers_NewtonsoftJson_JsonHttpContentSerializer__">JsonHttpMethodBuilderExtensions.PutJson&lt;T&gt;(T, Nullable&lt;Object&gt;, Nullable&lt;Encoding&gt;, Nullable&lt;JsonHttpContentSerializer&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Serializers.NewtonsoftJson.JsonHttpMethodBuilderExtensions.html#ReqRest_Serializers_NewtonsoftJson_JsonHttpMethodBuilderExtensions_PatchJson__1___0_System_Nullable_System_Object__System_Nullable_System_Text_Encoding__System_Nullable_ReqRest_Serializers_NewtonsoftJson_JsonHttpContentSerializer__">JsonHttpMethodBuilderExtensions.PatchJson&lt;T&gt;(T, Nullable&lt;Object&gt;, Nullable&lt;Encoding&gt;, Nullable&lt;JsonHttpContentSerializer&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.ApiRequestBaseExtensions.html#ReqRest_ApiRequestBaseExtensions_SetHttpClientProvider__1___0_System_Net_Http_HttpClient_">ApiRequestBaseExtensions.SetHttpClientProvider&lt;T&gt;(T, HttpClient)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.ApiRequestBaseExtensions.html#ReqRest_ApiRequestBaseExtensions_SetHttpClientProvider__1___0_System_Func_System_Net_Http_HttpClient__">ApiRequestBaseExtensions.SetHttpClientProvider&lt;T&gt;(T, Func&lt;HttpClient&gt;)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright &copy; 2019 ReqRest - Generated with <a href="https://github.com/dotnet/docfx">DocFX</a> - <a href="https://github.com/ovasquez/docfx-material/">Material Theme</a> made by <a href="https://github.com/ovasquez">Oscar Vásquez</a> - <a href="https://gist.github.com/manuelroemer/2aa8fc4e377874ae93dbd26e779cdbf6">Impressum (Imprint)</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

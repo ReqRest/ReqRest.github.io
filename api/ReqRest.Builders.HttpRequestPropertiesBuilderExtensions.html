@@ -1,0 +1,573 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class HttpRequestPropertiesBuilderExtensions
+   | ReqRest </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class HttpRequestPropertiesBuilderExtensions
+   | ReqRest ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ReqRest.Builders.HttpRequestPropertiesBuilderExtensions">
+  
+  
+  <h1 id="ReqRest_Builders_HttpRequestPropertiesBuilderExtensions" data-uid="ReqRest.Builders.HttpRequestPropertiesBuilderExtensions" class="text-break">Class HttpRequestPropertiesBuilderExtensions
+  </h1>
+  <div class="markdown level0 summary"><p>Defines the static methods for an <a class="xref" href="ReqRest.Builders.IHttpRequestPropertiesBuilder.html">IHttpRequestPropertiesBuilder</a> provided
+by the library.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">HttpRequestPropertiesBuilderExtensions</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ReqRest.Builders.html">ReqRest.Builders</a></h6>
+  <h6><strong>Assembly</strong>: ReqRest.Builders.dll</h6>
+  <h5 id="ReqRest_Builders_HttpRequestPropertiesBuilderExtensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class HttpRequestPropertiesBuilderExtensions</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="ReqRest_Builders_HttpRequestPropertiesBuilderExtensions_AddProperty_" data-uid="ReqRest.Builders.HttpRequestPropertiesBuilderExtensions.AddProperty*"></a>
+  <h4 id="ReqRest_Builders_HttpRequestPropertiesBuilderExtensions_AddProperty__1___0_System_String_System_Nullable_System_Object__" data-uid="ReqRest.Builders.HttpRequestPropertiesBuilderExtensions.AddProperty``1(``0,System.String,System.Nullable{System.Object})">AddProperty&lt;T&gt;(T, String, Nullable&lt;Object&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds the specified property and value to the properties of the HTTP request which
+is being built.
+If a property with the specified <code data-dev-comment-type="paramref" class="paramref">key</code> already exists, an exception
+is thrown.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T AddProperty&lt;T&gt;(this T builder, string key, object? value)
+    where T : IHttpRequestPropertiesBuilder</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>The builder.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key of the property.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value of the property.
+This can be <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The specified <code data-dev-comment-type="paramref" class="paramref">builder</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the builder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>The properties already contain a property with the <code data-dev-comment-type="paramref" class="paramref">key</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><ul>
+<li><code data-dev-comment-type="paramref" class="paramref">builder</code></li>
+<li><code data-dev-comment-type="paramref" class="paramref">key</code></li>
+</ul>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="ReqRest_Builders_HttpRequestPropertiesBuilderExtensions_ClearProperties_" data-uid="ReqRest.Builders.HttpRequestPropertiesBuilderExtensions.ClearProperties*"></a>
+  <h4 id="ReqRest_Builders_HttpRequestPropertiesBuilderExtensions_ClearProperties__1___0_" data-uid="ReqRest.Builders.HttpRequestPropertiesBuilderExtensions.ClearProperties``1(``0)">ClearProperties&lt;T&gt;(T)</h4>
+  <div class="markdown level1 summary"><p>Removes all properties from the properties of the HTTP request which is being built.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T ClearProperties&lt;T&gt;(this T builder)
+    where T : IHttpRequestPropertiesBuilder</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>The builder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The specified <code data-dev-comment-type="paramref" class="paramref">builder</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the builder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><ul>
+<li><code data-dev-comment-type="paramref" class="paramref">builder</code></li>
+</ul>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="ReqRest_Builders_HttpRequestPropertiesBuilderExtensions_ConfigureProperties_" data-uid="ReqRest.Builders.HttpRequestPropertiesBuilderExtensions.ConfigureProperties*"></a>
+  <h4 id="ReqRest_Builders_HttpRequestPropertiesBuilderExtensions_ConfigureProperties__1___0_System_Action_System_Collections_Generic_IDictionary_System_String_System_Nullable_System_Object____" data-uid="ReqRest.Builders.HttpRequestPropertiesBuilderExtensions.ConfigureProperties``1(``0,System.Action{System.Collections.Generic.IDictionary{System.String,System.Nullable{System.Object}}})">ConfigureProperties&lt;T&gt;(T, Action&lt;IDictionary&lt;String, Nullable&lt;Object&gt;&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Executes the specified <code data-dev-comment-type="paramref" class="paramref">configureProperties</code> function to modify the
+properties of the HTTP request which is being built.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T ConfigureProperties&lt;T&gt;(this T builder, Action&lt;IDictionary&lt;string, object? &gt;&gt; configureProperties)
+    where T : IHttpRequestPropertiesBuilder</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>The builder.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;&gt;&gt;</td>
+        <td><span class="parametername">configureProperties</span></td>
+        <td><p>A function which receives the request's properties.
+The function can then modify the properties as desired.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The specified <code data-dev-comment-type="paramref" class="paramref">builder</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the builder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><ul>
+<li><code data-dev-comment-type="paramref" class="paramref">builder</code></li>
+<li><code data-dev-comment-type="paramref" class="paramref">configureProperties</code></li>
+</ul>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="ReqRest_Builders_HttpRequestPropertiesBuilderExtensions_RemoveProperty_" data-uid="ReqRest.Builders.HttpRequestPropertiesBuilderExtensions.RemoveProperty*"></a>
+  <h4 id="ReqRest_Builders_HttpRequestPropertiesBuilderExtensions_RemoveProperty__1___0_System_Nullable_System_String____names_" data-uid="ReqRest.Builders.HttpRequestPropertiesBuilderExtensions.RemoveProperty``1(``0,System.Nullable{System.String}[],names)">RemoveProperty&lt;T&gt;(T, Nullable&lt;String&gt;[], names)</h4>
+  <div class="markdown level1 summary"><p>Removes the properties with the specified names from the properties of the
+HTTP request which is being built.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T RemoveProperty&lt;T&gt;(this T builder, params string? [], names)
+    where T : IHttpRequestPropertiesBuilder</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>The builder.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;[]</td>
+        <td><span class="parametername"></span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">names</span></td>
+        <td><span class="parametername"></span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The specified <code data-dev-comment-type="paramref" class="paramref">builder</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the builder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><ul>
+<li><code data-dev-comment-type="paramref" class="paramref">builder</code></li>
+</ul>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="ReqRest_Builders_HttpRequestPropertiesBuilderExtensions_SetProperty_" data-uid="ReqRest.Builders.HttpRequestPropertiesBuilderExtensions.SetProperty*"></a>
+  <h4 id="ReqRest_Builders_HttpRequestPropertiesBuilderExtensions_SetProperty__1___0_System_String_System_Nullable_System_Object__" data-uid="ReqRest.Builders.HttpRequestPropertiesBuilderExtensions.SetProperty``1(``0,System.String,System.Nullable{System.Object})">SetProperty&lt;T&gt;(T, String, Nullable&lt;Object&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds the specified property and value to the properties of the HTTP request
+which is being built.
+If a property with the specified <code data-dev-comment-type="paramref" class="paramref">key</code> already exists,
+it is overwritten.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T SetProperty&lt;T&gt;(this T builder, string key, object? value)
+    where T : IHttpRequestPropertiesBuilder</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>The builder.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key of the property.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value of the property.
+This can be <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The specified <code data-dev-comment-type="paramref" class="paramref">builder</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the builder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><ul>
+<li><code data-dev-comment-type="paramref" class="paramref">builder</code></li>
+<li><code data-dev-comment-type="paramref" class="paramref">key</code></li>
+</ul>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright &copy; 2019 ReqRest - Generated with <a href="https://github.com/dotnet/docfx">DocFX</a> - <a href="https://github.com/ovasquez/docfx-material/">Material Theme</a> made by <a href="https://github.com/ovasquez">Oscar Vásquez</a> - <a href="https://gist.github.com/manuelroemer/2aa8fc4e377874ae93dbd26e779cdbf6">Impressum (Imprint)</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

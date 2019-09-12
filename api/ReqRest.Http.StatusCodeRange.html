@@ -1,0 +1,715 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct StatusCodeRange
+   | ReqRest </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct StatusCodeRange
+   | ReqRest ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ReqRest.Http.StatusCodeRange">
+  
+  
+  <h1 id="ReqRest_Http_StatusCodeRange" data-uid="ReqRest.Http.StatusCodeRange" class="text-break">Struct StatusCodeRange
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a range between two HTTP status codes and provides methods for determining
+whether status codes fall within this range.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="ReqRest.Http.StatusCodeRange.html">StatusCodeRange</a>&gt;</div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ReqRest.Http.html">ReqRest.Http</a></h6>
+  <h6><strong>Assembly</strong>: ReqRest.Http.dll</h6>
+  <h5 id="ReqRest_Http_StatusCodeRange_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct StatusCodeRange : IEquatable&lt;StatusCodeRange&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="ReqRest_Http_StatusCodeRange__ctor_" data-uid="ReqRest.Http.StatusCodeRange.#ctor*"></a>
+  <h4 id="ReqRest_Http_StatusCodeRange__ctor_System_Nullable_System_Int32__" data-uid="ReqRest.Http.StatusCodeRange.#ctor(System.Nullable{System.Int32})">StatusCodeRange(Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="ReqRest.Http.StatusCodeRange.html">StatusCodeRange</a> instance which only spans a
+single status code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StatusCodeRange(int? singleStatusCode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">singleStatusCode</span></td>
+        <td><p>The single status code that is covered by this range.
+If <span class="xref">null</span>, this range is equal to <a class="xref" href="ReqRest.Http.StatusCodeRange.html#ReqRest_Http_StatusCodeRange_All">All</a> and will
+thus cover every single available status code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="ReqRest_Http_StatusCodeRange__ctor_" data-uid="ReqRest.Http.StatusCodeRange.#ctor*"></a>
+  <h4 id="ReqRest_Http_StatusCodeRange__ctor_System_Nullable_System_Int32__System_Nullable_System_Int32__" data-uid="ReqRest.Http.StatusCodeRange.#ctor(System.Nullable{System.Int32},System.Nullable{System.Int32})">StatusCodeRange(Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="ReqRest.Http.StatusCodeRange.html">StatusCodeRange</a> instance which starts at
+<code data-dev-comment-type="paramref" class="paramref">from</code> and ends at <code data-dev-comment-type="paramref" class="paramref">to</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StatusCodeRange(int? from, int? to)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">from</span></td>
+        <td><p>the status code where the range starts.</p>
+<p>If <span class="xref">null</span>, every single status code before
+<code data-dev-comment-type="paramref" class="paramref">to</code> is covered by this range.</p>
+<p>If <code data-dev-comment-type="paramref" class="paramref">to</code> is also <span class="xref">null</span>, this range covers every
+available status code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">to</span></td>
+        <td><p>The status code where the range ends.</p>
+<p>If <span class="xref">null</span>, every single status code after
+<code data-dev-comment-type="paramref" class="paramref">from</code> is covered by this range.</p>
+<p>If <code data-dev-comment-type="paramref" class="paramref">from</code> is also <span class="xref">null</span>, this range covers every
+available status code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">from</code> is larger than <code data-dev-comment-type="paramref" class="paramref">to</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <h4 id="ReqRest_Http_StatusCodeRange_All" data-uid="ReqRest.Http.StatusCodeRange.All">All</h4>
+  <div class="markdown level1 summary"><p>A <a class="xref" href="ReqRest.Http.StatusCodeRange.html">StatusCodeRange</a> which covers every single status code that is available.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly StatusCodeRange All</code></pre>
+  </div>
+  <h4 id="ReqRest_Http_StatusCodeRange_ClientErrors" data-uid="ReqRest.Http.StatusCodeRange.ClientErrors">ClientErrors</h4>
+  <div class="markdown level1 summary"><p>A <a class="xref" href="ReqRest.Http.StatusCodeRange.html">StatusCodeRange</a> which covers status codes that indicate client errors, i.e.
+status codes from <code>400</code> to <code>499</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly StatusCodeRange ClientErrors</code></pre>
+  </div>
+  <h4 id="ReqRest_Http_StatusCodeRange_Errors" data-uid="ReqRest.Http.StatusCodeRange.Errors">Errors</h4>
+  <div class="markdown level1 summary"><p>A <a class="xref" href="ReqRest.Http.StatusCodeRange.html">StatusCodeRange</a> which covers status codes that indicate either
+client or a server errors, i.e. status codes from <code>400</code> to <code>599</code>.</p>
+<p>This is basically a unification of <a class="xref" href="ReqRest.Http.StatusCodeRange.html#ReqRest_Http_StatusCodeRange_ClientErrors">ClientErrors</a> and
+<a class="xref" href="ReqRest.Http.StatusCodeRange.html#ReqRest_Http_StatusCodeRange_ServerErrors">ServerErrors</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly StatusCodeRange Errors</code></pre>
+  </div>
+  <h4 id="ReqRest_Http_StatusCodeRange_Informational" data-uid="ReqRest.Http.StatusCodeRange.Informational">Informational</h4>
+  <div class="markdown level1 summary"><p>A <a class="xref" href="ReqRest.Http.StatusCodeRange.html">StatusCodeRange</a> which covers informational status codes, i.e.
+status codes from <code>100</code> to <code>199</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly StatusCodeRange Informational</code></pre>
+  </div>
+  <h4 id="ReqRest_Http_StatusCodeRange_Redirection" data-uid="ReqRest.Http.StatusCodeRange.Redirection">Redirection</h4>
+  <div class="markdown level1 summary"><p>A <a class="xref" href="ReqRest.Http.StatusCodeRange.html">StatusCodeRange</a> which covers status codes that indicate a redirection, i.e.
+status codes from <code>300</code> to <code>399</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly StatusCodeRange Redirection</code></pre>
+  </div>
+  <h4 id="ReqRest_Http_StatusCodeRange_ServerErrors" data-uid="ReqRest.Http.StatusCodeRange.ServerErrors">ServerErrors</h4>
+  <div class="markdown level1 summary"><p>A <a class="xref" href="ReqRest.Http.StatusCodeRange.html">StatusCodeRange</a> which covers status codes that indicate server errors, i.e.
+status codes from <code>500</code> to <code>599</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly StatusCodeRange ServerErrors</code></pre>
+  </div>
+  <h4 id="ReqRest_Http_StatusCodeRange_Success" data-uid="ReqRest.Http.StatusCodeRange.Success">Success</h4>
+  <div class="markdown level1 summary"><p>A <a class="xref" href="ReqRest.Http.StatusCodeRange.html">StatusCodeRange</a> which covers status codes that indicate success, i.e.
+status codes from <code>200</code> to <code>299</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly StatusCodeRange Success</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="ReqRest_Http_StatusCodeRange_From_" data-uid="ReqRest.Http.StatusCodeRange.From*"></a>
+  <h4 id="ReqRest_Http_StatusCodeRange_From" data-uid="ReqRest.Http.StatusCodeRange.From">From</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the status code where the range starts.</p>
+<p>If <span class="xref">null</span>, every single status code before
+<a class="xref" href="ReqRest.Http.StatusCodeRange.html#ReqRest_Http_StatusCodeRange_To">To</a> is covered by this range.</p>
+<p>If <a class="xref" href="ReqRest.Http.StatusCodeRange.html#ReqRest_Http_StatusCodeRange_To">To</a> is also <span class="xref">null</span>, this range covers every
+available status code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? From { get; }</code></pre>
+  </div>
+  <a id="ReqRest_Http_StatusCodeRange_HasWildcardComponent_" data-uid="ReqRest.Http.StatusCodeRange.HasWildcardComponent*"></a>
+  <h4 id="ReqRest_Http_StatusCodeRange_HasWildcardComponent" data-uid="ReqRest.Http.StatusCodeRange.HasWildcardComponent">HasWildcardComponent</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether <a class="xref" href="ReqRest.Http.StatusCodeRange.html#ReqRest_Http_StatusCodeRange_From">From</a>, <a class="xref" href="ReqRest.Http.StatusCodeRange.html#ReqRest_Http_StatusCodeRange_To">To</a> or both are
+<span class="xref">null</span>, thus indicating a wildcard.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasWildcardComponent { get; }</code></pre>
+  </div>
+  <a id="ReqRest_Http_StatusCodeRange_IsSingleStatusCode_" data-uid="ReqRest.Http.StatusCodeRange.IsSingleStatusCode*"></a>
+  <h4 id="ReqRest_Http_StatusCodeRange_IsSingleStatusCode" data-uid="ReqRest.Http.StatusCodeRange.IsSingleStatusCode">IsSingleStatusCode</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this range spans only a single status code,
+i.e. if <a class="xref" href="ReqRest.Http.StatusCodeRange.html#ReqRest_Http_StatusCodeRange_From">From</a> equals <a class="xref" href="ReqRest.Http.StatusCodeRange.html#ReqRest_Http_StatusCodeRange_To">To</a>.
+The only exception to this rule is this range being <a class="xref" href="ReqRest.Http.StatusCodeRange.html#ReqRest_Http_StatusCodeRange_All">All</a>.
+If so, this returns <span class="xref">false</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSingleStatusCode { get; }</code></pre>
+  </div>
+  <a id="ReqRest_Http_StatusCodeRange_To_" data-uid="ReqRest.Http.StatusCodeRange.To*"></a>
+  <h4 id="ReqRest_Http_StatusCodeRange_To" data-uid="ReqRest.Http.StatusCodeRange.To">To</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the status code where the range ends.</p>
+<p>If <span class="xref">null</span>, every single status code after
+<a class="xref" href="ReqRest.Http.StatusCodeRange.html#ReqRest_Http_StatusCodeRange_From">From</a> is covered by this range.</p>
+<p>If <a class="xref" href="ReqRest.Http.StatusCodeRange.html#ReqRest_Http_StatusCodeRange_From">From</a> is also <span class="xref">null</span>, this range covers every
+available status code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? To { get; }</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="ReqRest_Http_StatusCodeRange_Equals_" data-uid="ReqRest.Http.StatusCodeRange.Equals*"></a>
+  <h4 id="ReqRest_Http_StatusCodeRange_Equals_ReqRest_Http_StatusCodeRange_" data-uid="ReqRest.Http.StatusCodeRange.Equals(ReqRest.Http.StatusCodeRange)">Equals(StatusCodeRange)</h4>
+  <div class="markdown level1 summary"><p>Returns a value indicating whether this status code range equals the
+<code data-dev-comment-type="paramref" class="paramref">other</code> one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(StatusCodeRange other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ReqRest.Http.StatusCodeRange.html">StatusCodeRange</a></td>
+        <td><span class="parametername">other</span></td>
+        <td><p>Another <a class="xref" href="ReqRest.Http.StatusCodeRange.html">StatusCodeRange</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><span class="xref">true</span> the two ranges are considered equal;
+<span class="xref">false</span> if not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="ReqRest_Http_StatusCodeRange_Equals_" data-uid="ReqRest.Http.StatusCodeRange.Equals*"></a>
+  <h4 id="ReqRest_Http_StatusCodeRange_Equals_System_Object_" data-uid="ReqRest.Http.StatusCodeRange.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>Returns a value indicating whether this status code range equals the specified object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>An object to be compared with this status code range.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><span class="xref">true</span> the two objects are considered equal;
+<span class="xref">false</span> if not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetype.equals#System_ValueType_Equals_System_Object_">ValueType.Equals(Object)</a></div>
+  <a id="ReqRest_Http_StatusCodeRange_GetHashCode_" data-uid="ReqRest.Http.StatusCodeRange.GetHashCode*"></a>
+  <h4 id="ReqRest_Http_StatusCodeRange_GetHashCode" data-uid="ReqRest.Http.StatusCodeRange.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Returns a unique hash code for this status code range.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>A unique hash code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetype.gethashcode#System_ValueType_GetHashCode">ValueType.GetHashCode()</a></div>
+  <a id="ReqRest_Http_StatusCodeRange_IsInRange_" data-uid="ReqRest.Http.StatusCodeRange.IsInRange*"></a>
+  <h4 id="ReqRest_Http_StatusCodeRange_IsInRange_ReqRest_Http_StatusCodeRange_" data-uid="ReqRest.Http.StatusCodeRange.IsInRange(ReqRest.Http.StatusCodeRange)">IsInRange(StatusCodeRange)</h4>
+  <div class="markdown level1 summary"><p>Returns a value indicating whether the <code data-dev-comment-type="paramref" class="paramref">other</code> specified status
+code range falls within this range.
+This will also return <span class="xref">true</span> if the ranges have equal values.
+For example, this will return <span class="xref">true</span> for <code>(200-300), (250-300)</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInRange(StatusCodeRange other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ReqRest.Http.StatusCodeRange.html">StatusCodeRange</a></td>
+        <td><span class="parametername">other</span></td>
+        <td><p>The other status code range to be checked.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><span class="xref">true</span> if <code data-dev-comment-type="paramref" class="paramref">other</code> falls within this range;
+<span class="xref">false</span> if not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="ReqRest_Http_StatusCodeRange_ToString_" data-uid="ReqRest.Http.StatusCodeRange.ToString*"></a>
+  <h4 id="ReqRest_Http_StatusCodeRange_ToString" data-uid="ReqRest.Http.StatusCodeRange.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Returns a string similar to <code>200-404</code>, <code>200-<em></em></code>, <code>-200</code>, <code>200</code>
+or <code>*</code>, depending on <a class="xref" href="ReqRest.Http.StatusCodeRange.html#ReqRest_Http_StatusCodeRange_From">From</a> and <a class="xref" href="ReqRest.Http.StatusCodeRange.html#ReqRest_Http_StatusCodeRange_To">To</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>A string representing the current status code range.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetype.tostring#System_ValueType_ToString">ValueType.ToString()</a></div>
+  <h3 id="operators">Operators
+  </h3>
+  <a id="ReqRest_Http_StatusCodeRange_op_Equality_" data-uid="ReqRest.Http.StatusCodeRange.op_Equality*"></a>
+  <h4 id="ReqRest_Http_StatusCodeRange_op_Equality_ReqRest_Http_StatusCodeRange_ReqRest_Http_StatusCodeRange_" data-uid="ReqRest.Http.StatusCodeRange.op_Equality(ReqRest.Http.StatusCodeRange,ReqRest.Http.StatusCodeRange)">Equality(StatusCodeRange, StatusCodeRange)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(StatusCodeRange left, StatusCodeRange right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ReqRest.Http.StatusCodeRange.html">StatusCodeRange</a></td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ReqRest.Http.StatusCodeRange.html">StatusCodeRange</a></td>
+        <td><span class="parametername">right</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ReqRest_Http_StatusCodeRange_op_Equality_ReqRest_Http_StatusCodeRange_ReqRest_Http_StatusCodeRange__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ReqRest.Http.StatusCodeRange.html#ReqRest_Http_StatusCodeRange_Equals_ReqRest_Http_StatusCodeRange_">Equals(StatusCodeRange)</a></div>
+  </div>
+  <a id="ReqRest_Http_StatusCodeRange_op_Implicit_" data-uid="ReqRest.Http.StatusCodeRange.op_Implicit*"></a>
+  <h4 id="ReqRest_Http_StatusCodeRange_op_Implicit_System_Nullable_System_Int32___ReqRest_Http_StatusCodeRange" data-uid="ReqRest.Http.StatusCodeRange.op_Implicit(System.Nullable{System.Int32})~ReqRest.Http.StatusCodeRange">Implicit(Nullable&lt;Int32&gt; to StatusCodeRange)</h4>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="ReqRest.Http.StatusCodeRange.html">StatusCodeRange</a> instance which only spans the
+specified <code data-dev-comment-type="paramref" class="paramref">singleStatusCode</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator StatusCodeRange(int? singleStatusCode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">singleStatusCode</span></td>
+        <td><p>The single status code that is covered by this range.
+If <span class="xref">null</span>, this range is equal to <a class="xref" href="ReqRest.Http.StatusCodeRange.html#ReqRest_Http_StatusCodeRange_All">All</a> and will
+thus cover every single available status code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ReqRest.Http.StatusCodeRange.html">StatusCodeRange</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="ReqRest_Http_StatusCodeRange_op_Implicit_" data-uid="ReqRest.Http.StatusCodeRange.op_Implicit*"></a>
+  <h4 id="ReqRest_Http_StatusCodeRange_op_Implicit_System_ValueTuple_System_Nullable_System_Int32__System_Nullable_System_Int32____ReqRest_Http_StatusCodeRange" data-uid="ReqRest.Http.StatusCodeRange.op_Implicit(System.ValueTuple{System.Nullable{System.Int32},System.Nullable{System.Int32}})~ReqRest.Http.StatusCodeRange">Implicit((Nullable&lt;Int32&gt; From, Nullable&lt;Int32&gt; To) to StatusCodeRange)</h4>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="ReqRest.Http.StatusCodeRange.html">StatusCodeRange</a> instance with the range values defined
+by the specified tuple.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator StatusCodeRange((int? From, int? To)range)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetuple-2">ValueTuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;&gt;</td>
+        <td><span class="parametername">range</span></td>
+        <td><p>A tuple where the first value corresponds to <a class="xref" href="ReqRest.Http.StatusCodeRange.html#ReqRest_Http_StatusCodeRange_From">From</a> and the second
+value to <a class="xref" href="ReqRest.Http.StatusCodeRange.html#ReqRest_Http_StatusCodeRange_To">To</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ReqRest.Http.StatusCodeRange.html">StatusCodeRange</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="ReqRest_Http_StatusCodeRange_op_Inequality_" data-uid="ReqRest.Http.StatusCodeRange.op_Inequality*"></a>
+  <h4 id="ReqRest_Http_StatusCodeRange_op_Inequality_ReqRest_Http_StatusCodeRange_ReqRest_Http_StatusCodeRange_" data-uid="ReqRest.Http.StatusCodeRange.op_Inequality(ReqRest.Http.StatusCodeRange,ReqRest.Http.StatusCodeRange)">Inequality(StatusCodeRange, StatusCodeRange)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(StatusCodeRange left, StatusCodeRange right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ReqRest.Http.StatusCodeRange.html">StatusCodeRange</a></td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ReqRest.Http.StatusCodeRange.html">StatusCodeRange</a></td>
+        <td><span class="parametername">right</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ReqRest_Http_StatusCodeRange_op_Inequality_ReqRest_Http_StatusCodeRange_ReqRest_Http_StatusCodeRange__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="ReqRest.Http.StatusCodeRange.html#ReqRest_Http_StatusCodeRange_Equals_ReqRest_Http_StatusCodeRange_">Equals(StatusCodeRange)</a></div>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">System.IEquatable&lt;T&gt;</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright &copy; 2019 ReqRest - Generated with <a href="https://github.com/dotnet/docfx">DocFX</a> - <a href="https://github.com/ovasquez/docfx-material/">Material Theme</a> made by <a href="https://github.com/ovasquez">Oscar Vásquez</a> - <a href="https://gist.github.com/manuelroemer/2aa8fc4e377874ae93dbd26e779cdbf6">Impressum (Imprint)</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

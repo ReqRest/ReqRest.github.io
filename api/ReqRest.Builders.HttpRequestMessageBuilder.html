@@ -1,0 +1,520 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class HttpRequestMessageBuilder
+   | ReqRest </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class HttpRequestMessageBuilder
+   | ReqRest ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ReqRest.Builders.HttpRequestMessageBuilder">
+  
+  
+  <h1 id="ReqRest_Builders_HttpRequestMessageBuilder" data-uid="ReqRest.Builders.HttpRequestMessageBuilder" class="text-break">Class HttpRequestMessageBuilder
+  </h1>
+  <div class="markdown level0 summary"><p>Implements several builder interfaces which enable fluent building of
+<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.httprequestmessage">HttpRequestMessage</a> objects.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">HttpRequestMessageBuilder</span></div>
+      <div class="level2"><a class="xref" href="ReqRest.ApiRequestBase.html">ApiRequestBase</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="ReqRest.Builders.IHttpRequestMessageBuilder.html">IHttpRequestMessageBuilder</a></div>
+    <div><a class="xref" href="ReqRest.Builders.IHttpHeadersBuilder-1.html">IHttpHeadersBuilder</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.headers.httprequestheaders">HttpRequestHeaders</a>&gt;</div>
+    <div><a class="xref" href="ReqRest.Builders.IHttpHeadersBuilder.html">IHttpHeadersBuilder</a></div>
+    <div><a class="xref" href="ReqRest.Builders.IHttpRequestPropertiesBuilder.html">IHttpRequestPropertiesBuilder</a></div>
+    <div><a class="xref" href="ReqRest.Builders.IHttpContentBuilder.html">IHttpContentBuilder</a></div>
+    <div><a class="xref" href="ReqRest.Builders.IHttpProtocolVersionBuilder.html">IHttpProtocolVersionBuilder</a></div>
+    <div><a class="xref" href="ReqRest.Builders.IRequestUriBuilder.html">IRequestUriBuilder</a></div>
+    <div><a class="xref" href="ReqRest.Builders.IHttpMethodBuilder.html">IHttpMethodBuilder</a></div>
+    <div><a class="xref" href="ReqRest.Builders.IBuilder.html">IBuilder</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ReqRest.Builders.html">ReqRest.Builders</a></h6>
+  <h6><strong>Assembly</strong>: ReqRest.Builders.dll</h6>
+  <h5 id="ReqRest_Builders_HttpRequestMessageBuilder_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class HttpRequestMessageBuilder : IHttpRequestMessageBuilder, IHttpHeadersBuilder&lt;HttpRequestHeaders&gt;, IHttpHeadersBuilder, IHttpRequestPropertiesBuilder, IHttpContentBuilder, IHttpProtocolVersionBuilder, IRequestUriBuilder, IHttpMethodBuilder, IBuilder</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="ReqRest_Builders_HttpRequestMessageBuilder__ctor_" data-uid="ReqRest.Builders.HttpRequestMessageBuilder.#ctor*"></a>
+  <h4 id="ReqRest_Builders_HttpRequestMessageBuilder__ctor_System_Nullable_System_Net_Http_HttpRequestMessage__" data-uid="ReqRest.Builders.HttpRequestMessageBuilder.#ctor(System.Nullable{System.Net.Http.HttpRequestMessage})">HttpRequestMessageBuilder(Nullable&lt;HttpRequestMessage&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="ReqRest.Builders.HttpRequestMessageBuilder.html">HttpRequestMessageBuilder</a> class
+which starts building on the specified <code data-dev-comment-type="paramref" class="paramref">httpRequestMessage</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpRequestMessageBuilder(HttpRequestMessage? httpRequestMessage = default(HttpRequestMessage? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.httprequestmessage">HttpRequestMessage</a>&gt;</td>
+        <td><span class="parametername">httpRequestMessage</span></td>
+        <td><p>The request from which the builder starts building.
+If <span class="xref">null</span>, a new instance is created instead.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="ReqRest_Builders_HttpRequestMessageBuilder_Content_" data-uid="ReqRest.Builders.HttpRequestMessageBuilder.Content*"></a>
+  <h4 id="ReqRest_Builders_HttpRequestMessageBuilder_Content" data-uid="ReqRest.Builders.HttpRequestMessageBuilder.Content">Content</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the HTTP content
+of the <a class="xref" href="ReqRest.Builders.HttpRequestMessageBuilder.html#ReqRest_Builders_HttpRequestMessageBuilder_HttpRequestMessage">HttpRequestMessage</a> whose properties are being built.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpContent? Content { get; set; }</code></pre>
+  </div>
+  <a id="ReqRest_Builders_HttpRequestMessageBuilder_Headers_" data-uid="ReqRest.Builders.HttpRequestMessageBuilder.Headers*"></a>
+  <h4 id="ReqRest_Builders_HttpRequestMessageBuilder_Headers" data-uid="ReqRest.Builders.HttpRequestMessageBuilder.Headers">Headers</h4>
+  <div class="markdown level1 summary"><p>Gets the collection of HTTP request headers
+of the <a class="xref" href="ReqRest.Builders.HttpRequestMessageBuilder.html#ReqRest_Builders_HttpRequestMessageBuilder_HttpRequestMessage">HttpRequestMessage</a> whose properties are being built.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpRequestHeaders Headers { get; }</code></pre>
+  </div>
+  <a id="ReqRest_Builders_HttpRequestMessageBuilder_HttpRequestMessage_" data-uid="ReqRest.Builders.HttpRequestMessageBuilder.HttpRequestMessage*"></a>
+  <h4 id="ReqRest_Builders_HttpRequestMessageBuilder_HttpRequestMessage" data-uid="ReqRest.Builders.HttpRequestMessageBuilder.HttpRequestMessage">HttpRequestMessage</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.httprequestmessage">HttpRequestMessage</a> which is being built.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpRequestMessage HttpRequestMessage { get; set; }</code></pre>
+  </div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="ReqRest_Builders_HttpRequestMessageBuilder_Method_" data-uid="ReqRest.Builders.HttpRequestMessageBuilder.Method*"></a>
+  <h4 id="ReqRest_Builders_HttpRequestMessageBuilder_Method" data-uid="ReqRest.Builders.HttpRequestMessageBuilder.Method">Method</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.httpmethod">HttpMethod</a>
+of the <a class="xref" href="ReqRest.Builders.HttpRequestMessageBuilder.html#ReqRest_Builders_HttpRequestMessageBuilder_HttpRequestMessage">HttpRequestMessage</a> whose properties are being built.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpMethod Method { get; set; }</code></pre>
+  </div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="ReqRest_Builders_HttpRequestMessageBuilder_Properties_" data-uid="ReqRest.Builders.HttpRequestMessageBuilder.Properties*"></a>
+  <h4 id="ReqRest_Builders_HttpRequestMessageBuilder_Properties" data-uid="ReqRest.Builders.HttpRequestMessageBuilder.Properties">Properties</h4>
+  <div class="markdown level1 summary"><p>Gets the set of HTTP properties for the request
+of the <a class="xref" href="ReqRest.Builders.HttpRequestMessageBuilder.html#ReqRest_Builders_HttpRequestMessageBuilder_HttpRequestMessage">HttpRequestMessage</a> whose properties are being built.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDictionary&lt;string, object? &gt; Properties { get; }</code></pre>
+  </div>
+  <a id="ReqRest_Builders_HttpRequestMessageBuilder_RequestUri_" data-uid="ReqRest.Builders.HttpRequestMessageBuilder.RequestUri*"></a>
+  <h4 id="ReqRest_Builders_HttpRequestMessageBuilder_RequestUri" data-uid="ReqRest.Builders.HttpRequestMessageBuilder.RequestUri">RequestUri</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the request <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a>
+of the <a class="xref" href="ReqRest.Builders.HttpRequestMessageBuilder.html#ReqRest_Builders_HttpRequestMessageBuilder_HttpRequestMessage">HttpRequestMessage</a> whose properties are being built.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Uri? RequestUri { get; set; }</code></pre>
+  </div>
+  <a id="ReqRest_Builders_HttpRequestMessageBuilder_Version_" data-uid="ReqRest.Builders.HttpRequestMessageBuilder.Version*"></a>
+  <h4 id="ReqRest_Builders_HttpRequestMessageBuilder_Version" data-uid="ReqRest.Builders.HttpRequestMessageBuilder.Version">Version</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the HTTP message version
+of the <a class="xref" href="ReqRest.Builders.HttpRequestMessageBuilder.html#ReqRest_Builders_HttpRequestMessageBuilder_HttpRequestMessage">HttpRequestMessage</a> whose properties are being built.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Version Version { get; set; }</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="ReqRest_Builders_HttpRequestMessageBuilder_ToString_" data-uid="ReqRest.Builders.HttpRequestMessageBuilder.ToString*"></a>
+  <h4 id="ReqRest_Builders_HttpRequestMessageBuilder_ToString" data-uid="ReqRest.Builders.HttpRequestMessageBuilder.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Returns a string representing the values of the underlying
+<a class="xref" href="ReqRest.Builders.HttpRequestMessageBuilder.html#ReqRest_Builders_HttpRequestMessageBuilder_HttpRequestMessage">HttpRequestMessage</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>A string representing the values of the underlying <a class="xref" href="ReqRest.Builders.HttpRequestMessageBuilder.html#ReqRest_Builders_HttpRequestMessageBuilder_HttpRequestMessage">HttpRequestMessage</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a></div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <a id="ReqRest_Builders_HttpRequestMessageBuilder_ReqRest_Builders_IHttpHeadersBuilder_Headers_" data-uid="ReqRest.Builders.HttpRequestMessageBuilder.ReqRest#Builders#IHttpHeadersBuilder#Headers*"></a>
+  <h4 id="ReqRest_Builders_HttpRequestMessageBuilder_ReqRest_Builders_IHttpHeadersBuilder_Headers" data-uid="ReqRest.Builders.HttpRequestMessageBuilder.ReqRest#Builders#IHttpHeadersBuilder#Headers">IHttpHeadersBuilder.Headers</h4>
+  <div class="markdown level1 summary"><p>Gets the collection of HTTP headers which the builder builds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HttpHeaders IHttpHeadersBuilder.Headers { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.headers.httpheaders">HttpHeaders</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="ReqRest.Builders.IHttpRequestMessageBuilder.html">IHttpRequestMessageBuilder</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.IHttpHeadersBuilder-1.html">IHttpHeadersBuilder&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.IHttpHeadersBuilder.html">IHttpHeadersBuilder</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.IHttpRequestPropertiesBuilder.html">IHttpRequestPropertiesBuilder</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.IHttpContentBuilder.html">IHttpContentBuilder</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.IHttpProtocolVersionBuilder.html">IHttpProtocolVersionBuilder</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.IRequestUriBuilder.html">IRequestUriBuilder</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.IHttpMethodBuilder.html">IHttpMethodBuilder</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.IBuilder.html">IBuilder</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="ReqRest.Serializers.NewtonsoftJson.JsonHttpContentBuilderExtensions.html#ReqRest_Serializers_NewtonsoftJson_JsonHttpContentBuilderExtensions_SetJsonContent__1___0_System_Nullable_System_Object__System_Nullable_System_Text_Encoding__System_Nullable_ReqRest_Serializers_NewtonsoftJson_JsonHttpContentSerializer__">JsonHttpContentBuilderExtensions.SetJsonContent&lt;T&gt;(T, Nullable&lt;Object&gt;, Nullable&lt;Encoding&gt;, Nullable&lt;JsonHttpContentSerializer&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Serializers.NewtonsoftJson.JsonHttpMethodBuilderExtensions.html#ReqRest_Serializers_NewtonsoftJson_JsonHttpMethodBuilderExtensions_PostJson__1___0_System_Nullable_System_Object__System_Nullable_System_Text_Encoding__System_Nullable_ReqRest_Serializers_NewtonsoftJson_JsonHttpContentSerializer__">JsonHttpMethodBuilderExtensions.PostJson&lt;T&gt;(T, Nullable&lt;Object&gt;, Nullable&lt;Encoding&gt;, Nullable&lt;JsonHttpContentSerializer&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Serializers.NewtonsoftJson.JsonHttpMethodBuilderExtensions.html#ReqRest_Serializers_NewtonsoftJson_JsonHttpMethodBuilderExtensions_PutJson__1___0_System_Nullable_System_Object__System_Nullable_System_Text_Encoding__System_Nullable_ReqRest_Serializers_NewtonsoftJson_JsonHttpContentSerializer__">JsonHttpMethodBuilderExtensions.PutJson&lt;T&gt;(T, Nullable&lt;Object&gt;, Nullable&lt;Encoding&gt;, Nullable&lt;JsonHttpContentSerializer&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Serializers.NewtonsoftJson.JsonHttpMethodBuilderExtensions.html#ReqRest_Serializers_NewtonsoftJson_JsonHttpMethodBuilderExtensions_PatchJson__1___0_System_Nullable_System_Object__System_Nullable_System_Text_Encoding__System_Nullable_ReqRest_Serializers_NewtonsoftJson_JsonHttpContentSerializer__">JsonHttpMethodBuilderExtensions.PatchJson&lt;T&gt;(T, Nullable&lt;Object&gt;, Nullable&lt;Encoding&gt;, Nullable&lt;JsonHttpContentSerializer&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.BuilderExtensions.html#ReqRest_Builders_BuilderExtensions_Configure__1___0_System_Action___0__">BuilderExtensions.Configure&lt;T&gt;(T, Action&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.BuilderExtensions.html#ReqRest_Builders_BuilderExtensions_If__1___0_System_Boolean_System_Action___0__">BuilderExtensions.If&lt;T&gt;(T, Boolean, Action&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.BuilderExtensions.html#ReqRest_Builders_BuilderExtensions_IfNot__1___0_System_Boolean_System_Action___0__">BuilderExtensions.IfNot&lt;T&gt;(T, Boolean, Action&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpContentBuilderExtensions.html#ReqRest_Builders_HttpContentBuilderExtensions_SetFormUrlEncodedContent__1___0_System_ValueTuple_System_String_System_String____">HttpContentBuilderExtensions.SetFormUrlEncodedContent&lt;T&gt;(T, (String Key, String Value)[])</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpContentBuilderExtensions.html#ReqRest_Builders_HttpContentBuilderExtensions_SetFormUrlEncodedContent__1___0_System_Collections_Generic_IEnumerable_System_ValueTuple_System_String_System_String___">HttpContentBuilderExtensions.SetFormUrlEncodedContent&lt;T&gt;(T, IEnumerable&lt;(String Key, String Value)&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpContentBuilderExtensions.html#ReqRest_Builders_HttpContentBuilderExtensions_SetFormUrlEncodedContent__1___0_System_Collections_Generic_KeyValuePair_System_String_System_String____">HttpContentBuilderExtensions.SetFormUrlEncodedContent&lt;T&gt;(T, KeyValuePair&lt;String, String&gt;[])</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpContentBuilderExtensions.html#ReqRest_Builders_HttpContentBuilderExtensions_SetFormUrlEncodedContent__1___0_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_String___">HttpContentBuilderExtensions.SetFormUrlEncodedContent&lt;T&gt;(T, IEnumerable&lt;KeyValuePair&lt;String, String&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpContentBuilderExtensions.html#ReqRest_Builders_HttpContentBuilderExtensions_SetContent__1___0_System_String_System_Nullable_System_Text_Encoding__System_Nullable_System_String__">HttpContentBuilderExtensions.SetContent&lt;T&gt;(T, String, Nullable&lt;Encoding&gt;, Nullable&lt;String&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpContentBuilderExtensions.html#ReqRest_Builders_HttpContentBuilderExtensions_SetContent__1___0_System_Byte___">HttpContentBuilderExtensions.SetContent&lt;T&gt;(T, Byte[])</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpContentBuilderExtensions.html#ReqRest_Builders_HttpContentBuilderExtensions_SetContent__1___0_System_Byte___System_Int32_System_Int32_">HttpContentBuilderExtensions.SetContent&lt;T&gt;(T, Byte[], Int32, Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpContentBuilderExtensions.html#ReqRest_Builders_HttpContentBuilderExtensions_SetContent__1___0_System_Nullable_System_Net_Http_HttpContent__">HttpContentBuilderExtensions.SetContent&lt;T&gt;(T, Nullable&lt;HttpContent&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpContentBuilderExtensions.html#ReqRest_Builders_HttpContentBuilderExtensions_SetContentType__1___0_System_String_System_Nullable_System_String__System_Nullable_System_Collections_Generic_IEnumerable_System_Net_Http_Headers_NameValueHeaderValue___">HttpContentBuilderExtensions.SetContentType&lt;T&gt;(T, String, Nullable&lt;String&gt;, Nullable&lt;IEnumerable&lt;NameValueHeaderValue&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpContentBuilderExtensions.html#ReqRest_Builders_HttpContentBuilderExtensions_SetContentType__1___0_System_Nullable_System_Net_Http_Headers_MediaTypeHeaderValue__">HttpContentBuilderExtensions.SetContentType&lt;T&gt;(T, Nullable&lt;MediaTypeHeaderValue&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpContentBuilderExtensions.html#ReqRest_Builders_HttpContentBuilderExtensions_AddContentHeader__1___0_System_String_">HttpContentBuilderExtensions.AddContentHeader&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpContentBuilderExtensions.html#ReqRest_Builders_HttpContentBuilderExtensions_AddContentHeader__1___0_System_String_System_Nullable_System_String__">HttpContentBuilderExtensions.AddContentHeader&lt;T&gt;(T, String, Nullable&lt;String&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpContentBuilderExtensions.html#ReqRest_Builders_HttpContentBuilderExtensions_AddContentHeader__1___0_System_String_System_Nullable_System_Collections_Generic_IEnumerable_System_Nullable_System_String____">HttpContentBuilderExtensions.AddContentHeader&lt;T&gt;(T, String, Nullable&lt;IEnumerable&lt;Nullable&lt;String&gt;&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpContentBuilderExtensions.html#ReqRest_Builders_HttpContentBuilderExtensions_RemoveContentHeader__1___0_System_Nullable_System_String____names_">HttpContentBuilderExtensions.RemoveContentHeader&lt;T&gt;(T, Nullable&lt;String&gt;[], names)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpContentBuilderExtensions.html#ReqRest_Builders_HttpContentBuilderExtensions_ClearContentHeaders__1___0_">HttpContentBuilderExtensions.ClearContentHeaders&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpContentBuilderExtensions.html#ReqRest_Builders_HttpContentBuilderExtensions_ConfigureContentHeaders__1___0_System_Action_System_Net_Http_Headers_HttpContentHeaders__">HttpContentBuilderExtensions.ConfigureContentHeaders&lt;T&gt;(T, Action&lt;HttpContentHeaders&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpHeadersBuilderExtensions.html#ReqRest_Builders_HttpHeadersBuilderExtensions_AddHeader__1___0_System_String_">HttpHeadersBuilderExtensions.AddHeader&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpHeadersBuilderExtensions.html#ReqRest_Builders_HttpHeadersBuilderExtensions_AddHeader__1___0_System_String_System_Nullable_System_String__">HttpHeadersBuilderExtensions.AddHeader&lt;T&gt;(T, String, Nullable&lt;String&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpHeadersBuilderExtensions.html#ReqRest_Builders_HttpHeadersBuilderExtensions_AddHeader__1___0_System_String_System_Nullable_System_Collections_Generic_IEnumerable_System_Nullable_System_String____">HttpHeadersBuilderExtensions.AddHeader&lt;T&gt;(T, String, Nullable&lt;IEnumerable&lt;Nullable&lt;String&gt;&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpHeadersBuilderExtensions.html#ReqRest_Builders_HttpHeadersBuilderExtensions_RemoveHeader__1___0_System_Nullable_System_String____names_">HttpHeadersBuilderExtensions.RemoveHeader&lt;T&gt;(T, Nullable&lt;String&gt;[], names)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpHeadersBuilderExtensions.html#ReqRest_Builders_HttpHeadersBuilderExtensions_SetHeader__1___0_System_String_">HttpHeadersBuilderExtensions.SetHeader&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpHeadersBuilderExtensions.html#ReqRest_Builders_HttpHeadersBuilderExtensions_SetHeader__1___0_System_String_System_Nullable_System_String__">HttpHeadersBuilderExtensions.SetHeader&lt;T&gt;(T, String, Nullable&lt;String&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpHeadersBuilderExtensions.html#ReqRest_Builders_HttpHeadersBuilderExtensions_SetHeader__1___0_System_String_System_Nullable_System_Collections_Generic_IEnumerable_System_Nullable_System_String____">HttpHeadersBuilderExtensions.SetHeader&lt;T&gt;(T, String, Nullable&lt;IEnumerable&lt;Nullable&lt;String&gt;&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpHeadersBuilderExtensions.html#ReqRest_Builders_HttpHeadersBuilderExtensions_ClearHeaders__1___0_">HttpHeadersBuilderExtensions.ClearHeaders&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpHeadersBuilderExtensions.html#ReqRest_Builders_HttpHeadersBuilderExtensions_ConfigureHeaders__1___0_System_Action_System_Net_Http_Headers_HttpHeaders__">HttpHeadersBuilderExtensions.ConfigureHeaders&lt;T&gt;(T, Action&lt;HttpHeaders&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpMethodBuilderExtensions.html#ReqRest_Builders_HttpMethodBuilderExtensions_Get__1___0_">HttpMethodBuilderExtensions.Get&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpMethodBuilderExtensions.html#ReqRest_Builders_HttpMethodBuilderExtensions_Post__1___0_">HttpMethodBuilderExtensions.Post&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpMethodBuilderExtensions.html#ReqRest_Builders_HttpMethodBuilderExtensions_Put__1___0_">HttpMethodBuilderExtensions.Put&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpMethodBuilderExtensions.html#ReqRest_Builders_HttpMethodBuilderExtensions_Delete__1___0_">HttpMethodBuilderExtensions.Delete&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpMethodBuilderExtensions.html#ReqRest_Builders_HttpMethodBuilderExtensions_Options__1___0_">HttpMethodBuilderExtensions.Options&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpMethodBuilderExtensions.html#ReqRest_Builders_HttpMethodBuilderExtensions_Trace__1___0_">HttpMethodBuilderExtensions.Trace&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpMethodBuilderExtensions.html#ReqRest_Builders_HttpMethodBuilderExtensions_Head__1___0_">HttpMethodBuilderExtensions.Head&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpMethodBuilderExtensions.html#ReqRest_Builders_HttpMethodBuilderExtensions_Patch__1___0_">HttpMethodBuilderExtensions.Patch&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpMethodBuilderExtensions.html#ReqRest_Builders_HttpMethodBuilderExtensions_SetMethod__1___0_System_String_">HttpMethodBuilderExtensions.SetMethod&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpMethodBuilderExtensions.html#ReqRest_Builders_HttpMethodBuilderExtensions_SetMethod__1___0_System_Net_Http_HttpMethod_">HttpMethodBuilderExtensions.SetMethod&lt;T&gt;(T, HttpMethod)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpProtocolVersionBuilderExtensions.html#ReqRest_Builders_HttpProtocolVersionBuilderExtensions_SetVersion__1___0_System_Version_">HttpProtocolVersionBuilderExtensions.SetVersion&lt;T&gt;(T, Version)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpRequestMessageBuilderExtensions.html#ReqRest_Builders_HttpRequestMessageBuilderExtensions_ConfigureRequest__1___0_System_Action_System_Net_Http_HttpRequestMessage__">HttpRequestMessageBuilderExtensions.ConfigureRequest&lt;T&gt;(T, Action&lt;HttpRequestMessage&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpRequestMessageBuilderExtensions.html#ReqRest_Builders_HttpRequestMessageBuilderExtensions_ConfigureRequest__1___0_System_Func_System_Net_Http_HttpRequestMessage__">HttpRequestMessageBuilderExtensions.ConfigureRequest&lt;T&gt;(T, Func&lt;HttpRequestMessage&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpRequestMessageBuilderExtensions.html#ReqRest_Builders_HttpRequestMessageBuilderExtensions_ConfigureRequest__1___0_System_Func_System_Net_Http_HttpRequestMessage_System_Net_Http_HttpRequestMessage__">HttpRequestMessageBuilderExtensions.ConfigureRequest&lt;T&gt;(T, Func&lt;HttpRequestMessage, HttpRequestMessage&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpRequestMessageBuilderExtensions.html#ReqRest_Builders_HttpRequestMessageBuilderExtensions_SetRequest__1___0_System_Net_Http_HttpRequestMessage_">HttpRequestMessageBuilderExtensions.SetRequest&lt;T&gt;(T, HttpRequestMessage)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpRequestPropertiesBuilderExtensions.html#ReqRest_Builders_HttpRequestPropertiesBuilderExtensions_SetProperty__1___0_System_String_System_Nullable_System_Object__">HttpRequestPropertiesBuilderExtensions.SetProperty&lt;T&gt;(T, String, Nullable&lt;Object&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpRequestPropertiesBuilderExtensions.html#ReqRest_Builders_HttpRequestPropertiesBuilderExtensions_AddProperty__1___0_System_String_System_Nullable_System_Object__">HttpRequestPropertiesBuilderExtensions.AddProperty&lt;T&gt;(T, String, Nullable&lt;Object&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpRequestPropertiesBuilderExtensions.html#ReqRest_Builders_HttpRequestPropertiesBuilderExtensions_RemoveProperty__1___0_System_Nullable_System_String____names_">HttpRequestPropertiesBuilderExtensions.RemoveProperty&lt;T&gt;(T, Nullable&lt;String&gt;[], names)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpRequestPropertiesBuilderExtensions.html#ReqRest_Builders_HttpRequestPropertiesBuilderExtensions_ClearProperties__1___0_">HttpRequestPropertiesBuilderExtensions.ClearProperties&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.HttpRequestPropertiesBuilderExtensions.html#ReqRest_Builders_HttpRequestPropertiesBuilderExtensions_ConfigureProperties__1___0_System_Action_System_Collections_Generic_IDictionary_System_String_System_Nullable_System_Object____">HttpRequestPropertiesBuilderExtensions.ConfigureProperties&lt;T&gt;(T, Action&lt;IDictionary&lt;String, Nullable&lt;Object&gt;&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.RequestUriBuilderExtensions.html#ReqRest_Builders_RequestUriBuilderExtensions_ConfigureRequestUri__1___0_System_Action_ReqRest_Builders_UrlBuilder__">RequestUriBuilderExtensions.ConfigureRequestUri&lt;T&gt;(T, Action&lt;UrlBuilder&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.RequestUriBuilderExtensions.html#ReqRest_Builders_RequestUriBuilderExtensions_ConfigureRequestUri__1___0_System_Func_ReqRest_Builders_UrlBuilder_System_Nullable_System_Uri___">RequestUriBuilderExtensions.ConfigureRequestUri&lt;T&gt;(T, Func&lt;UrlBuilder, Nullable&lt;Uri&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.RequestUriBuilderExtensions.html#ReqRest_Builders_RequestUriBuilderExtensions_SetRequestUri__1___0_System_Nullable_System_String__">RequestUriBuilderExtensions.SetRequestUri&lt;T&gt;(T, Nullable&lt;String&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.RequestUriBuilderExtensions.html#ReqRest_Builders_RequestUriBuilderExtensions_SetRequestUri__1___0_System_Nullable_System_Uri__">RequestUriBuilderExtensions.SetRequestUri&lt;T&gt;(T, Nullable&lt;Uri&gt;)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright &copy; 2019 ReqRest - Generated with <a href="https://github.com/dotnet/docfx">DocFX</a> - <a href="https://github.com/ovasquez/docfx-material/">Material Theme</a> made by <a href="https://github.com/ovasquez">Oscar Vásquez</a> - <a href="https://gist.github.com/manuelroemer/2aa8fc4e377874ae93dbd26e779cdbf6">Impressum (Imprint)</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

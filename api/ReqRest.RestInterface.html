@@ -1,0 +1,353 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RestInterface
+   | ReqRest </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RestInterface
+   | ReqRest ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ReqRest.RestInterface">
+  
+  
+  <h1 id="ReqRest_RestInterface" data-uid="ReqRest.RestInterface" class="text-break">Class RestInterface
+  </h1>
+  <div class="markdown level0 summary"><p>Defines a base class for wrapping an interface of a RESTful HTTP API and exposing
+the HTTP requests which can be made against that interface.
+See remarks for details on what an interface means in this context.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">RestInterface</span></div>
+      <div class="level2"><a class="xref" href="ReqRest.RestInterface-1.html">RestInterface&lt;TClient&gt;</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="ReqRest.IUrlProvider.html">IUrlProvider</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ReqRest.html">ReqRest</a></h6>
+  <h6><strong>Assembly</strong>: ReqRest.dll</h6>
+  <h5 id="ReqRest_RestInterface_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class RestInterface : IUrlProvider</code></pre>
+  </div>
+  <h5 id="ReqRest_RestInterface_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>An interface in the context of this library means a certain part of an URL which
+identifies a resource in a RESTful API.</p>
+<p>For example, given the <code>http://api.com/todos</code> URL, the <code>todos</code> part is
+an interface.
+If a <a class="xref" href="ReqRest.RestClient.html">RestClient</a> is configured with the base URL of that API (i.e.
+(<code>http://api.com</code>), this base URL can be combined with the interface part
+<code>todos</code> to form a full URL.</p>
+<p>It is important to understand that ReqRest maps each possible interface to one class.
+For example, while the two URLS <code>http://api.com/todos</code> and <code>http://api.com/todos/123</code>
+might look like one interface, they are actually treated as two <a class="xref" href="ReqRest.RestInterface.html">RestInterface</a>
+members by ReqRest.
+This is because the two URLs support different methods. While the first one usually
+supports methods like <code>GET</code> and <code>POST</code>, the second one usually supports
+<code>GET</code>, <code>POST</code>, <code>PUT</code> and <code>DELETE</code>.
+Thus, it makes sense to separate them into different classes that make different
+requests available.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="ReqRest_RestInterface__ctor_" data-uid="ReqRest.RestInterface.#ctor*"></a>
+  <h4 id="ReqRest_RestInterface__ctor_ReqRest_RestClient_System_Nullable_ReqRest_IUrlProvider__" data-uid="ReqRest.RestInterface.#ctor(ReqRest.RestClient,System.Nullable{ReqRest.IUrlProvider})">RestInterface(RestClient, Nullable&lt;IUrlProvider&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="ReqRest.RestInterface.html">RestInterface</a> class whose full URL
+depends on another <a class="xref" href="ReqRest.IUrlProvider.html">IUrlProvider</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RestInterface(RestClient restClient, IUrlProvider? baseUrlProvider = default(IUrlProvider? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ReqRest.RestClient.html">RestClient</a></td>
+        <td><span class="parametername">restClient</span></td>
+        <td><p>The <a class="xref" href="ReqRest.RestClient.html">RestClient</a> which ultimately manages (or rather &quot;contains&quot;)
+this interface.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="ReqRest.IUrlProvider.html">IUrlProvider</a>&gt;</td>
+        <td><span class="parametername">baseUrlProvider</span></td>
+        <td><p>An <a class="xref" href="ReqRest.IUrlProvider.html">IUrlProvider</a> which is the logical parent of this
+interface.
+The URL which is provided by this <a class="xref" href="ReqRest.IUrlProvider.html">IUrlProvider</a> is used as this
+interface's base url.</p>
+<p>If <span class="xref">null</span>, the <code data-dev-comment-type="paramref" class="paramref">restClient</code> is used instead.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><ul>
+<li><code data-dev-comment-type="paramref" class="paramref">restClient</code></li>
+</ul>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="ReqRest_RestInterface_BaseUrlProvider_" data-uid="ReqRest.RestInterface.BaseUrlProvider*"></a>
+  <h4 id="ReqRest_RestInterface_BaseUrlProvider" data-uid="ReqRest.RestInterface.BaseUrlProvider">BaseUrlProvider</h4>
+  <div class="markdown level1 summary"><p>Gets an <a class="xref" href="ReqRest.IUrlProvider.html">IUrlProvider</a> which is the logical parent of this
+interface.
+The URL which is returned by this <a class="xref" href="ReqRest.IUrlProvider.html">IUrlProvider</a> is used as this
+interface's base url.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IUrlProvider BaseUrlProvider { get; }</code></pre>
+  </div>
+  <a id="ReqRest_RestInterface_Client_" data-uid="ReqRest.RestInterface.Client*"></a>
+  <h4 id="ReqRest_RestInterface_Client" data-uid="ReqRest.RestInterface.Client">Client</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="ReqRest.RestClient.html">RestClient</a> which ultimately manages (or rather &quot;contains&quot;)
+this interface.
+This client's configuration is supposed to be used when building requests.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RestClient Client { get; }</code></pre>
+  </div>
+  <a id="ReqRest_RestInterface_Url_" data-uid="ReqRest.RestInterface.Url*"></a>
+  <h4 id="ReqRest_RestInterface_Url" data-uid="ReqRest.RestInterface.Url">Url</h4>
+  <div class="markdown level1 summary"><p>Gets the URL which was built for the <a class="xref" href="ReqRest.RestInterface.html">RestInterface</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Uri Url { get; }</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="ReqRest_RestInterface_BuildRequest_" data-uid="ReqRest.RestInterface.BuildRequest*"></a>
+  <h4 id="ReqRest_RestInterface_BuildRequest" data-uid="ReqRest.RestInterface.BuildRequest">BuildRequest()</h4>
+  <div class="markdown level1 summary"><p>Returns a new <a class="xref" href="ReqRest.ApiRequest.html">ApiRequest</a> instance which can be used
+to build a specific request against this interface.</p>
+<p>The request is preconfigured with the default configuration of the <a class="xref" href="ReqRest.RestInterface.html#ReqRest_RestInterface_Client">Client</a>
+and the URL of this interface which was created via <a class="xref" href="ReqRest.RestInterface.html#ReqRest_RestInterface_BuildUrl_ReqRest_Builders_UrlBuilder_">BuildUrl(UrlBuilder)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual ApiRequest BuildRequest()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ReqRest.ApiRequest.html">ApiRequest</a></td>
+        <td><p>A new <a class="xref" href="ReqRest.ApiRequestBase.html">ApiRequestBase</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="ReqRest_RestInterface_BuildUrl_" data-uid="ReqRest.RestInterface.BuildUrl*"></a>
+  <h4 id="ReqRest_RestInterface_BuildUrl_ReqRest_Builders_UrlBuilder_" data-uid="ReqRest.RestInterface.BuildUrl(ReqRest.Builders.UrlBuilder)">BuildUrl(UrlBuilder)</h4>
+  <div class="markdown level1 summary"><p>Builds the full URL of this interface by using the specified <a class="xref" href="ReqRest.Builders.UrlBuilder.html">UrlBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract UrlBuilder BuildUrl(UrlBuilder baseUrl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ReqRest.Builders.UrlBuilder.html">UrlBuilder</a></td>
+        <td><span class="parametername">baseUrl</span></td>
+        <td><p>An <a class="xref" href="ReqRest.Builders.UrlBuilder.html">UrlBuilder</a> which was created by this interface's parent.
+This builder most likely holds some kind of base URL which can be extended
+with this interface's information.</p>
+<p>For example, the parent may already have configured the builder with a base URL
+like <code>http://www.test.com/user/1</code>.
+This interface could then extend this URL with additional information like
+<code>/items/2</code> or <code>?limit=10</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ReqRest.Builders.UrlBuilder.html">UrlBuilder</a></td>
+        <td><p>The final <a class="xref" href="ReqRest.Builders.UrlBuilder.html">UrlBuilder</a> which holds the parts of this interface's URL.
+This should usually be the incoming <code data-dev-comment-type="paramref" class="paramref">baseUrl</code> builder instance,
+but can, for special cases, also be an entirely different instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <a id="ReqRest_RestInterface_ReqRest_IUrlProvider_GetUrlBuilder_" data-uid="ReqRest.RestInterface.ReqRest#IUrlProvider#GetUrlBuilder*"></a>
+  <h4 id="ReqRest_RestInterface_ReqRest_IUrlProvider_GetUrlBuilder" data-uid="ReqRest.RestInterface.ReqRest#IUrlProvider#GetUrlBuilder">IUrlProvider.GetUrlBuilder()</h4>
+  <div class="markdown level1 summary"><p>Creates and returns a new <a class="xref" href="ReqRest.Builders.UrlBuilder.html">UrlBuilder</a> instance which is configured
+with this member's current URL information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">UrlBuilder IUrlProvider.GetUrlBuilder()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ReqRest.Builders.UrlBuilder.html">UrlBuilder</a></td>
+        <td><p>A new <a class="xref" href="ReqRest.Builders.UrlBuilder.html">UrlBuilder</a> instance which is already configured with the
+URL information that this member has.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="ReqRest.IUrlProvider.html">IUrlProvider</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright &copy; 2019 ReqRest - Generated with <a href="https://github.com/dotnet/docfx">DocFX</a> - <a href="https://github.com/ovasquez/docfx-material/">Material Theme</a> made by <a href="https://github.com/ovasquez">Oscar Vásquez</a> - <a href="https://gist.github.com/manuelroemer/2aa8fc4e377874ae93dbd26e779cdbf6">Impressum (Imprint)</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

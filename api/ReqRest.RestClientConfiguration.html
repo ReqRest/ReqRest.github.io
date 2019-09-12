@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RestClientConfiguration
+   | ReqRest </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RestClientConfiguration
+   | ReqRest ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ReqRest.RestClientConfiguration">
+  
+  
+  <h1 id="ReqRest_RestClientConfiguration" data-uid="ReqRest.RestClientConfiguration" class="text-break">Class RestClientConfiguration
+  </h1>
+  <div class="markdown level0 summary"><p>Defines the basic configuration values for a <a class="xref" href="ReqRest.RestClient.html">RestClient</a>.
+This configuration can be extended by specific client implementations.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">RestClientConfiguration</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ReqRest.html">ReqRest</a></h6>
+  <h6><strong>Assembly</strong>: ReqRest.dll</h6>
+  <h5 id="ReqRest_RestClientConfiguration_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RestClientConfiguration</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="ReqRest_RestClientConfiguration__ctor_" data-uid="ReqRest.RestClientConfiguration.#ctor*"></a>
+  <h4 id="ReqRest_RestClientConfiguration__ctor" data-uid="ReqRest.RestClientConfiguration.#ctor">RestClientConfiguration()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="ReqRest.RestClientConfiguration.html">RestClientConfiguration</a> with default values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RestClientConfiguration()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="ReqRest_RestClientConfiguration_BaseUrl_" data-uid="ReqRest.RestClientConfiguration.BaseUrl*"></a>
+  <h4 id="ReqRest_RestClientConfiguration_BaseUrl" data-uid="ReqRest.RestClientConfiguration.BaseUrl">BaseUrl</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a> which forms the base URL for any request
+created by the client.</p>
+<p>Any <a class="xref" href="ReqRest.RestInterface.html">RestInterface</a> which is exposed by the client will start building
+its request URL based on this value.</p>
+<p>This can be <span class="xref">null</span>. If so, a default initial <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a> will
+be used by most components instead.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Uri? BaseUrl { get; set; }</code></pre>
+  </div>
+  <a id="ReqRest_RestClientConfiguration_HttpClientProvider_" data-uid="ReqRest.RestClientConfiguration.HttpClientProvider*"></a>
+  <h4 id="ReqRest_RestClientConfiguration_HttpClientProvider" data-uid="ReqRest.RestClientConfiguration.HttpClientProvider">HttpClientProvider</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a function which returns an <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a> instance that
+should be used for making requests created by the client.</p>
+<p>By default, this returns a default <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a> factory that uses a single
+static <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;HttpClient&gt; HttpClientProvider { get; set; }</code></pre>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright &copy; 2019 ReqRest - Generated with <a href="https://github.com/dotnet/docfx">DocFX</a> - <a href="https://github.com/ovasquez/docfx-material/">Material Theme</a> made by <a href="https://github.com/ovasquez">Oscar Vásquez</a> - <a href="https://gist.github.com/manuelroemer/2aa8fc4e377874ae93dbd26e779cdbf6">Impressum (Imprint)</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

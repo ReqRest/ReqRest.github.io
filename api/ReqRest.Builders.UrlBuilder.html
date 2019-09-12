@@ -1,0 +1,671 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class UrlBuilder
+   | ReqRest </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class UrlBuilder
+   | ReqRest ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ReqRest.Builders.UrlBuilder">
+  
+  
+  <h1 id="ReqRest_Builders_UrlBuilder" data-uid="ReqRest.Builders.UrlBuilder" class="text-break">Class UrlBuilder
+  </h1>
+  <div class="markdown level0 summary"><p>An extension of the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder">UriBuilder</a> which is specifically tailored for
+convenience and expressive code during URL creation.
+It additionally implements <a class="xref" href="ReqRest.Builders.IBuilder.html">IBuilder</a>, thus enabling the default set
+of builder extension methods on this class.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder">UriBuilder</a></div>
+    <div class="level2"><span class="xref">UrlBuilder</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="ReqRest.Builders.IBuilder.html">IBuilder</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ReqRest.Builders.html">ReqRest.Builders</a></h6>
+  <h6><strong>Assembly</strong>: ReqRest.Builders.dll</h6>
+  <h5 id="ReqRest_Builders_UrlBuilder_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class UrlBuilder : UriBuilder, IBuilder</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="ReqRest_Builders_UrlBuilder__ctor_" data-uid="ReqRest.Builders.UrlBuilder.#ctor*"></a>
+  <h4 id="ReqRest_Builders_UrlBuilder__ctor_System_Nullable_System_String__System_Nullable_System_String__System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_String__" data-uid="ReqRest.Builders.UrlBuilder.#ctor(System.Nullable{System.String},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.String})">UrlBuilder(Nullable&lt;String&gt;, Nullable&lt;String&gt;, Nullable&lt;Int32&gt;, Nullable&lt;String&gt;, Nullable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="ReqRest.Builders.UrlBuilder.html">UrlBuilder</a> instance which starts building on
+an URL built from the specified values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UrlBuilder(string? scheme = default(string? ), string? host = default(string? ), int? port, string? path = default(string? ), string? extraValue = default(string? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">scheme</span></td>
+        <td><p>The URL's scheme.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">host</span></td>
+        <td><p>The URL's host.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">port</span></td>
+        <td><p>The URL's port.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The URL's path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">extraValue</span></td>
+        <td><p>The URL's extra value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="ReqRest_Builders_UrlBuilder__ctor_" data-uid="ReqRest.Builders.UrlBuilder.#ctor*"></a>
+  <h4 id="ReqRest_Builders_UrlBuilder__ctor_System_String_" data-uid="ReqRest.Builders.UrlBuilder.#ctor(System.String)">UrlBuilder(String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="ReqRest.Builders.UrlBuilder.html">UrlBuilder</a> instance which starts building
+on the specified <code data-dev-comment-type="paramref" class="paramref">uri</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UrlBuilder(string uri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">uri</span></td>
+        <td><p>A string representing a URL.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><ul>
+<li><code data-dev-comment-type="paramref" class="paramref">uri</code></li>
+</ul>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="ReqRest_Builders_UrlBuilder__ctor_" data-uid="ReqRest.Builders.UrlBuilder.#ctor*"></a>
+  <h4 id="ReqRest_Builders_UrlBuilder__ctor_System_Uri_" data-uid="ReqRest.Builders.UrlBuilder.#ctor(System.Uri)">UrlBuilder(Uri)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="ReqRest.Builders.UrlBuilder.html">UrlBuilder</a> instance which starts building
+on the specified <code data-dev-comment-type="paramref" class="paramref">uri</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UrlBuilder(Uri uri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><span class="parametername">uri</span></td>
+        <td><p>An <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a> representing a URL.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><ul>
+<li><code data-dev-comment-type="paramref" class="paramref">uri</code></li>
+</ul>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  <a id="ReqRest_Builders_UrlBuilder_op_BitwiseAnd_" data-uid="ReqRest.Builders.UrlBuilder.op_BitwiseAnd*"></a>
+  <h4 id="ReqRest_Builders_UrlBuilder_op_BitwiseAnd_ReqRest_Builders_UrlBuilder_System_Collections_Generic_KeyValuePair_System_Nullable_System_String__System_Nullable_System_String___" data-uid="ReqRest.Builders.UrlBuilder.op_BitwiseAnd(ReqRest.Builders.UrlBuilder,System.Collections.Generic.KeyValuePair{System.Nullable{System.String},System.Nullable{System.String}})">BitwiseAnd(UrlBuilder, KeyValuePair&lt;Nullable&lt;String&gt;, Nullable&lt;String&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Formats the specified parameter consisting of a key and value into
+a query parameters (similar to <code>&amp;key=value</code>) and appends it at the
+end of the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder.query#System_UriBuilder_Query">Query</a> string.</p>
+<p>If the query ends with or if the final parameter starts with one or
+more <code>&quot;&amp;&quot;</code> characters, they are trimmed, so that there is only a single
+<code>&quot;&amp;&quot;</code> between the old query and the new parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static UrlBuilder operator &amp;(UrlBuilder builder, KeyValuePair&lt;string? , string? &gt; queryParameter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ReqRest.Builders.UrlBuilder.html">UrlBuilder</a></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>The builder.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">queryParameter</span></td>
+        <td><p>A query parameter consisting of a key and value which should
+be appended to the query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ReqRest.Builders.UrlBuilder.html">UrlBuilder</a></td>
+        <td><p>The specified <code data-dev-comment-type="paramref" class="paramref">builder</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><ul>
+<li><code data-dev-comment-type="paramref" class="paramref">builder</code></li>
+</ul>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="ReqRest_Builders_UrlBuilder_op_BitwiseAnd_" data-uid="ReqRest.Builders.UrlBuilder.op_BitwiseAnd*"></a>
+  <h4 id="ReqRest_Builders_UrlBuilder_op_BitwiseAnd_ReqRest_Builders_UrlBuilder_System_Nullable_System_String__" data-uid="ReqRest.Builders.UrlBuilder.op_BitwiseAnd(ReqRest.Builders.UrlBuilder,System.Nullable{System.String})">BitwiseAnd(UrlBuilder, Nullable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Appends the specified <code data-dev-comment-type="paramref" class="paramref">queryParameter</code> at the end of the
+<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder.query#System_UriBuilder_Query">Query</a>.</p>
+<p>If the query ends with or if the <code data-dev-comment-type="paramref" class="paramref">queryParameter</code> starts with one or
+more <code>&quot;&amp;&quot;</code> characters, they are trimmed, so that there is only a single
+<code>&quot;&amp;&quot;</code> between the old query and the new parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static UrlBuilder operator &amp;(UrlBuilder builder, string? queryParameter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ReqRest.Builders.UrlBuilder.html">UrlBuilder</a></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>The builder.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">queryParameter</span></td>
+        <td><p>The query parameter to be appended to the query.</p>
+<p>This can be <span class="xref">null</span>. If so (or if empty), nothing gets appended.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ReqRest.Builders.UrlBuilder.html">UrlBuilder</a></td>
+        <td><p>The specified <code data-dev-comment-type="paramref" class="paramref">builder</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><ul>
+<li><code data-dev-comment-type="paramref" class="paramref">builder</code></li>
+</ul>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="ReqRest_Builders_UrlBuilder_op_BitwiseAnd_" data-uid="ReqRest.Builders.UrlBuilder.op_BitwiseAnd*"></a>
+  <h4 id="ReqRest_Builders_UrlBuilder_op_BitwiseAnd_ReqRest_Builders_UrlBuilder_System_ValueTuple_System_Nullable_System_String__System_Nullable_System_String___" data-uid="ReqRest.Builders.UrlBuilder.op_BitwiseAnd(ReqRest.Builders.UrlBuilder,System.ValueTuple{System.Nullable{System.String},System.Nullable{System.String}})">BitwiseAnd(UrlBuilder, (Nullable&lt;String&gt; Key, Nullable&lt;String&gt; Value))</h4>
+  <div class="markdown level1 summary"><p>Formats the specified parameter consisting of a key and value into
+a query parameters (similar to <code>&amp;key=value</code>) and appends it at the
+end of the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder.query#System_UriBuilder_Query">Query</a> string.</p>
+<p>If the query ends with or if the final parameter starts with one or
+more <code>&quot;&amp;&quot;</code> characters, they are trimmed, so that there is only a single
+<code>&quot;&amp;&quot;</code> between the old query and the new parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static UrlBuilder operator &amp;(UrlBuilder builder, (string? Key, string? Value)queryParameter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ReqRest.Builders.UrlBuilder.html">UrlBuilder</a></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>The builder.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetuple-2">ValueTuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">queryParameter</span></td>
+        <td><p>A query parameter consisting of a key and value which should
+be appended to the query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ReqRest.Builders.UrlBuilder.html">UrlBuilder</a></td>
+        <td><p>The specified <code data-dev-comment-type="paramref" class="paramref">builder</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><ul>
+<li><code data-dev-comment-type="paramref" class="paramref">builder</code></li>
+</ul>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="ReqRest_Builders_UrlBuilder_op_Division_" data-uid="ReqRest.Builders.UrlBuilder.op_Division*"></a>
+  <h4 id="ReqRest_Builders_UrlBuilder_op_Division_ReqRest_Builders_UrlBuilder_System_Nullable_System_String__" data-uid="ReqRest.Builders.UrlBuilder.op_Division(ReqRest.Builders.UrlBuilder,System.Nullable{System.String})">Division(UrlBuilder, Nullable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Appends the specified <code data-dev-comment-type="paramref" class="paramref">pathSegment</code> to the builder's
+<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder.path#System_UriBuilder_Path">Path</a> and returns the same builder instance.</p>
+<p>If the existing path ends with a single slash, or if the <code data-dev-comment-type="paramref" class="paramref">pathSegment</code>
+starts with a single slash, the slashes are stripped, so that the resulting path
+only has a single slash between the two concatenated parts.</p>
+<p>If the existing path starts with multiple slashes, or if the <code data-dev-comment-type="paramref" class="paramref">pathSegment</code>
+starts with multiple slashes, they are kept and appended to each other.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static UrlBuilder operator /(UrlBuilder builder, string? pathSegment)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ReqRest.Builders.UrlBuilder.html">UrlBuilder</a></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>The builder.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">pathSegment</span></td>
+        <td><p>The segment to be appended to the builder's path.</p>
+<p>This can be <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ReqRest.Builders.UrlBuilder.html">UrlBuilder</a></td>
+        <td><p>The specified <code data-dev-comment-type="paramref" class="paramref">builder</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="ReqRest_Builders_UrlBuilder_op_Implicit_" data-uid="ReqRest.Builders.UrlBuilder.op_Implicit*"></a>
+  <h4 id="ReqRest_Builders_UrlBuilder_op_Implicit_ReqRest_Builders_UrlBuilder__System_Nullable_System_Uri_" data-uid="ReqRest.Builders.UrlBuilder.op_Implicit(ReqRest.Builders.UrlBuilder)~System.Nullable{System.Uri}">Implicit(UrlBuilder to Nullable&lt;Uri&gt;)</h4>
+  <div class="markdown level1 summary"><p>Implicitly converts the specified <code data-dev-comment-type="paramref" class="paramref">builder</code> to an <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a>
+by returning the value of the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder.uri#System_UriBuilder_Uri">Uri</a> property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Uri? (UrlBuilder builder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ReqRest.Builders.UrlBuilder.html">UrlBuilder</a></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>The builder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a>&gt;</td>
+        <td><p>The <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a> built by the builder or <span class="xref">null</span> if
+<code data-dev-comment-type="paramref" class="paramref">builder</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uriformatexception">UriFormatException</a></td>
+        <td><p>The URI constructed by the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder">UriBuilder</a> properties is invalid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="ReqRest.Builders.IBuilder.html">IBuilder</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="ReqRest.Builders.BuilderExtensions.html#ReqRest_Builders_BuilderExtensions_Configure__1___0_System_Action___0__">BuilderExtensions.Configure&lt;T&gt;(T, Action&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.BuilderExtensions.html#ReqRest_Builders_BuilderExtensions_If__1___0_System_Boolean_System_Action___0__">BuilderExtensions.If&lt;T&gt;(T, Boolean, Action&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.BuilderExtensions.html#ReqRest_Builders_BuilderExtensions_IfNot__1___0_System_Boolean_System_Action___0__">BuilderExtensions.IfNot&lt;T&gt;(T, Boolean, Action&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.UriBuilderExtensions.html#ReqRest_Builders_UriBuilderExtensions_SetScheme__1___0_System_Nullable_System_String__">UriBuilderExtensions.SetScheme&lt;T&gt;(T, Nullable&lt;String&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.UriBuilderExtensions.html#ReqRest_Builders_UriBuilderExtensions_SetUserName__1___0_System_Nullable_System_String__">UriBuilderExtensions.SetUserName&lt;T&gt;(T, Nullable&lt;String&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.UriBuilderExtensions.html#ReqRest_Builders_UriBuilderExtensions_SetPassword__1___0_System_Nullable_System_String__">UriBuilderExtensions.SetPassword&lt;T&gt;(T, Nullable&lt;String&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.UriBuilderExtensions.html#ReqRest_Builders_UriBuilderExtensions_SetHost__1___0_System_Nullable_System_String__">UriBuilderExtensions.SetHost&lt;T&gt;(T, Nullable&lt;String&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.UriBuilderExtensions.html#ReqRest_Builders_UriBuilderExtensions_SetPort__1___0_System_Nullable_System_Int32__">UriBuilderExtensions.SetPort&lt;T&gt;(T, Nullable&lt;Int32&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.UriBuilderExtensions.html#ReqRest_Builders_UriBuilderExtensions_SetPath__1___0_System_Nullable_System_String__">UriBuilderExtensions.SetPath&lt;T&gt;(T, Nullable&lt;String&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.UriBuilderExtensions.html#ReqRest_Builders_UriBuilderExtensions_SetQuery__1___0_System_Nullable_System_String__">UriBuilderExtensions.SetQuery&lt;T&gt;(T, Nullable&lt;String&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.UriBuilderExtensions.html#ReqRest_Builders_UriBuilderExtensions_SetFragment__1___0_System_Nullable_System_String__">UriBuilderExtensions.SetFragment&lt;T&gt;(T, Nullable&lt;String&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.UriBuilderExtensions.html#ReqRest_Builders_UriBuilderExtensions_AppendPath__1___0_System_Nullable_System_String__">UriBuilderExtensions.AppendPath&lt;T&gt;(T, Nullable&lt;String&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.UriBuilderExtensions.html#ReqRest_Builders_UriBuilderExtensions_AppendQueryParameter__1___0_System_ValueTuple_System_Nullable_System_String__System_Nullable_System_String_____parameters_">UriBuilderExtensions.AppendQueryParameter&lt;T&gt;(T, (Nullable&lt;String&gt; Key, Nullable&lt;String&gt; Value)[], parameters)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.UriBuilderExtensions.html#ReqRest_Builders_UriBuilderExtensions_AppendQueryParameter__1___0_System_Collections_Generic_KeyValuePair_System_Nullable_System_String__System_Nullable_System_String_____parameters_">UriBuilderExtensions.AppendQueryParameter&lt;T&gt;(T, KeyValuePair&lt;Nullable&lt;String&gt;, Nullable&lt;String&gt;&gt;[], parameters)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.UriBuilderExtensions.html#ReqRest_Builders_UriBuilderExtensions_AppendQueryParameter__1___0_System_Nullable_System_Collections_Generic_IEnumerable_System_ValueTuple_System_Nullable_System_String__System_Nullable_System_String_____">UriBuilderExtensions.AppendQueryParameter&lt;T&gt;(T, Nullable&lt;IEnumerable&lt;(Nullable&lt;String&gt; Key, Nullable&lt;String&gt; Value)&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.UriBuilderExtensions.html#ReqRest_Builders_UriBuilderExtensions_AppendQueryParameter__1___0_System_Nullable_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_Nullable_System_String__System_Nullable_System_String_____">UriBuilderExtensions.AppendQueryParameter&lt;T&gt;(T, Nullable&lt;IEnumerable&lt;KeyValuePair&lt;Nullable&lt;String&gt;, Nullable&lt;String&gt;&gt;&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.UriBuilderExtensions.html#ReqRest_Builders_UriBuilderExtensions_AppendQueryParameter__1___0_System_Nullable_System_String__System_Nullable_System_String__">UriBuilderExtensions.AppendQueryParameter&lt;T&gt;(T, Nullable&lt;String&gt;, Nullable&lt;String&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.UriBuilderExtensions.html#ReqRest_Builders_UriBuilderExtensions_AppendQueryParameter__1___0_System_Nullable_System_String__">UriBuilderExtensions.AppendQueryParameter&lt;T&gt;(T, Nullable&lt;String&gt;)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright &copy; 2019 ReqRest - Generated with <a href="https://github.com/dotnet/docfx">DocFX</a> - <a href="https://github.com/ovasquez/docfx-material/">Material Theme</a> made by <a href="https://github.com/ovasquez">Oscar Vásquez</a> - <a href="https://gist.github.com/manuelroemer/2aa8fc4e377874ae93dbd26e779cdbf6">Impressum (Imprint)</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ApiResponseBase
+   | ReqRest </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ApiResponseBase
+   | ReqRest ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ReqRest.ApiResponseBase">
+  
+  
+  <h1 id="ReqRest_ApiResponseBase" data-uid="ReqRest.ApiResponseBase" class="text-break">Class ApiResponseBase
+  </h1>
+  <div class="markdown level0 summary"><p>Defines the shared members of a response which was returned by a RESTful HTTP API
+after making a request with this library.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="ReqRest.Builders.HttpResponseMessageBuilder.html">HttpResponseMessageBuilder</a></div>
+    <div class="level2"><span class="xref">ApiResponseBase</span></div>
+      <div class="level3"><a class="xref" href="ReqRest.ApiResponse.html">ApiResponse</a></div>
+      <div class="level3"><a class="xref" href="ReqRest.ApiResponse-1.html">ApiResponse&lt;T1&gt;</a></div>
+      <div class="level3"><a class="xref" href="ReqRest.ApiResponse-2.html">ApiResponse&lt;T1, T2&gt;</a></div>
+      <div class="level3"><a class="xref" href="ReqRest.ApiResponse-3.html">ApiResponse&lt;T1, T2, T3&gt;</a></div>
+      <div class="level3"><a class="xref" href="ReqRest.ApiResponse-4.html">ApiResponse&lt;T1, T2, T3, T4&gt;</a></div>
+      <div class="level3"><a class="xref" href="ReqRest.ApiResponse-5.html">ApiResponse&lt;T1, T2, T3, T4, T5&gt;</a></div>
+      <div class="level3"><a class="xref" href="ReqRest.ApiResponse-6.html">ApiResponse&lt;T1, T2, T3, T4, T5, T6&gt;</a></div>
+      <div class="level3"><a class="xref" href="ReqRest.ApiResponse-7.html">ApiResponse&lt;T1, T2, T3, T4, T5, T6, T7&gt;</a></div>
+      <div class="level3"><a class="xref" href="ReqRest.ApiResponse-8.html">ApiResponse&lt;T1, T2, T3, T4, T5, T6, T7, T8&gt;</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="ReqRest.Builders.IHttpResponseMessageBuilder.html">IHttpResponseMessageBuilder</a></div>
+    <div><a class="xref" href="ReqRest.Builders.IHttpHeadersBuilder-1.html">IHttpHeadersBuilder</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.headers.httpresponseheaders">HttpResponseHeaders</a>&gt;</div>
+    <div><a class="xref" href="ReqRest.Builders.IHttpHeadersBuilder.html">IHttpHeadersBuilder</a></div>
+    <div><a class="xref" href="ReqRest.Builders.IHttpContentBuilder.html">IHttpContentBuilder</a></div>
+    <div><a class="xref" href="ReqRest.Builders.IHttpProtocolVersionBuilder.html">IHttpProtocolVersionBuilder</a></div>
+    <div><a class="xref" href="ReqRest.Builders.IHttpResponseReasonPhraseBuilder.html">IHttpResponseReasonPhraseBuilder</a></div>
+    <div><a class="xref" href="ReqRest.Builders.IHttpStatusCodeBuilder.html">IHttpStatusCodeBuilder</a></div>
+    <div><a class="xref" href="ReqRest.Builders.IBuilder.html">IBuilder</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ReqRest.html">ReqRest</a></h6>
+  <h6><strong>Assembly</strong>: ReqRest.dll</h6>
+  <h5 id="ReqRest_ApiResponseBase_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ApiResponseBase : HttpResponseMessageBuilder, IHttpResponseMessageBuilder, IHttpHeadersBuilder&lt;HttpResponseHeaders&gt;, IHttpHeadersBuilder, IHttpContentBuilder, IHttpProtocolVersionBuilder, IHttpResponseReasonPhraseBuilder, IHttpStatusCodeBuilder, IBuilder</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="ReqRest_ApiResponseBase__ctor_" data-uid="ReqRest.ApiResponseBase.#ctor*"></a>
+  <h4 id="ReqRest_ApiResponseBase__ctor_System_Nullable_System_Net_Http_HttpResponseMessage__System_Nullable_System_Collections_Generic_IEnumerable_ReqRest_ResponseTypeInfo___" data-uid="ReqRest.ApiResponseBase.#ctor(System.Nullable{System.Net.Http.HttpResponseMessage},System.Nullable{System.Collections.Generic.IEnumerable{ReqRest.ResponseTypeInfo}})">ApiResponseBase(Nullable&lt;HttpResponseMessage&gt;, Nullable&lt;IEnumerable&lt;ResponseTypeInfo&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="ReqRest.ApiResponseBase.html">ApiResponseBase</a> instance with the specified values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponseBase(HttpResponseMessage? httpResponseMessage, IEnumerable&lt;ResponseTypeInfo&gt;? possibleResponseTypes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.httpresponsemessage">HttpResponseMessage</a>&gt;</td>
+        <td><span class="parametername">httpResponseMessage</span></td>
+        <td><p>The <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.httpresponsemessage">HttpResponseMessage</a> which was the underlying
+result returned by an <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a> after making the associated request.
+If <span class="xref">null</span>, a new instance is created instead.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="ReqRest.ResponseTypeInfo.html">ResponseTypeInfo</a>&gt;&gt;</td>
+        <td><span class="parametername">possibleResponseTypes</span></td>
+        <td><p>A set of elements that declare which .NET types may have been returned by the
+HTTP API in this response.
+If <span class="xref">null</span>, an empty set is used instead.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="ReqRest_ApiResponseBase_PossibleResponseTypes_" data-uid="ReqRest.ApiResponseBase.PossibleResponseTypes*"></a>
+  <h4 id="ReqRest_ApiResponseBase_PossibleResponseTypes" data-uid="ReqRest.ApiResponseBase.PossibleResponseTypes">PossibleResponseTypes</h4>
+  <div class="markdown level1 summary"><p>Gets a set of elements that declare which .NET types may have been returned by the
+HTTP API in this response.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IReadOnlyCollection&lt;ResponseTypeInfo&gt; PossibleResponseTypes { get; }</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="ReqRest_ApiResponseBase_GetCurrentResponseTypeInfo_" data-uid="ReqRest.ApiResponseBase.GetCurrentResponseTypeInfo*"></a>
+  <h4 id="ReqRest_ApiResponseBase_GetCurrentResponseTypeInfo" data-uid="ReqRest.ApiResponseBase.GetCurrentResponseTypeInfo">GetCurrentResponseTypeInfo()</h4>
+  <div class="markdown level1 summary"><p>Returns the <a class="xref" href="ReqRest.ResponseTypeInfo.html">ResponseTypeInfo</a> from the <a class="xref" href="ReqRest.ApiResponseBase.html#ReqRest_ApiResponseBase_PossibleResponseTypes">PossibleResponseTypes</a>
+set which is the most appropriate one for the response's current status code.</p>
+<p>This is <span class="xref">null</span> if the <a class="xref" href="ReqRest.ApiResponseBase.html#ReqRest_ApiResponseBase_PossibleResponseTypes">PossibleResponseTypes</a>
+property doesn't contain any information which matches the response's status code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ResponseTypeInfo GetCurrentResponseTypeInfo()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ReqRest.ResponseTypeInfo.html">ResponseTypeInfo</a></td>
+        <td><p>The <a class="xref" href="ReqRest.ResponseTypeInfo.html">ResponseTypeInfo</a> from the <a class="xref" href="ReqRest.ApiResponseBase.html#ReqRest_ApiResponseBase_PossibleResponseTypes">PossibleResponseTypes</a> set
+which is the most specific match for the response's current HTTP status code.
+If there are multiple instances that match this status code with equal specificness,
+it returns the first one.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="ReqRest.Builders.IHttpResponseMessageBuilder.html">IHttpResponseMessageBuilder</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.IHttpHeadersBuilder-1.html">IHttpHeadersBuilder&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.IHttpHeadersBuilder.html">IHttpHeadersBuilder</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.IHttpContentBuilder.html">IHttpContentBuilder</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.IHttpProtocolVersionBuilder.html">IHttpProtocolVersionBuilder</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.IHttpResponseReasonPhraseBuilder.html">IHttpResponseReasonPhraseBuilder</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.IHttpStatusCodeBuilder.html">IHttpStatusCodeBuilder</a>
+  </div>
+  <div>
+      <a class="xref" href="ReqRest.Builders.IBuilder.html">IBuilder</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="ReqRest.Serializers.NewtonsoftJson.JsonHttpContentBuilderExtensions.html#ReqRest_Serializers_NewtonsoftJson_JsonHttpContentBuilderExtensions_SetJsonContent__1___0_System_Nullable_System_Object__System_Nullable_System_Text_Encoding__System_Nullable_ReqRest_Serializers_NewtonsoftJson_JsonHttpContentSerializer__">JsonHttpContentBuilderExtensions.SetJsonContent&lt;T&gt;(T, Nullable&lt;Object&gt;, Nullable&lt;Encoding&gt;, Nullable&lt;JsonHttpContentSerializer&gt;)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright &copy; 2019 ReqRest - Generated with <a href="https://github.com/dotnet/docfx">DocFX</a> - <a href="https://github.com/ovasquez/docfx-material/">Material Theme</a> made by <a href="https://github.com/ovasquez">Oscar Vásquez</a> - <a href="https://gist.github.com/manuelroemer/2aa8fc4e377874ae93dbd26e779cdbf6">Impressum (Imprint)</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1307 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class UriBuilderExtensions
+   | ReqRest </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class UriBuilderExtensions
+   | ReqRest ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ReqRest.Builders.UriBuilderExtensions">
+  
+  
+  <h1 id="ReqRest_Builders_UriBuilderExtensions" data-uid="ReqRest.Builders.UriBuilderExtensions" class="text-break">Class UriBuilderExtensions
+  </h1>
+  <div class="markdown level0 summary"><p>Extends the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder">UriBuilder</a> class with fluent extension methods.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">UriBuilderExtensions</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ReqRest.Builders.html">ReqRest.Builders</a></h6>
+  <h6><strong>Assembly</strong>: ReqRest.Builders.dll</h6>
+  <h5 id="ReqRest_Builders_UriBuilderExtensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class UriBuilderExtensions</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="ReqRest_Builders_UriBuilderExtensions_AppendPath_" data-uid="ReqRest.Builders.UriBuilderExtensions.AppendPath*"></a>
+  <h4 id="ReqRest_Builders_UriBuilderExtensions_AppendPath__1___0_System_Nullable_System_String__" data-uid="ReqRest.Builders.UriBuilderExtensions.AppendPath``1(``0,System.Nullable{System.String})">AppendPath&lt;T&gt;(T, Nullable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Appends the specified path <code data-dev-comment-type="paramref" class="paramref">segment</code> to the builder's
+<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder.path#System_UriBuilder_Path">Path</a> and returns the same builder instance.</p>
+<p>If the existing path ends with a single slash, or if the <code data-dev-comment-type="paramref" class="paramref">segment</code>
+starts with a single slash, the slashes are stripped, so that the resulting path
+only has a single slash between the two concatenated parts.</p>
+<p>If the existing path starts with multiple slashes, or if the <code data-dev-comment-type="paramref" class="paramref">segment</code>
+starts with multiple slashes, one slash is removed, but the rest are kept.</p>
+<p>One additional slash gets added between the two parts in any case.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T AppendPath&lt;T&gt;(this T builder, string? segment)
+    where T : UriBuilder</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>The builder.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">segment</span></td>
+        <td><p>The segment to be appended to the builder's path.
+This can be <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The same <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder">UriBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder">UriBuilder</a> type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="ReqRest_Builders_UriBuilderExtensions_AppendQueryParameter_" data-uid="ReqRest.Builders.UriBuilderExtensions.AppendQueryParameter*"></a>
+  <h4 id="ReqRest_Builders_UriBuilderExtensions_AppendQueryParameter__1___0_System_Collections_Generic_KeyValuePair_System_Nullable_System_String__System_Nullable_System_String_____parameters_" data-uid="ReqRest.Builders.UriBuilderExtensions.AppendQueryParameter``1(``0,System.Collections.Generic.KeyValuePair{System.Nullable{System.String},System.Nullable{System.String}}[],parameters)">AppendQueryParameter&lt;T&gt;(T, KeyValuePair&lt;Nullable&lt;String&gt;, Nullable&lt;String&gt;&gt;[], parameters)</h4>
+  <div class="markdown level1 summary"><p>Formats the specified parameters consisting of a key and value into
+a set of query parameters (similar to <code>&amp;key=value</code>) and appends them at the
+end of the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder.query#System_UriBuilder_Query">Query</a> string.</p>
+<p>If the query ends with or if the final parameters starts with one or
+more <code>&quot;&amp;&quot;</code> characters, they are trimmed, so that there is only a single
+<code>&quot;&amp;&quot;</code> between the old query and the new parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T AppendQueryParameter&lt;T&gt;(this T builder, params KeyValuePair&lt;string? , string? &gt;[], parameters)
+    where T : UriBuilder</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>The builder.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;[]</td>
+        <td><span class="parametername"></span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">parameters</span></td>
+        <td><span class="parametername"></span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The specified <code data-dev-comment-type="paramref" class="paramref">builder</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder">UriBuilder</a> type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><ul>
+<li><code data-dev-comment-type="paramref" class="paramref">builder</code></li>
+</ul>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="ReqRest_Builders_UriBuilderExtensions_AppendQueryParameter_" data-uid="ReqRest.Builders.UriBuilderExtensions.AppendQueryParameter*"></a>
+  <h4 id="ReqRest_Builders_UriBuilderExtensions_AppendQueryParameter__1___0_System_Nullable_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_Nullable_System_String__System_Nullable_System_String_____" data-uid="ReqRest.Builders.UriBuilderExtensions.AppendQueryParameter``1(``0,System.Nullable{System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.Nullable{System.String},System.Nullable{System.String}}}})">AppendQueryParameter&lt;T&gt;(T, Nullable&lt;IEnumerable&lt;KeyValuePair&lt;Nullable&lt;String&gt;, Nullable&lt;String&gt;&gt;&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Formats the specified parameters consisting of a key and value into
+a set of query parameters (similar to <code>&amp;key=value</code>) and appends them at the
+end of the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder.query#System_UriBuilder_Query">Query</a> string.</p>
+<p>If the query ends with or if the final parameters starts with one or
+more <code>&quot;&amp;&quot;</code> characters, they are trimmed, so that there is only a single
+<code>&quot;&amp;&quot;</code> between the old query and the new parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T AppendQueryParameter&lt;T&gt;(this T builder, IEnumerable&lt;KeyValuePair&lt;string? , string? &gt;&gt;? parameters)
+    where T : UriBuilder</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>The builder.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;&gt;&gt;</td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>A set of query parameters consisting of a key and value which should
+be appended to the query.
+This can be <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The specified <code data-dev-comment-type="paramref" class="paramref">builder</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder">UriBuilder</a> type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><ul>
+<li><code data-dev-comment-type="paramref" class="paramref">builder</code></li>
+</ul>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="ReqRest_Builders_UriBuilderExtensions_AppendQueryParameter_" data-uid="ReqRest.Builders.UriBuilderExtensions.AppendQueryParameter*"></a>
+  <h4 id="ReqRest_Builders_UriBuilderExtensions_AppendQueryParameter__1___0_System_Nullable_System_Collections_Generic_IEnumerable_System_ValueTuple_System_Nullable_System_String__System_Nullable_System_String_____" data-uid="ReqRest.Builders.UriBuilderExtensions.AppendQueryParameter``1(``0,System.Nullable{System.Collections.Generic.IEnumerable{System.ValueTuple{System.Nullable{System.String},System.Nullable{System.String}}}})">AppendQueryParameter&lt;T&gt;(T, Nullable&lt;IEnumerable&lt;(Nullable&lt;String&gt; Key, Nullable&lt;String&gt; Value)&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Formats the specified parameters consisting of a key and value into
+a set of query parameters (similar to <code>&amp;key=value</code>) and appends them at the
+end of the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder.query#System_UriBuilder_Query">Query</a> string.</p>
+<p>If the query ends with or if the final parameters starts with one or
+more <code>&quot;&amp;&quot;</code> characters, they are trimmed, so that there is only a single
+<code>&quot;&amp;&quot;</code> between the old query and the new parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T AppendQueryParameter&lt;T&gt;(this T builder, IEnumerable&lt;(string? Key, string? Value)&gt;? parameters)
+    where T : UriBuilder</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>The builder.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetuple-2">ValueTuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;&gt;&gt;</td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>A set of query parameters consisting of a key and value which should
+be appended to the query.
+This can be <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The specified <code data-dev-comment-type="paramref" class="paramref">builder</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder">UriBuilder</a> type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><ul>
+<li><code data-dev-comment-type="paramref" class="paramref">builder</code></li>
+</ul>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="ReqRest_Builders_UriBuilderExtensions_AppendQueryParameter_" data-uid="ReqRest.Builders.UriBuilderExtensions.AppendQueryParameter*"></a>
+  <h4 id="ReqRest_Builders_UriBuilderExtensions_AppendQueryParameter__1___0_System_Nullable_System_String__" data-uid="ReqRest.Builders.UriBuilderExtensions.AppendQueryParameter``1(``0,System.Nullable{System.String})">AppendQueryParameter&lt;T&gt;(T, Nullable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Appends the specified <code data-dev-comment-type="paramref" class="paramref">parameter</code> at the end of the
+<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder.query#System_UriBuilder_Query">Query</a>.</p>
+<p>If the query ends with or if the <code data-dev-comment-type="paramref" class="paramref">parameter</code> starts with one or
+more <code>&quot;&amp;&quot;</code> characters, they are trimmed, so that there is only a single
+<code>&quot;&amp;&quot;</code> between the old query and the new parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T AppendQueryParameter&lt;T&gt;(this T builder, string? parameter)
+    where T : UriBuilder</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>The builder.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">parameter</span></td>
+        <td><p>The query parameter to be appended to the query.</p>
+<p>This can be <span class="xref">null</span>. If so (or if empty), nothing gets appended.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The specified <code data-dev-comment-type="paramref" class="paramref">builder</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder">UriBuilder</a> type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><ul>
+<li><code data-dev-comment-type="paramref" class="paramref">builder</code></li>
+</ul>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="ReqRest_Builders_UriBuilderExtensions_AppendQueryParameter_" data-uid="ReqRest.Builders.UriBuilderExtensions.AppendQueryParameter*"></a>
+  <h4 id="ReqRest_Builders_UriBuilderExtensions_AppendQueryParameter__1___0_System_Nullable_System_String__System_Nullable_System_String__" data-uid="ReqRest.Builders.UriBuilderExtensions.AppendQueryParameter``1(``0,System.Nullable{System.String},System.Nullable{System.String})">AppendQueryParameter&lt;T&gt;(T, Nullable&lt;String&gt;, Nullable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Formats the specified <code data-dev-comment-type="paramref" class="paramref">key</code> and <code data-dev-comment-type="paramref" class="paramref">value</code> into
+a query parameter (similar to <code>&amp;key=value</code>) and appends it at the end
+of the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder.query#System_UriBuilder_Query">Query</a> string.</p>
+<p>If the query ends with or if the final parameter starts with one or
+more <code>&quot;&amp;&quot;</code> characters, they are trimmed, so that there is only a single
+<code>&quot;&amp;&quot;</code> between the old query and the new parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T AppendQueryParameter&lt;T&gt;(this T builder, string? key, string? value)
+    where T : UriBuilder</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>The builder.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key of the query parameter.
+This can be <span class="xref">null</span>. If so, it is treated as an empty string.</p>
+<p>If both <code data-dev-comment-type="paramref" class="paramref">key</code> and <code data-dev-comment-type="paramref" class="paramref">value</code> are
+<span class="xref">null</span> or empty, nothing gets appended.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value of the query parameter.
+This can be <span class="xref">null</span>. If so, it is treated as an empty string.</p>
+<p>If both <code data-dev-comment-type="paramref" class="paramref">key</code> and <code data-dev-comment-type="paramref" class="paramref">value</code> are
+<span class="xref">null</span> or empty, nothing gets appended.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The specified <code data-dev-comment-type="paramref" class="paramref">builder</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder">UriBuilder</a> type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><ul>
+<li><code data-dev-comment-type="paramref" class="paramref">builder</code></li>
+</ul>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="ReqRest_Builders_UriBuilderExtensions_AppendQueryParameter_" data-uid="ReqRest.Builders.UriBuilderExtensions.AppendQueryParameter*"></a>
+  <h4 id="ReqRest_Builders_UriBuilderExtensions_AppendQueryParameter__1___0_System_ValueTuple_System_Nullable_System_String__System_Nullable_System_String_____parameters_" data-uid="ReqRest.Builders.UriBuilderExtensions.AppendQueryParameter``1(``0,System.ValueTuple{System.Nullable{System.String},System.Nullable{System.String}}[],parameters)">AppendQueryParameter&lt;T&gt;(T, (Nullable&lt;String&gt; Key, Nullable&lt;String&gt; Value)[], parameters)</h4>
+  <div class="markdown level1 summary"><p>Formats the specified parameters consisting of a key and value into
+a set of query parameters (similar to <code>&amp;key=value</code>) and appends them at the
+end of the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder.query#System_UriBuilder_Query">Query</a> string.</p>
+<p>If the query ends with or if the final parameters starts with one or
+more <code>&quot;&amp;&quot;</code> characters, they are trimmed, so that there is only a single
+<code>&quot;&amp;&quot;</code> between the old query and the new parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T AppendQueryParameter&lt;T&gt;(this T builder, params (string? Key, string? Value)[], parameters)
+    where T : UriBuilder</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>The builder.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetuple-2">ValueTuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;[]</td>
+        <td><span class="parametername"></span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">parameters</span></td>
+        <td><span class="parametername"></span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The specified <code data-dev-comment-type="paramref" class="paramref">builder</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder">UriBuilder</a> type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><ul>
+<li><code data-dev-comment-type="paramref" class="paramref">builder</code></li>
+</ul>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="ReqRest_Builders_UriBuilderExtensions_SetFragment_" data-uid="ReqRest.Builders.UriBuilderExtensions.SetFragment*"></a>
+  <h4 id="ReqRest_Builders_UriBuilderExtensions_SetFragment__1___0_System_Nullable_System_String__" data-uid="ReqRest.Builders.UriBuilderExtensions.SetFragment``1(``0,System.Nullable{System.String})">SetFragment&lt;T&gt;(T, Nullable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Sets the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder.fragment#System_UriBuilder_Fragment">Fragment</a> property to the specified
+<code data-dev-comment-type="paramref" class="paramref">fragment</code> and returns the same builder instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T SetFragment&lt;T&gt;(this T builder, string? fragment)
+    where T : UriBuilder</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>The builder.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">fragment</span></td>
+        <td><p>The optional fragment of the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a> which is being built.</p>
+<p>This can be <span class="xref">null</span>. If so, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder.fragment#System_UriBuilder_Fragment">Fragment</a>
+will be set to an empty string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The same <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder">UriBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder">UriBuilder</a> type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="ReqRest_Builders_UriBuilderExtensions_SetHost_" data-uid="ReqRest.Builders.UriBuilderExtensions.SetHost*"></a>
+  <h4 id="ReqRest_Builders_UriBuilderExtensions_SetHost__1___0_System_Nullable_System_String__" data-uid="ReqRest.Builders.UriBuilderExtensions.SetHost``1(``0,System.Nullable{System.String})">SetHost&lt;T&gt;(T, Nullable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Sets the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder.host#System_UriBuilder_Host">Host</a> property to the specified
+<code data-dev-comment-type="paramref" class="paramref">host</code> and returns the same builder instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T SetHost&lt;T&gt;(this T builder, string? host)
+    where T : UriBuilder</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>The builder.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">host</span></td>
+        <td><p>The optional host of the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a> which is being built.</p>
+<p>This can be <span class="xref">null</span>. If so, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder.host#System_UriBuilder_Host">Host</a>
+will be set to an empty string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The same <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder">UriBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder">UriBuilder</a> type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="ReqRest_Builders_UriBuilderExtensions_SetPassword_" data-uid="ReqRest.Builders.UriBuilderExtensions.SetPassword*"></a>
+  <h4 id="ReqRest_Builders_UriBuilderExtensions_SetPassword__1___0_System_Nullable_System_String__" data-uid="ReqRest.Builders.UriBuilderExtensions.SetPassword``1(``0,System.Nullable{System.String})">SetPassword&lt;T&gt;(T, Nullable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Sets the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder.password#System_UriBuilder_Password">Password</a> property to the specified
+<code data-dev-comment-type="paramref" class="paramref">password</code> and returns the same builder instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T SetPassword&lt;T&gt;(this T builder, string? password)
+    where T : UriBuilder</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>The builder.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">password</span></td>
+        <td><p>The optional password of the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a> which is being built.</p>
+<p>This can be <span class="xref">null</span>. If so, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder.password#System_UriBuilder_Password">Password</a>
+will be set to an empty string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The same <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder">UriBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder">UriBuilder</a> type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="ReqRest_Builders_UriBuilderExtensions_SetPath_" data-uid="ReqRest.Builders.UriBuilderExtensions.SetPath*"></a>
+  <h4 id="ReqRest_Builders_UriBuilderExtensions_SetPath__1___0_System_Nullable_System_String__" data-uid="ReqRest.Builders.UriBuilderExtensions.SetPath``1(``0,System.Nullable{System.String})">SetPath&lt;T&gt;(T, Nullable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Sets the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder.path#System_UriBuilder_Path">Path</a> property to the specified
+<code data-dev-comment-type="paramref" class="paramref">path</code> and returns the same builder instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T SetPath&lt;T&gt;(this T builder, string? path)
+    where T : UriBuilder</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>The builder.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path of the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a> which is being built.</p>
+<p>This can be <span class="xref">null</span>. If so, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder.path#System_UriBuilder_Path">Path</a>
+will be set to a single slash <code>/</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The same <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder">UriBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder">UriBuilder</a> type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="ReqRest_Builders_UriBuilderExtensions_SetPort_" data-uid="ReqRest.Builders.UriBuilderExtensions.SetPort*"></a>
+  <h4 id="ReqRest_Builders_UriBuilderExtensions_SetPort__1___0_System_Nullable_System_Int32__" data-uid="ReqRest.Builders.UriBuilderExtensions.SetPort``1(``0,System.Nullable{System.Int32})">SetPort&lt;T&gt;(T, Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>Sets the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder.port#System_UriBuilder_Port">Port</a> property to the specified
+<code data-dev-comment-type="paramref" class="paramref">port</code> and returns the same builder instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T SetPort&lt;T&gt;(this T builder, int? port)
+    where T : UriBuilder</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>The builder.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">port</span></td>
+        <td><p>The optional port of the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a> which is being built.</p>
+<p>This can be <span class="xref">null</span>. If so, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder.port#System_UriBuilder_Port">Port</a>
+will be set to -1, indicating that no port information is available.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The same <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder">UriBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder">UriBuilder</a> type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="ReqRest_Builders_UriBuilderExtensions_SetQuery_" data-uid="ReqRest.Builders.UriBuilderExtensions.SetQuery*"></a>
+  <h4 id="ReqRest_Builders_UriBuilderExtensions_SetQuery__1___0_System_Nullable_System_String__" data-uid="ReqRest.Builders.UriBuilderExtensions.SetQuery``1(``0,System.Nullable{System.String})">SetQuery&lt;T&gt;(T, Nullable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Sets the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder.query#System_UriBuilder_Query">Query</a> property to the specified
+<code data-dev-comment-type="paramref" class="paramref">query</code> and returns the same builder instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T SetQuery&lt;T&gt;(this T builder, string? query)
+    where T : UriBuilder</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>The builder.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The optional query of the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a> which is being built.</p>
+<p>This can be <span class="xref">null</span>. If so, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder.query#System_UriBuilder_Query">Query</a>
+will be set to an empty string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The same <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder">UriBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder">UriBuilder</a> type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="ReqRest_Builders_UriBuilderExtensions_SetScheme_" data-uid="ReqRest.Builders.UriBuilderExtensions.SetScheme*"></a>
+  <h4 id="ReqRest_Builders_UriBuilderExtensions_SetScheme__1___0_System_Nullable_System_String__" data-uid="ReqRest.Builders.UriBuilderExtensions.SetScheme``1(``0,System.Nullable{System.String})">SetScheme&lt;T&gt;(T, Nullable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Sets the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder.scheme#System_UriBuilder_Scheme">Scheme</a> property to the specified
+<code data-dev-comment-type="paramref" class="paramref">scheme</code> and returns the same builder instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T SetScheme&lt;T&gt;(this T builder, string? scheme)
+    where T : UriBuilder</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>The builder.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">scheme</span></td>
+        <td><p>The scheme of the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a> which is being built.</p>
+<p>This can be <span class="xref">null</span>. If so, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder.scheme#System_UriBuilder_Scheme">Scheme</a>
+will be set to an empty string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The same <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder">UriBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder">UriBuilder</a> type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="ReqRest_Builders_UriBuilderExtensions_SetUserName_" data-uid="ReqRest.Builders.UriBuilderExtensions.SetUserName*"></a>
+  <h4 id="ReqRest_Builders_UriBuilderExtensions_SetUserName__1___0_System_Nullable_System_String__" data-uid="ReqRest.Builders.UriBuilderExtensions.SetUserName``1(``0,System.Nullable{System.String})">SetUserName&lt;T&gt;(T, Nullable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Sets the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder.username#System_UriBuilder_UserName">UserName</a> property to the specified
+<code data-dev-comment-type="paramref" class="paramref">userName</code> and returns the same builder instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T SetUserName&lt;T&gt;(this T builder, string? userName)
+    where T : UriBuilder</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>The builder.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">userName</span></td>
+        <td><p>The optional user name of the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a> which is being built.</p>
+<p>This can be <span class="xref">null</span>. If so, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder.username#System_UriBuilder_UserName">UserName</a>
+will be set to an empty string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The same <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder">UriBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uribuilder">UriBuilder</a> type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright &copy; 2019 ReqRest - Generated with <a href="https://github.com/dotnet/docfx">DocFX</a> - <a href="https://github.com/ovasquez/docfx-material/">Material Theme</a> made by <a href="https://github.com/ovasquez">Oscar Vásquez</a> - <a href="https://gist.github.com/manuelroemer/2aa8fc4e377874ae93dbd26e779cdbf6">Impressum (Imprint)</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

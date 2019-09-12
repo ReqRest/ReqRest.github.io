@@ -1,0 +1,1040 @@
+{
+  "homepages": [],
+  "source_base_path": "D:/a/1/s/doc",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.ApiRequest-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.ApiRequest-1.html",
+          "hash": "Kj/Km4pJQTNQssHtiJMCwA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.ApiRequest-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.ApiRequest-2.html",
+          "hash": "ykCmOwHOSmRHhenpcsUn2Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.ApiRequest-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.ApiRequest-3.html",
+          "hash": "L6/GBLl74PDrMgeNk/FZvA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.ApiRequest-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.ApiRequest-4.html",
+          "hash": "ayqv/jbckKFl+hJmVin6Ew=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.ApiRequest-5.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.ApiRequest-5.html",
+          "hash": "M/xeXC2ZMs7mUlWTZRqlKw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.ApiRequest-6.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.ApiRequest-6.html",
+          "hash": "sz4gXabjHjeVtrc16c58mg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.ApiRequest-7.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.ApiRequest-7.html",
+          "hash": "0x1j69c8z7gxo/TuCFMZrw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.ApiRequest-8.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.ApiRequest-8.html",
+          "hash": "Mc11VnctUhN0UlycLV11Yg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.ApiRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.ApiRequest.html",
+          "hash": "xID3Di9Qn+PVTu61kpMdvw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.ApiRequestBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.ApiRequestBase.html",
+          "hash": "bjvQoKHAEZl9H0YjVC+mwg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.ApiRequestBaseExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.ApiRequestBaseExtensions.html",
+          "hash": "FnY1kqkxj/cMLlVytuzZ/g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.ApiResponse-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.ApiResponse-1.html",
+          "hash": "MFAbovY8fR+QYuls1LjDIA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.ApiResponse-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.ApiResponse-2.html",
+          "hash": "QkE5eUaVc8Fi0MrW34I/ZQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.ApiResponse-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.ApiResponse-3.html",
+          "hash": "K/ECyrCPu3c/+k7iZ69SGQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.ApiResponse-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.ApiResponse-4.html",
+          "hash": "6N4Zhne7tJTxb//gprwMEA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.ApiResponse-5.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.ApiResponse-5.html",
+          "hash": "mp2ivl/x8ilQTxYsmepTXQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.ApiResponse-6.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.ApiResponse-6.html",
+          "hash": "4lZgcpdy/Bv19+2b8eFwyg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.ApiResponse-7.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.ApiResponse-7.html",
+          "hash": "lRNFL8xPRmCWajt7e1a+ow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.ApiResponse-8.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.ApiResponse-8.html",
+          "hash": "VntxFe0Mfb6+yaZlQ7JpTw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.ApiResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.ApiResponse.html",
+          "hash": "JpqqIHdBrrzMoQNc43/S9g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.ApiResponseBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.ApiResponseBase.html",
+          "hash": "EmB47R+1EraEz4E8g28xlw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Builders.BuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Builders.BuilderExtensions.html",
+          "hash": "Vn4DlMdV4QL05/08EfzdFw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Builders.HttpContentBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Builders.HttpContentBuilderExtensions.html",
+          "hash": "9WfRfRRHvtHwF0EJSQW71Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Builders.HttpHeadersBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Builders.HttpHeadersBuilderExtensions.html",
+          "hash": "b8PKI+jB3RoNpP1zIyvhRA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Builders.HttpMethodBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Builders.HttpMethodBuilderExtensions.html",
+          "hash": "i+tAhNrKfSd6V0d44Z7Anw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Builders.HttpProtocolVersionBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Builders.HttpProtocolVersionBuilderExtensions.html",
+          "hash": "CnpAWi364jvl2gtv/Xj/dg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Builders.HttpRequestMessageBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Builders.HttpRequestMessageBuilder.html",
+          "hash": "HdkZANpVnK73MsnV31z65w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Builders.HttpRequestMessageBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Builders.HttpRequestMessageBuilderExtensions.html",
+          "hash": "6wdtAiFe08TKOLcBDSYNiA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Builders.HttpRequestPropertiesBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Builders.HttpRequestPropertiesBuilderExtensions.html",
+          "hash": "PDR0bbuv3NoS7VD9m8jqTQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Builders.HttpResponseMessageBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Builders.HttpResponseMessageBuilder.html",
+          "hash": "lfbC5AneVAta06lYpBd/+Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Builders.HttpResponseMessageBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Builders.HttpResponseMessageBuilderExtensions.html",
+          "hash": "56mRUA1Ad5JZTugF12OSjg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Builders.HttpResponseReasonPhraseBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Builders.HttpResponseReasonPhraseBuilderExtensions.html",
+          "hash": "Gq0zFvXK0yC6T7wJCu/Eyw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Builders.HttpStatusCodeBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Builders.HttpStatusCodeBuilderExtensions.html",
+          "hash": "3oXlPnXMHY+LkJJ0gzfEgg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Builders.IBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Builders.IBuilder.html",
+          "hash": "JHtewuHxFD4yyYaB7Alcig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Builders.IHttpContentBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Builders.IHttpContentBuilder.html",
+          "hash": "1PlhwMkTcPNVwQeKCfWUaA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Builders.IHttpHeadersBuilder-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Builders.IHttpHeadersBuilder-1.html",
+          "hash": "/DEEGtJUl33zrCr7rQTvFw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Builders.IHttpHeadersBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Builders.IHttpHeadersBuilder.html",
+          "hash": "IB0dmdighP4szxih6mkrQA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Builders.IHttpMethodBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Builders.IHttpMethodBuilder.html",
+          "hash": "8xKzGaF3THAk17xyMJVqkA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Builders.IHttpProtocolVersionBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Builders.IHttpProtocolVersionBuilder.html",
+          "hash": "XCUF14oLAgiGC68rzwUXtQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Builders.IHttpRequestMessageBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Builders.IHttpRequestMessageBuilder.html",
+          "hash": "5L4LQnaNdWMiRPiF4TV2Bg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Builders.IHttpRequestPropertiesBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Builders.IHttpRequestPropertiesBuilder.html",
+          "hash": "Jn6hfxO7SQDdzcTXS4QMnA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Builders.IHttpResponseMessageBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Builders.IHttpResponseMessageBuilder.html",
+          "hash": "xFFRqFxJkOu8vucsGXdFYw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Builders.IHttpResponseReasonPhraseBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Builders.IHttpResponseReasonPhraseBuilder.html",
+          "hash": "/A4ipXg99FxuvytW3jN1Hg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Builders.IHttpStatusCodeBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Builders.IHttpStatusCodeBuilder.html",
+          "hash": "IQ6wx84MQpSNYO6up3Xvnw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Builders.IRequestUriBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Builders.IRequestUriBuilder.html",
+          "hash": "ECMd/hxbnEQv1gtb09e0Mg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Builders.RequestUriBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Builders.RequestUriBuilderExtensions.html",
+          "hash": "UCcnOoneQytTol7sfYZB0Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Builders.UriBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Builders.UriBuilderExtensions.html",
+          "hash": "0dP/qsOikh4jnKSCI7mbhw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Builders.UrlBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Builders.UrlBuilder.html",
+          "hash": "MTA1DKZMNMtlf2aFfrYFHQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Builders.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Builders.html",
+          "hash": "5dUTltl5EaAXwKzHIiN6sg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Http.MediaType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Http.MediaType.html",
+          "hash": "CiD0eyckzirYOhnsMO0LBw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Http.StatusCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Http.StatusCode.html",
+          "hash": "LYjGMPbfvvPy+/E8TvQv+g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Http.StatusCodeRange.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Http.StatusCodeRange.html",
+          "hash": "ZMT6lVVS5XV40+gkwd9gAA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Http.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Http.html",
+          "hash": "sidgCfklFJJwEjKZSKGtng=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.IUrlProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.IUrlProvider.html",
+          "hash": "7mfUNdLAbwheUHxDCO9Q1g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.ResponseTypeInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.ResponseTypeInfo.html",
+          "hash": "NpkjrDqmtZIRAdeiYmdULA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.ResponseTypeInfoBuilder-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.ResponseTypeInfoBuilder-1.html",
+          "hash": "azUU7Q8qtNVtx42CDvXANA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.RestClient-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.RestClient-1.html",
+          "hash": "lKE1IvOzthuupJyFgyuegw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.RestClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.RestClient.html",
+          "hash": "ivYYra8odCe3LqOZJqs79A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.RestClientConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.RestClientConfiguration.html",
+          "hash": "8No4HPq0KG4hizGEazQiUg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.RestInterface-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.RestInterface-1.html",
+          "hash": "/mkGdQZbRd0XP4I/j2RNag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.RestInterface.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.RestInterface.html",
+          "hash": "IWkEQQRSqRhBubIdljK8lw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Serializers.HttpContentDeserializerExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Serializers.HttpContentDeserializerExtensions.html",
+          "hash": "q/84AZ7kXpgf0IIuFXg51Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Serializers.HttpContentSerializationException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Serializers.HttpContentSerializationException.html",
+          "hash": "Ac//Ae0f+hNb19tk1Kzo9g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Serializers.HttpContentSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Serializers.HttpContentSerializer.html",
+          "hash": "DYCJ84dUx5ETIDfAV7d2DQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Serializers.IHttpContentDeserializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Serializers.IHttpContentDeserializer.html",
+          "hash": "SDh/ueR7O4gVlSevPnvYkQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Serializers.IHttpContentSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Serializers.IHttpContentSerializer.html",
+          "hash": "6Jwwyn+Y8aHuLlk0wluCpg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Serializers.NewtonsoftJson.JsonHttpContentBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Serializers.NewtonsoftJson.JsonHttpContentBuilderExtensions.html",
+          "hash": "WrJ+u6Ax58dHT1pyrlINMw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Serializers.NewtonsoftJson.JsonHttpContentSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Serializers.NewtonsoftJson.JsonHttpContentSerializer.html",
+          "hash": "pk9MG2qSL3ilm8gWuai/Tw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Serializers.NewtonsoftJson.JsonHttpMethodBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Serializers.NewtonsoftJson.JsonHttpMethodBuilderExtensions.html",
+          "hash": "QLc+4n4j/0peTrDf3Y0i0Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Serializers.NewtonsoftJson.JsonResponseTypeInfoBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Serializers.NewtonsoftJson.JsonResponseTypeInfoBuilderExtensions.html",
+          "hash": "zuoWeiFv0z6jJaTO8TePtQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Serializers.NewtonsoftJson.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Serializers.NewtonsoftJson.html",
+          "hash": "mb64yE+Umsw9boS/HCegeA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Serializers.NoContent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Serializers.NoContent.html",
+          "hash": "jDbxIhSCUxOtxBpNAEhp8g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.Serializers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.Serializers.html",
+          "hash": "HMB1Xmd7ySMBXT7Q7yK8SQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ReqRest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ReqRest.html",
+          "hash": "obf4RgjWNyRD2RarZpMfQQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "lqSogRrCabhg2W/dIC4hUg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "+Nu4GlIQTqHO3MFBgy8UGA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/getting-started/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/getting-started/intro.html",
+          "hash": "pFpIqXD9NP8vhz2gO91Lbw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/getting-started/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/getting-started/toc.html",
+          "hash": "t7iiFrmuYmrKWisdq+lN6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/index.html",
+          "hash": "ZKZ0xb7NysAfXTlh9ZKdMA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "TQsuP49A7+Ui6tdY/fDClQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "xuYDCVBwClTL3KxZLR5/zw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "LuJC3e014kVslAKyvXD9Hw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 4,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 74,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
