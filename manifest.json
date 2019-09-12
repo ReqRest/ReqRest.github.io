@@ -941,6 +941,30 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "articles/guides/custom-serializers.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/guides/custom-serializers.html",
+          "hash": "GP/Kvb421oUG8zLkIuoGcQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/guides/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/guides/toc.html",
+          "hash": "hnA4zCO/eWaWT0Jkq439MA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "articles/index.md",
       "output": {
         ".html": {
@@ -957,7 +981,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "TQsuP49A7+Ui6tdY/fDClQ=="
+          "hash": "dYz8IOi4gHmYjqvEss7iIQ=="
         }
       },
       "is_incremental": false,
@@ -981,7 +1005,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "LuJC3e014kVslAKyvXD9Hw=="
+          "hash": "EuoNMBmAQE6iWNXN4qvQ8Q=="
         }
       },
       "is_incremental": false,
@@ -1009,7 +1033,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 4,
+          "total_file_count": 5,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {

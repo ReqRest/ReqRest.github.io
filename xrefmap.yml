@@ -7,6 +7,9 @@ references:
 - uid: getting_started_intro
   name: Getting Started
   href: articles/getting-started/intro.html
+- uid: guides_custom_serializers
+  name: 'How to: Implementing Custom Serializers'
+  href: articles/guides/custom-serializers.html
 - uid: index
   name: Welcome to the ReqRest Documentation!
   href: index.html
