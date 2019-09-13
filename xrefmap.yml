@@ -4,11 +4,17 @@ references:
 - uid: api
   name: API Documentation
   href: api/index.html
-- uid: getting_started_intro
+- uid: articles
+  name: Articles
+  href: articles/index.html
+- uid: getting_started
   name: Getting Started
-  href: articles/getting-started/intro.html
+  href: articles/getting-started.html
+- uid: guides
+  name: Guides
+  href: articles/guides/index.html
 - uid: guides_custom_serializers
-  name: 'How to: Implementing Custom Serializers'
+  name: 'How to: Implement Custom Serializers'
   href: articles/guides/custom-serializers.html
 - uid: index
   name: Welcome to the ReqRest Documentation!
