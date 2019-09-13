@@ -99,7 +99,7 @@ store their body as an <a class="xref" href="https://docs.microsoft.com/dotnet/a
 <p>While the serialization interfaces above are rather trivial, there are a few points that nearly
 every generic serializer should support:</p>
 <ul>
-<li>It should be able to correctly (de-)serialize the special <a class="xref" href="../../api/ReqRest.Serializers.NoContent.html">NoContent</a> type.
+<li>It should be able to correctly (de-)serialize the special @&quot;ReqRest.Serializers.NoContent&quot; type.
 This type represents an empty HTTP content and is supposed to be used when an API returns no content
 (for example after deleting a resource).</li>
 <li>Serializers should throw an <a class="xref" href="../../api/ReqRest.Serializers.HttpContentSerializationException.html">HttpContentSerializationException</a>
@@ -186,7 +186,7 @@ XML serializer with a few lines of code:</p>
 <p>Congratulations! You have just created your first custom serializer.
 When looking at the code above, you may notice that there is a lot of boilerplate in there.
 Most passages are universal to any kind of serializer, for example the exception and
-<a class="xref" href="../../api/ReqRest.Serializers.NoContent.html">NoContent</a> handling.
+@&quot;ReqRest.Serializers.NoContent&quot; handling.
 For this reason, ReqRest provides you with the abstract
 <a class="xref" href="../../api/ReqRest.Serializers.HttpContentSerializer.html">HttpContentSerializer</a> class which, when inherited
 from, already takes care of most of these tasks.</p>
@@ -224,7 +224,7 @@ we can reduce the code of the custom XML serializer to this:</p>
 <p>As you can see, the required code got reduced by quite a bit, because the
 <a class="xref" href="../../api/ReqRest.Serializers.HttpContentSerializer.html">HttpContentSerializer</a> already takes care of</p>
 <ul>
-<li>handling <a class="xref" href="../../api/ReqRest.Serializers.NoContent.html">NoContent</a>,</li>
+<li>handling @&quot;ReqRest.Serializers.NoContent&quot;,</li>
 <li>handling serialization exceptions,</li>
 <li>using the default <code>UTF8</code> encoding, if no special encoding is given</li>
 <li>and finally, basic parameter validation.</li>

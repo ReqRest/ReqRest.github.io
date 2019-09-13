@@ -73,7 +73,7 @@
   
   <h1 id="ReqRest_Http_MediaType" data-uid="ReqRest.Http.MediaType" class="text-break">Class MediaType
   </h1>
-  <div class="markdown level0 summary"><p>Defines an incomplete list of HTTP media type constants.</p>
+  <div class="markdown level0 summary"><p>Defines an incomplete list of media type information.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -82,19 +82,59 @@
     <div class="level1"><span class="xref">MediaType</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="ReqRest.Http.html">ReqRest.Http</a></h6>
-  <h6><strong>Assembly</strong>: ReqRest.Http.dll</h6>
+  <h6><strong>Assembly</strong>: ReqRest.dll</h6>
   <h5 id="ReqRest_Http_MediaType_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static class MediaType</code></pre>
   </div>
+  <h5 id="ReqRest_Http_MediaType_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>While the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.mime.mediatypenames">MediaTypeNames</a> class already provides a few
+constants with the same value, the list is rather sparse, especially when targeting
+.NET Standard 2.0. This class aims to extend that list.</p>
+</div>
   <h3 id="fields">Fields
   </h3>
+  <h4 id="ReqRest_Http_MediaType_ApplicationJavaScript" data-uid="ReqRest.Http.MediaType.ApplicationJavaScript">ApplicationJavaScript</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ApplicationJavaScript = &quot;application/javascript&quot;</code></pre>
+  </div>
   <h4 id="ReqRest_Http_MediaType_ApplicationJson" data-uid="ReqRest.Http.MediaType.ApplicationJson">ApplicationJson</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string ApplicationJson = &quot;application/json&quot;</code></pre>
+  </div>
+  <h4 id="ReqRest_Http_MediaType_ApplicationOctetStream" data-uid="ReqRest.Http.MediaType.ApplicationOctetStream">ApplicationOctetStream</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ApplicationOctetStream = &quot;application/octet-stream&quot;</code></pre>
+  </div>
+  <h4 id="ReqRest_Http_MediaType_ApplicationPdf" data-uid="ReqRest.Http.MediaType.ApplicationPdf">ApplicationPdf</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ApplicationPdf = &quot;application/pdf&quot;</code></pre>
+  </div>
+  <h4 id="ReqRest_Http_MediaType_ApplicationRtf" data-uid="ReqRest.Http.MediaType.ApplicationRtf">ApplicationRtf</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ApplicationRtf = &quot;application/rtf&quot;</code></pre>
+  </div>
+  <h4 id="ReqRest_Http_MediaType_ApplicationSoapXml" data-uid="ReqRest.Http.MediaType.ApplicationSoapXml">ApplicationSoapXml</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ApplicationSoapXml = &quot;application/soap+xml&quot;</code></pre>
   </div>
   <h4 id="ReqRest_Http_MediaType_ApplicationWwwFormEncoded" data-uid="ReqRest.Http.MediaType.ApplicationWwwFormEncoded">ApplicationWwwFormEncoded</h4>
   <div class="markdown level1 summary"></div>
@@ -103,12 +143,96 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string ApplicationWwwFormEncoded = &quot;application/x-www-form-urlencoded&quot;</code></pre>
   </div>
+  <h4 id="ReqRest_Http_MediaType_ApplicationZip" data-uid="ReqRest.Http.MediaType.ApplicationZip">ApplicationZip</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ApplicationZip = &quot;application/zip&quot;</code></pre>
+  </div>
+  <h4 id="ReqRest_Http_MediaType_ImageBmp" data-uid="ReqRest.Http.MediaType.ImageBmp">ImageBmp</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ImageBmp = &quot;image/bmp&quot;</code></pre>
+  </div>
+  <h4 id="ReqRest_Http_MediaType_ImageGif" data-uid="ReqRest.Http.MediaType.ImageGif">ImageGif</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ImageGif = &quot;image/gif&quot;</code></pre>
+  </div>
+  <h4 id="ReqRest_Http_MediaType_ImageJpeg" data-uid="ReqRest.Http.MediaType.ImageJpeg">ImageJpeg</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ImageJpeg = &quot;image/jpeg&quot;</code></pre>
+  </div>
+  <h4 id="ReqRest_Http_MediaType_ImagePng" data-uid="ReqRest.Http.MediaType.ImagePng">ImagePng</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ImagePng = &quot;image/png&quot;</code></pre>
+  </div>
+  <h4 id="ReqRest_Http_MediaType_ImageTiff" data-uid="ReqRest.Http.MediaType.ImageTiff">ImageTiff</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ImageTiff = &quot;image/tiff&quot;</code></pre>
+  </div>
+  <h4 id="ReqRest_Http_MediaType_TextCss" data-uid="ReqRest.Http.MediaType.TextCss">TextCss</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string TextCss = &quot;text/css&quot;</code></pre>
+  </div>
+  <h4 id="ReqRest_Http_MediaType_TextCsv" data-uid="ReqRest.Http.MediaType.TextCsv">TextCsv</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string TextCsv = &quot;text/csv&quot;</code></pre>
+  </div>
+  <h4 id="ReqRest_Http_MediaType_TextHtml" data-uid="ReqRest.Http.MediaType.TextHtml">TextHtml</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string TextHtml = &quot;text/html&quot;</code></pre>
+  </div>
+  <h4 id="ReqRest_Http_MediaType_TextJavaScript" data-uid="ReqRest.Http.MediaType.TextJavaScript">TextJavaScript</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string TextJavaScript = &quot;text/javascript&quot;</code></pre>
+  </div>
   <h4 id="ReqRest_Http_MediaType_TextPlain" data-uid="ReqRest.Http.MediaType.TextPlain">TextPlain</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const string TextPlain = &quot;text/plain&quot;</code></pre>
+  </div>
+  <h4 id="ReqRest_Http_MediaType_TextRichText" data-uid="ReqRest.Http.MediaType.TextRichText">TextRichText</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string TextRichText = &quot;text/richtext&quot;</code></pre>
+  </div>
+  <h4 id="ReqRest_Http_MediaType_TextXml" data-uid="ReqRest.Http.MediaType.TextXml">TextXml</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string TextXml = &quot;text/xml&quot;</code></pre>
   </div>
 </article>
           </div>

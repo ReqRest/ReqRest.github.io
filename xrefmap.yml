@@ -3417,24 +3417,190 @@ references:
   commentId: T:ReqRest.Http.MediaType
   fullName: ReqRest.Http.MediaType
   nameWithType: MediaType
+- uid: ReqRest.Http.MediaType.ApplicationJavaScript
+  name: ApplicationJavaScript
+  href: api/ReqRest.Http.MediaType.html#ReqRest_Http_MediaType_ApplicationJavaScript
+  commentId: F:ReqRest.Http.MediaType.ApplicationJavaScript
+  fullName: ReqRest.Http.MediaType.ApplicationJavaScript
+  nameWithType: MediaType.ApplicationJavaScript
 - uid: ReqRest.Http.MediaType.ApplicationJson
   name: ApplicationJson
   href: api/ReqRest.Http.MediaType.html#ReqRest_Http_MediaType_ApplicationJson
   commentId: F:ReqRest.Http.MediaType.ApplicationJson
   fullName: ReqRest.Http.MediaType.ApplicationJson
   nameWithType: MediaType.ApplicationJson
+- uid: ReqRest.Http.MediaType.ApplicationOctetStream
+  name: ApplicationOctetStream
+  href: api/ReqRest.Http.MediaType.html#ReqRest_Http_MediaType_ApplicationOctetStream
+  commentId: F:ReqRest.Http.MediaType.ApplicationOctetStream
+  fullName: ReqRest.Http.MediaType.ApplicationOctetStream
+  nameWithType: MediaType.ApplicationOctetStream
+- uid: ReqRest.Http.MediaType.ApplicationPdf
+  name: ApplicationPdf
+  href: api/ReqRest.Http.MediaType.html#ReqRest_Http_MediaType_ApplicationPdf
+  commentId: F:ReqRest.Http.MediaType.ApplicationPdf
+  fullName: ReqRest.Http.MediaType.ApplicationPdf
+  nameWithType: MediaType.ApplicationPdf
+- uid: ReqRest.Http.MediaType.ApplicationRtf
+  name: ApplicationRtf
+  href: api/ReqRest.Http.MediaType.html#ReqRest_Http_MediaType_ApplicationRtf
+  commentId: F:ReqRest.Http.MediaType.ApplicationRtf
+  fullName: ReqRest.Http.MediaType.ApplicationRtf
+  nameWithType: MediaType.ApplicationRtf
+- uid: ReqRest.Http.MediaType.ApplicationSoapXml
+  name: ApplicationSoapXml
+  href: api/ReqRest.Http.MediaType.html#ReqRest_Http_MediaType_ApplicationSoapXml
+  commentId: F:ReqRest.Http.MediaType.ApplicationSoapXml
+  fullName: ReqRest.Http.MediaType.ApplicationSoapXml
+  nameWithType: MediaType.ApplicationSoapXml
 - uid: ReqRest.Http.MediaType.ApplicationWwwFormEncoded
   name: ApplicationWwwFormEncoded
   href: api/ReqRest.Http.MediaType.html#ReqRest_Http_MediaType_ApplicationWwwFormEncoded
   commentId: F:ReqRest.Http.MediaType.ApplicationWwwFormEncoded
   fullName: ReqRest.Http.MediaType.ApplicationWwwFormEncoded
   nameWithType: MediaType.ApplicationWwwFormEncoded
+- uid: ReqRest.Http.MediaType.ApplicationZip
+  name: ApplicationZip
+  href: api/ReqRest.Http.MediaType.html#ReqRest_Http_MediaType_ApplicationZip
+  commentId: F:ReqRest.Http.MediaType.ApplicationZip
+  fullName: ReqRest.Http.MediaType.ApplicationZip
+  nameWithType: MediaType.ApplicationZip
+- uid: ReqRest.Http.MediaType.ImageBmp
+  name: ImageBmp
+  href: api/ReqRest.Http.MediaType.html#ReqRest_Http_MediaType_ImageBmp
+  commentId: F:ReqRest.Http.MediaType.ImageBmp
+  fullName: ReqRest.Http.MediaType.ImageBmp
+  nameWithType: MediaType.ImageBmp
+- uid: ReqRest.Http.MediaType.ImageGif
+  name: ImageGif
+  href: api/ReqRest.Http.MediaType.html#ReqRest_Http_MediaType_ImageGif
+  commentId: F:ReqRest.Http.MediaType.ImageGif
+  fullName: ReqRest.Http.MediaType.ImageGif
+  nameWithType: MediaType.ImageGif
+- uid: ReqRest.Http.MediaType.ImageJpeg
+  name: ImageJpeg
+  href: api/ReqRest.Http.MediaType.html#ReqRest_Http_MediaType_ImageJpeg
+  commentId: F:ReqRest.Http.MediaType.ImageJpeg
+  fullName: ReqRest.Http.MediaType.ImageJpeg
+  nameWithType: MediaType.ImageJpeg
+- uid: ReqRest.Http.MediaType.ImagePng
+  name: ImagePng
+  href: api/ReqRest.Http.MediaType.html#ReqRest_Http_MediaType_ImagePng
+  commentId: F:ReqRest.Http.MediaType.ImagePng
+  fullName: ReqRest.Http.MediaType.ImagePng
+  nameWithType: MediaType.ImagePng
+- uid: ReqRest.Http.MediaType.ImageTiff
+  name: ImageTiff
+  href: api/ReqRest.Http.MediaType.html#ReqRest_Http_MediaType_ImageTiff
+  commentId: F:ReqRest.Http.MediaType.ImageTiff
+  fullName: ReqRest.Http.MediaType.ImageTiff
+  nameWithType: MediaType.ImageTiff
+- uid: ReqRest.Http.MediaType.TextCss
+  name: TextCss
+  href: api/ReqRest.Http.MediaType.html#ReqRest_Http_MediaType_TextCss
+  commentId: F:ReqRest.Http.MediaType.TextCss
+  fullName: ReqRest.Http.MediaType.TextCss
+  nameWithType: MediaType.TextCss
+- uid: ReqRest.Http.MediaType.TextCsv
+  name: TextCsv
+  href: api/ReqRest.Http.MediaType.html#ReqRest_Http_MediaType_TextCsv
+  commentId: F:ReqRest.Http.MediaType.TextCsv
+  fullName: ReqRest.Http.MediaType.TextCsv
+  nameWithType: MediaType.TextCsv
+- uid: ReqRest.Http.MediaType.TextHtml
+  name: TextHtml
+  href: api/ReqRest.Http.MediaType.html#ReqRest_Http_MediaType_TextHtml
+  commentId: F:ReqRest.Http.MediaType.TextHtml
+  fullName: ReqRest.Http.MediaType.TextHtml
+  nameWithType: MediaType.TextHtml
+- uid: ReqRest.Http.MediaType.TextJavaScript
+  name: TextJavaScript
+  href: api/ReqRest.Http.MediaType.html#ReqRest_Http_MediaType_TextJavaScript
+  commentId: F:ReqRest.Http.MediaType.TextJavaScript
+  fullName: ReqRest.Http.MediaType.TextJavaScript
+  nameWithType: MediaType.TextJavaScript
 - uid: ReqRest.Http.MediaType.TextPlain
   name: TextPlain
   href: api/ReqRest.Http.MediaType.html#ReqRest_Http_MediaType_TextPlain
   commentId: F:ReqRest.Http.MediaType.TextPlain
   fullName: ReqRest.Http.MediaType.TextPlain
   nameWithType: MediaType.TextPlain
+- uid: ReqRest.Http.MediaType.TextRichText
+  name: TextRichText
+  href: api/ReqRest.Http.MediaType.html#ReqRest_Http_MediaType_TextRichText
+  commentId: F:ReqRest.Http.MediaType.TextRichText
+  fullName: ReqRest.Http.MediaType.TextRichText
+  nameWithType: MediaType.TextRichText
+- uid: ReqRest.Http.MediaType.TextXml
+  name: TextXml
+  href: api/ReqRest.Http.MediaType.html#ReqRest_Http_MediaType_TextXml
+  commentId: F:ReqRest.Http.MediaType.TextXml
+  fullName: ReqRest.Http.MediaType.TextXml
+  nameWithType: MediaType.TextXml
+- uid: ReqRest.Http.NoContent
+  name: NoContent
+  href: api/ReqRest.Http.NoContent.html
+  commentId: T:ReqRest.Http.NoContent
+  fullName: ReqRest.Http.NoContent
+  nameWithType: NoContent
+- uid: ReqRest.Http.NoContent.Equals(ReqRest.Http.NoContent)
+  name: Equals(NoContent)
+  href: api/ReqRest.Http.NoContent.html#ReqRest_Http_NoContent_Equals_ReqRest_Http_NoContent_
+  commentId: M:ReqRest.Http.NoContent.Equals(ReqRest.Http.NoContent)
+  fullName: ReqRest.Http.NoContent.Equals(ReqRest.Http.NoContent)
+  nameWithType: NoContent.Equals(NoContent)
+- uid: ReqRest.Http.NoContent.Equals(System.Object)
+  name: Equals(Object)
+  href: api/ReqRest.Http.NoContent.html#ReqRest_Http_NoContent_Equals_System_Object_
+  commentId: M:ReqRest.Http.NoContent.Equals(System.Object)
+  fullName: ReqRest.Http.NoContent.Equals(System.Object)
+  nameWithType: NoContent.Equals(Object)
+- uid: ReqRest.Http.NoContent.Equals*
+  name: Equals
+  href: api/ReqRest.Http.NoContent.html#ReqRest_Http_NoContent_Equals_
+  commentId: Overload:ReqRest.Http.NoContent.Equals
+  isSpec: "True"
+  fullName: ReqRest.Http.NoContent.Equals
+  nameWithType: NoContent.Equals
+- uid: ReqRest.Http.NoContent.GetHashCode
+  name: GetHashCode()
+  href: api/ReqRest.Http.NoContent.html#ReqRest_Http_NoContent_GetHashCode
+  commentId: M:ReqRest.Http.NoContent.GetHashCode
+  fullName: ReqRest.Http.NoContent.GetHashCode()
+  nameWithType: NoContent.GetHashCode()
+- uid: ReqRest.Http.NoContent.GetHashCode*
+  name: GetHashCode
+  href: api/ReqRest.Http.NoContent.html#ReqRest_Http_NoContent_GetHashCode_
+  commentId: Overload:ReqRest.Http.NoContent.GetHashCode
+  isSpec: "True"
+  fullName: ReqRest.Http.NoContent.GetHashCode
+  nameWithType: NoContent.GetHashCode
+- uid: ReqRest.Http.NoContent.op_Equality(ReqRest.Http.NoContent,ReqRest.Http.NoContent)
+  name: Equality(NoContent, NoContent)
+  href: api/ReqRest.Http.NoContent.html#ReqRest_Http_NoContent_op_Equality_ReqRest_Http_NoContent_ReqRest_Http_NoContent_
+  commentId: M:ReqRest.Http.NoContent.op_Equality(ReqRest.Http.NoContent,ReqRest.Http.NoContent)
+  fullName: ReqRest.Http.NoContent.Equality(ReqRest.Http.NoContent, ReqRest.Http.NoContent)
+  nameWithType: NoContent.Equality(NoContent, NoContent)
+- uid: ReqRest.Http.NoContent.op_Equality*
+  name: Equality
+  href: api/ReqRest.Http.NoContent.html#ReqRest_Http_NoContent_op_Equality_
+  commentId: Overload:ReqRest.Http.NoContent.op_Equality
+  isSpec: "True"
+  fullName: ReqRest.Http.NoContent.Equality
+  nameWithType: NoContent.Equality
+- uid: ReqRest.Http.NoContent.op_Inequality(ReqRest.Http.NoContent,ReqRest.Http.NoContent)
+  name: Inequality(NoContent, NoContent)
+  href: api/ReqRest.Http.NoContent.html#ReqRest_Http_NoContent_op_Inequality_ReqRest_Http_NoContent_ReqRest_Http_NoContent_
+  commentId: M:ReqRest.Http.NoContent.op_Inequality(ReqRest.Http.NoContent,ReqRest.Http.NoContent)
+  fullName: ReqRest.Http.NoContent.Inequality(ReqRest.Http.NoContent, ReqRest.Http.NoContent)
+  nameWithType: NoContent.Inequality(NoContent, NoContent)
+- uid: ReqRest.Http.NoContent.op_Inequality*
+  name: Inequality
+  href: api/ReqRest.Http.NoContent.html#ReqRest_Http_NoContent_op_Inequality_
+  commentId: Overload:ReqRest.Http.NoContent.op_Inequality
+  isSpec: "True"
+  fullName: ReqRest.Http.NoContent.Inequality
+  nameWithType: NoContent.Inequality
 - uid: ReqRest.Http.StatusCode
   name: StatusCode
   href: api/ReqRest.Http.StatusCode.html
@@ -4918,80 +5084,3 @@ references:
   fullName.vb: ReqRest.Serializers.NewtonsoftJson.JsonResponseTypeInfoBuilderExtensions.AsJson(Of T)(ReqRest.ResponseTypeInfoBuilder(Of T), System.Collections.Generic.IEnumerable(Of ReqRest.Http.StatusCodeRange), System.Nullable(Of Newtonsoft.Json.JsonSerializer))
   nameWithType: JsonResponseTypeInfoBuilderExtensions.AsJson<T>(ResponseTypeInfoBuilder<T>, IEnumerable<StatusCodeRange>, Nullable<JsonSerializer>)
   nameWithType.vb: JsonResponseTypeInfoBuilderExtensions.AsJson(Of T)(ResponseTypeInfoBuilder(Of T), IEnumerable(Of StatusCodeRange), Nullable(Of JsonSerializer))
-- uid: ReqRest.Serializers.NoContent
-  name: NoContent
-  href: api/ReqRest.Serializers.NoContent.html
-  commentId: T:ReqRest.Serializers.NoContent
-  fullName: ReqRest.Serializers.NoContent
-  nameWithType: NoContent
-- uid: ReqRest.Serializers.NoContent.Equals(ReqRest.Serializers.NoContent)
-  name: Equals(NoContent)
-  href: api/ReqRest.Serializers.NoContent.html#ReqRest_Serializers_NoContent_Equals_ReqRest_Serializers_NoContent_
-  commentId: M:ReqRest.Serializers.NoContent.Equals(ReqRest.Serializers.NoContent)
-  fullName: ReqRest.Serializers.NoContent.Equals(ReqRest.Serializers.NoContent)
-  nameWithType: NoContent.Equals(NoContent)
-- uid: ReqRest.Serializers.NoContent.Equals(System.Object)
-  name: Equals(Object)
-  href: api/ReqRest.Serializers.NoContent.html#ReqRest_Serializers_NoContent_Equals_System_Object_
-  commentId: M:ReqRest.Serializers.NoContent.Equals(System.Object)
-  fullName: ReqRest.Serializers.NoContent.Equals(System.Object)
-  nameWithType: NoContent.Equals(Object)
-- uid: ReqRest.Serializers.NoContent.Equals*
-  name: Equals
-  href: api/ReqRest.Serializers.NoContent.html#ReqRest_Serializers_NoContent_Equals_
-  commentId: Overload:ReqRest.Serializers.NoContent.Equals
-  isSpec: "True"
-  fullName: ReqRest.Serializers.NoContent.Equals
-  nameWithType: NoContent.Equals
-- uid: ReqRest.Serializers.NoContent.GetHashCode
-  name: GetHashCode()
-  href: api/ReqRest.Serializers.NoContent.html#ReqRest_Serializers_NoContent_GetHashCode
-  commentId: M:ReqRest.Serializers.NoContent.GetHashCode
-  fullName: ReqRest.Serializers.NoContent.GetHashCode()
-  nameWithType: NoContent.GetHashCode()
-- uid: ReqRest.Serializers.NoContent.GetHashCode*
-  name: GetHashCode
-  href: api/ReqRest.Serializers.NoContent.html#ReqRest_Serializers_NoContent_GetHashCode_
-  commentId: Overload:ReqRest.Serializers.NoContent.GetHashCode
-  isSpec: "True"
-  fullName: ReqRest.Serializers.NoContent.GetHashCode
-  nameWithType: NoContent.GetHashCode
-- uid: ReqRest.Serializers.NoContent.op_Equality(ReqRest.Serializers.NoContent,ReqRest.Serializers.NoContent)
-  name: Equality(NoContent, NoContent)
-  href: api/ReqRest.Serializers.NoContent.html#ReqRest_Serializers_NoContent_op_Equality_ReqRest_Serializers_NoContent_ReqRest_Serializers_NoContent_
-  commentId: M:ReqRest.Serializers.NoContent.op_Equality(ReqRest.Serializers.NoContent,ReqRest.Serializers.NoContent)
-  fullName: ReqRest.Serializers.NoContent.Equality(ReqRest.Serializers.NoContent, ReqRest.Serializers.NoContent)
-  nameWithType: NoContent.Equality(NoContent, NoContent)
-- uid: ReqRest.Serializers.NoContent.op_Equality*
-  name: Equality
-  href: api/ReqRest.Serializers.NoContent.html#ReqRest_Serializers_NoContent_op_Equality_
-  commentId: Overload:ReqRest.Serializers.NoContent.op_Equality
-  isSpec: "True"
-  fullName: ReqRest.Serializers.NoContent.Equality
-  nameWithType: NoContent.Equality
-- uid: ReqRest.Serializers.NoContent.op_Inequality(ReqRest.Serializers.NoContent,ReqRest.Serializers.NoContent)
-  name: Inequality(NoContent, NoContent)
-  href: api/ReqRest.Serializers.NoContent.html#ReqRest_Serializers_NoContent_op_Inequality_ReqRest_Serializers_NoContent_ReqRest_Serializers_NoContent_
-  commentId: M:ReqRest.Serializers.NoContent.op_Inequality(ReqRest.Serializers.NoContent,ReqRest.Serializers.NoContent)
-  fullName: ReqRest.Serializers.NoContent.Inequality(ReqRest.Serializers.NoContent, ReqRest.Serializers.NoContent)
-  nameWithType: NoContent.Inequality(NoContent, NoContent)
-- uid: ReqRest.Serializers.NoContent.op_Inequality*
-  name: Inequality
-  href: api/ReqRest.Serializers.NoContent.html#ReqRest_Serializers_NoContent_op_Inequality_
-  commentId: Overload:ReqRest.Serializers.NoContent.op_Inequality
-  isSpec: "True"
-  fullName: ReqRest.Serializers.NoContent.Inequality
-  nameWithType: NoContent.Inequality
-- uid: ReqRest.Serializers.NoContent.ToString
-  name: ToString()
-  href: api/ReqRest.Serializers.NoContent.html#ReqRest_Serializers_NoContent_ToString
-  commentId: M:ReqRest.Serializers.NoContent.ToString
-  fullName: ReqRest.Serializers.NoContent.ToString()
-  nameWithType: NoContent.ToString()
-- uid: ReqRest.Serializers.NoContent.ToString*
-  name: ToString
-  href: api/ReqRest.Serializers.NoContent.html#ReqRest_Serializers_NoContent_ToString_
-  commentId: Overload:ReqRest.Serializers.NoContent.ToString
-  isSpec: "True"
-  fullName: ReqRest.Serializers.NoContent.ToString
-  nameWithType: NoContent.ToString

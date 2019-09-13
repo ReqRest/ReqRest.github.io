@@ -68,32 +68,36 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="ReqRest.Serializers.NoContent">
+            <article class="content wrap" id="_content" data-uid="ReqRest.Http.NoContent">
   
   
-  <h1 id="ReqRest_Serializers_NoContent" data-uid="ReqRest.Serializers.NoContent" class="text-break">Struct NoContent
+  <h1 id="ReqRest_Http_NoContent" data-uid="ReqRest.Http.NoContent" class="text-break">Struct NoContent
   </h1>
-  <div class="markdown level0 summary"><p>A special type which should be used to represent an empty content of an HTTP response.
-This class is treated with special logic during (de-)serialization and is thus the preferred
-way for representing an empty HTTP response content.</p>
+  <div class="markdown level0 summary"><p>A special type which is used by to represent an empty HTTP message content, for example
+when an API returns <code>204 No Content</code>.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="ReqRest.Serializers.NoContent.html">NoContent</a>&gt;</div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="ReqRest.Http.NoContent.html">NoContent</a>&gt;</div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="ReqRest.Serializers.html">ReqRest.Serializers</a></h6>
-  <h6><strong>Assembly</strong>: ReqRest.Serializers.dll</h6>
-  <h5 id="ReqRest_Serializers_NoContent_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ReqRest.Http.html">ReqRest.Http</a></h6>
+  <h6><strong>Assembly</strong>: ReqRest.dll</h6>
+  <h5 id="ReqRest_Http_NoContent_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Serializable]
 public struct NoContent : IEquatable&lt;NoContent&gt;</code></pre>
   </div>
+  <h5 id="ReqRest_Http_NoContent_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This class is treated with special logic during (de-)serialization and is thus the preferred
+way for representing an empty HTTP response content within the context of this library.</p>
+</div>
   <h3 id="methods">Methods
   </h3>
-  <a id="ReqRest_Serializers_NoContent_Equals_" data-uid="ReqRest.Serializers.NoContent.Equals*"></a>
-  <h4 id="ReqRest_Serializers_NoContent_Equals_ReqRest_Serializers_NoContent_" data-uid="ReqRest.Serializers.NoContent.Equals(ReqRest.Serializers.NoContent)">Equals(NoContent)</h4>
-  <div class="markdown level1 summary"><p>Returns a value indicating whether this object equals <code data-dev-comment-type="paramref" class="paramref">other</code>.</p>
+  <a id="ReqRest_Http_NoContent_Equals_" data-uid="ReqRest.Http.NoContent.Equals*"></a>
+  <h4 id="ReqRest_Http_NoContent_Equals_ReqRest_Http_NoContent_" data-uid="ReqRest.Http.NoContent.Equals(ReqRest.Http.NoContent)">Equals(NoContent)</h4>
+  <div class="markdown level1 summary"><p>Returns a value indicating whether this <a class="xref" href="ReqRest.Http.NoContent.html">NoContent</a> instance
+equals <code data-dev-comment-type="paramref" class="paramref">other</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -111,7 +115,7 @@ public struct NoContent : IEquatable&lt;NoContent&gt;</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ReqRest.Serializers.NoContent.html">NoContent</a></td>
+        <td><a class="xref" href="ReqRest.Http.NoContent.html">NoContent</a></td>
         <td><span class="parametername">other</span></td>
         <td><p>The object to be compared with this object.</p>
 </td>
@@ -129,13 +133,13 @@ public struct NoContent : IEquatable&lt;NoContent&gt;</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><span class="xref">true</span>.</p>
+        <td><p>This always returns <span class="xref">true</span>.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <a id="ReqRest_Serializers_NoContent_Equals_" data-uid="ReqRest.Serializers.NoContent.Equals*"></a>
-  <h4 id="ReqRest_Serializers_NoContent_Equals_System_Object_" data-uid="ReqRest.Serializers.NoContent.Equals(System.Object)">Equals(Object)</h4>
+  <a id="ReqRest_Http_NoContent_Equals_" data-uid="ReqRest.Http.NoContent.Equals*"></a>
+  <h4 id="ReqRest_Http_NoContent_Equals_System_Object_" data-uid="ReqRest.Http.NoContent.Equals(System.Object)">Equals(Object)</h4>
   <div class="markdown level1 summary"><p>Returns a value indicating whether this object equals <code data-dev-comment-type="paramref" class="paramref">obj</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -172,7 +176,7 @@ public struct NoContent : IEquatable&lt;NoContent&gt;</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><span class="xref">true</span> if <code data-dev-comment-type="paramref" class="paramref">obj</code> is of type <a class="xref" href="ReqRest.Serializers.NoContent.html">NoContent</a>;
+        <td><p><span class="xref">true</span> if <code data-dev-comment-type="paramref" class="paramref">obj</code> is of type <a class="xref" href="ReqRest.Http.NoContent.html">NoContent</a>;
 <span class="xref">false</span> otherwise.</p>
 </td>
       </tr>
@@ -180,8 +184,8 @@ public struct NoContent : IEquatable&lt;NoContent&gt;</code></pre>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetype.equals#System_ValueType_Equals_System_Object_">ValueType.Equals(Object)</a></div>
-  <a id="ReqRest_Serializers_NoContent_GetHashCode_" data-uid="ReqRest.Serializers.NoContent.GetHashCode*"></a>
-  <h4 id="ReqRest_Serializers_NoContent_GetHashCode" data-uid="ReqRest.Serializers.NoContent.GetHashCode">GetHashCode()</h4>
+  <a id="ReqRest_Http_NoContent_GetHashCode_" data-uid="ReqRest.Http.NoContent.GetHashCode*"></a>
+  <h4 id="ReqRest_Http_NoContent_GetHashCode" data-uid="ReqRest.Http.NoContent.GetHashCode">GetHashCode()</h4>
   <div class="markdown level1 summary"><p>Returns a hash code for this instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -207,38 +211,13 @@ public struct NoContent : IEquatable&lt;NoContent&gt;</code></pre>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetype.gethashcode#System_ValueType_GetHashCode">ValueType.GetHashCode()</a></div>
-  <a id="ReqRest_Serializers_NoContent_ToString_" data-uid="ReqRest.Serializers.NoContent.ToString*"></a>
-  <h4 id="ReqRest_Serializers_NoContent_ToString" data-uid="ReqRest.Serializers.NoContent.ToString">ToString()</h4>
-  <div class="markdown level1 summary"><p>Returns a string similar to <code>No Content</code>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><p>A string similar to <code>No Content</code>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetype.tostring#System_ValueType_ToString">ValueType.ToString()</a></div>
   <h3 id="operators">Operators
   </h3>
-  <a id="ReqRest_Serializers_NoContent_op_Equality_" data-uid="ReqRest.Serializers.NoContent.op_Equality*"></a>
-  <h4 id="ReqRest_Serializers_NoContent_op_Equality_ReqRest_Serializers_NoContent_ReqRest_Serializers_NoContent_" data-uid="ReqRest.Serializers.NoContent.op_Equality(ReqRest.Serializers.NoContent,ReqRest.Serializers.NoContent)">Equality(NoContent, NoContent)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="ReqRest_Http_NoContent_op_Equality_" data-uid="ReqRest.Http.NoContent.op_Equality*"></a>
+  <h4 id="ReqRest_Http_NoContent_op_Equality_ReqRest_Http_NoContent_ReqRest_Http_NoContent_" data-uid="ReqRest.Http.NoContent.op_Equality(ReqRest.Http.NoContent,ReqRest.Http.NoContent)">Equality(NoContent, NoContent)</h4>
+  <div class="markdown level1 summary"><p>Returns a value indicating whether one <a class="xref" href="ReqRest.Http.NoContent.html">NoContent</a> instance
+is equal to another one.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -255,14 +234,16 @@ public struct NoContent : IEquatable&lt;NoContent&gt;</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ReqRest.Serializers.NoContent.html">NoContent</a></td>
+        <td><a class="xref" href="ReqRest.Http.NoContent.html">NoContent</a></td>
         <td><span class="parametername">a</span></td>
-        <td></td>
+        <td><p>The first instance.</p>
+</td>
       </tr>
       <tr>
-        <td><a class="xref" href="ReqRest.Serializers.NoContent.html">NoContent</a></td>
+        <td><a class="xref" href="ReqRest.Http.NoContent.html">NoContent</a></td>
         <td><span class="parametername">b</span></td>
-        <td></td>
+        <td><p>The second instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -277,13 +258,16 @@ public struct NoContent : IEquatable&lt;NoContent&gt;</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
+        <td><p>This always returns <span class="xref">true</span>.</p>
+</td>
       </tr>
     </tbody>
   </table>
-  <a id="ReqRest_Serializers_NoContent_op_Inequality_" data-uid="ReqRest.Serializers.NoContent.op_Inequality*"></a>
-  <h4 id="ReqRest_Serializers_NoContent_op_Inequality_ReqRest_Serializers_NoContent_ReqRest_Serializers_NoContent_" data-uid="ReqRest.Serializers.NoContent.op_Inequality(ReqRest.Serializers.NoContent,ReqRest.Serializers.NoContent)">Inequality(NoContent, NoContent)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="ReqRest_Http_NoContent_op_Inequality_" data-uid="ReqRest.Http.NoContent.op_Inequality*"></a>
+  <h4 id="ReqRest_Http_NoContent_op_Inequality_ReqRest_Http_NoContent_ReqRest_Http_NoContent_" data-uid="ReqRest.Http.NoContent.op_Inequality(ReqRest.Http.NoContent,ReqRest.Http.NoContent)">Inequality(NoContent, NoContent)</h4>
+  <div class="markdown level1 summary"><p>Returns a value indicating whether one <a class="xref" href="ReqRest.Http.NoContent.html">NoContent</a> instance
+is unequal to another one.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -300,14 +284,16 @@ public struct NoContent : IEquatable&lt;NoContent&gt;</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ReqRest.Serializers.NoContent.html">NoContent</a></td>
+        <td><a class="xref" href="ReqRest.Http.NoContent.html">NoContent</a></td>
         <td><span class="parametername">a</span></td>
-        <td></td>
+        <td><p>The first instance.</p>
+</td>
       </tr>
       <tr>
-        <td><a class="xref" href="ReqRest.Serializers.NoContent.html">NoContent</a></td>
+        <td><a class="xref" href="ReqRest.Http.NoContent.html">NoContent</a></td>
         <td><span class="parametername">b</span></td>
-        <td></td>
+        <td><p>The second instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -322,7 +308,8 @@ public struct NoContent : IEquatable&lt;NoContent&gt;</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
+        <td><p>This always returns <span class="xref">false</span>.</p>
+</td>
       </tr>
     </tbody>
   </table>
