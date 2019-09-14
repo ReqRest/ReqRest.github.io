@@ -62,7 +62,426 @@
             <article class="content wrap" id="_content" data-uid="getting_started">
 <h1 id="getting-started">Getting Started</h1>
 
-<p><em>To be done.</em></p>
+<h2 id="introduction">Introduction</h2>
+<p>This guide is going to teach you how to work with the ReqRest library by showing you, step-by-step,
+how an API client can be written with ReqRest.
+The client is going to interact with the <a href="https://jsonplaceholder.typicode.com">JSON Placeholder API</a>
+created by <a href="https://github.com/typicode">typicode</a>. JSON Placeholder is an awesome fake REST API
+which mocks responses and is thus ideal for demo projects. If you want to learn more about it,
+have a look at the documentation <a href="https://jsonplaceholder.typicode.com/guide.html">here</a>.</p>
+<p>Towards the end of this article, the API client will be able to interact with the <code>/todos</code> and
+<code>/todos/{id}</code> endpoints. These endpoints deal with the <code>TodoItem</code> resource which looks like this:</p>
+<pre><code class="lang-json">{
+    &quot;userId&quot;: 1,
+    &quot;id&quot;: 1,
+    &quot;title&quot;: &quot;Learn about ReqRest&quot;,
+    &quot;completed&quot;: false
+}
+</code></pre>
+<p>By using the final client, a user will be able to interact with the API using code similar to this:</p>
+<pre><code class="lang-csharp">JsonPlaceholderClient client = new JsonPlaceholderClient();
+
+// Get the TodoItem with the ID 1.
+var (response, resource) = await client.Todos(1).Get().FetchAsync();
+resource.Match(
+    item =&gt; Console.WriteLine($&quot;Task: {item.Title}.&quot;),
+    ()   =&gt; Console.WriteLine($&quot;Unexpected status code: {response.StatusCode}.&quot;)
+);
+
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This guide will make use of new language features introduced with C# 8.0, namely Nullable
+Reference Types. If your current development environment doesn't support C# 8.0, simply
+ignore every <code>?</code> behind a reference type in the code below.</p>
+</div>
+<h2 id="installation-and-project-setup">Installation and Project Setup</h2>
+<p>Create a new console project and reference both the <a href="https://www.nuget.org/packages/ReqRest"><code>ReqRest</code></a>
+and the <a href="https://www.nuget.org/packages/ReqRest.Serializers.NewtonsoftJson"><code>ReqRest.Serializers.NewtonsoftJson</code></a>
+package, for example via:</p>
+<pre><code class="lang-bash">dotnet new console -n GettingStarted
+dotnet add package ReqRest
+dotnet add package ReqRest.Serializers.NewtonsoftJson
+</code></pre>
+<p>Afterwards, create the <code>TodoItem</code> DTO class which is going to be used in the following code.</p>
+<pre><code class="lang-csharp">using Newtonsoft.Json;
+
+public class TodoItem
+{
+    [JsonProperty(&quot;id&quot;)]
+    public int? Id { get; set; }
+
+    [JsonProperty(&quot;userId&quot;)]
+    public int? UserId { get; set; }
+
+    [JsonProperty(&quot;title&quot;)]
+    public string? Title { get; set; }
+
+    [JsonProperty(&quot;completed&quot;)]
+    public bool? Completed { get; set; }
+}
+</code></pre>
+<h2 id="creating-the-jsonplaceholderclient">Creating the <code>JsonPlaceholderClient</code></h2>
+<p>Independent of what API you are wrapping, you will always have to create a class which inherits
+from the <a class="xref" href="../api/ReqRest.RestClient.html">RestClient</a> class. Such a client is the entry point for creating requests
+against the REST API.</p>
+<p>Create a new class called <code>JsonPlaceholderClient</code>, inherit from the <a class="xref" href="../api/ReqRest.RestClient.html">RestClient</a> class
+and copy the code below.</p>
+<pre><code class="lang-csharp">using System;
+using ReqRest;
+
+public sealed class JsonPlaceholderClient : RestClient
+{
+    private static readonly RestClientConfiguration DefaultConfig = new RestClientConfiguration()
+    {
+        BaseUrl = new Uri(&quot;https://jsonplaceholder.typicode.com&quot;),
+    };
+
+    public JsonPlaceholderClient(RestClientConfiguration? configuration = null)
+        : base(configuration ?? DefaultConfig) { }
+}
+</code></pre>
+<p>As you can see, any <a class="xref" href="../api/ReqRest.RestClient.html">RestClient</a> must be configured with a <a class="xref" href="../api/ReqRest.RestClientConfiguration.html">RestClientConfiguration</a>.
+This configuration holds several important values with the most important one being the
+<a class="xref" href="../api/ReqRest.RestClientConfiguration.html#ReqRest_RestClientConfiguration_BaseUrl">BaseUrl</a>. This URL is later on combined with the paths of the
+API endpoints, e.g. <code>&quot;/todos&quot;</code>.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>It is recommended to follow the example above and make the <a class="xref" href="../api/ReqRest.RestClientConfiguration.html">RestClientConfiguration</a>
+an optional constructor parameter so that a user <strong>can</strong> pass in a custom configuration, but
+<strong>doesn't have</strong> to.</p>
+</div>
+<p>By now, the client can already be instantiated, but it cannot really do anything. As a next step,
+it will be extended with support for the <code>/todos</code> interface, so that code like
+<code>client.Todos().[...]</code> becomes possible.</p>
+<h2 id="about-rest-api-interfaces">About REST API Interfaces</h2>
+<p>ReqRest uses the <a class="xref" href="../api/ReqRest.RestInterface.html">RestInterface</a> class to group requests to the same endpoint.
+At this point, it makes sense to have a look at which requests the JSON Placeholder API supports
+for the <code>TodoItem</code> resource.</p>
+<table>
+<thead>
+<tr>
+<th>Endpoint</th>
+<th>HTTP Method</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/todos</code></td>
+<td><code>GET</code></td>
+<td><code>TodoItem[]</code></td>
+</tr>
+<tr>
+<td></td>
+<td><code>POST</code></td>
+<td><code>TodoItem</code></td>
+</tr>
+<tr>
+<td><code>/todos/{id}</code></td>
+<td><code>GET</code></td>
+<td><code>TodoItem</code></td>
+</tr>
+<tr>
+<td></td>
+<td><code>PUT</code></td>
+<td><code>TodoItem</code></td>
+</tr>
+<tr>
+<td></td>
+<td><code>DELETE</code></td>
+<td><code>{ }</code></td>
+</tr>
+</tbody>
+</table>
+<p>You can see that the <code>/todos</code> and <code>/todos/{id}</code> endpoints basically form two separate groups with
+separate, possible requests.
+ReqRest models these two groups via the aforementioned <a class="xref" href="../api/ReqRest.RestInterface.html">RestInterface</a> class. Each group
+gets projected to a single class deriving from <a class="xref" href="../api/ReqRest.RestInterface.html">RestInterface</a> which then exposes the
+methods for creating the different requests which can be made against that interface.</p>
+<p>In this case, the two classes will be called <code>TodosInterface</code> (for <code>/todos</code>, because this interface
+deals with multiple items) and <code>TodoInterface</code> (for <code>/todos/{id}</code>, because this interface deals
+with a single item).</p>
+<p>If this sounds complicated, don't be afraid! The code following below will help a lot to understand
+this API design.</p>
+<h2 id="creating-the-todosinterface">Creating the <code>TodosInterface</code></h2>
+<p>Every class inheriting from <a class="xref" href="../api/ReqRest.RestInterface.html">RestInterface</a> requires at least the following code:</p>
+<pre><code class="lang-csharp">using ReqRest;
+using ReqRest.Builders;
+
+public sealed class TodosInterface : RestInterface
+{
+    internal TodosInterface(RestClient restClient)
+        : base(restClient) { }
+
+    // Every RestInterface is responsible of building up the URL which is ultimately going 
+    protected override UrlBuilder BuildUrl(UrlBuilder baseUrl) =&gt;
+        baseUrl / &quot;todos&quot;;
+}
+</code></pre>
+<p>Two things are happening here:</p>
+<p>First of all, the <code>TodosInterface</code> expects a <a class="xref" href="../api/ReqRest.RestClient.html">RestClient</a> instance which immediately gets
+passed to the base class. This client is required by the interface, because it needs to read out
+certain values from the client's configuration, e.g. the <a class="xref" href="../api/ReqRest.RestClientConfiguration.html#ReqRest_RestClientConfiguration_BaseUrl">BaseUrl</a>.</p>
+<p>In addition, every class inheriting from <a class="xref" href="../api/ReqRest.RestInterface.html">RestInterface</a> must override the
+<a class="xref" href="../api/ReqRest.RestInterface.html#ReqRest_RestInterface_BuildUrl_ReqRest_Builders_UrlBuilder_">BuildUrl(UrlBuilder)</a> method. This method is used by
+ReqRest to build up the final URL for a request against this interface.
+As you can see, the <code>TodosInterface</code> appends the <code>&quot;todos&quot;</code> string to a given <code>baseUrl</code>.
+In this example, <code>baseUrl</code> will always come directly from the <code>JsonPlaceholderClient</code> which means
+that is is going to be <code>https://jsonplaceholder.typicode.com</code>.
+The <code>BuildUrl</code> method above transforms this URL to <code>https://jsonplaceholder.typicode.com/todos</code>.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The slash in <code>baseUrl / &quot;todos&quot;</code> is syntactic sugar replacing the <a class="xref" href="../api/ReqRest.Builders.UriBuilderExtensions.html#ReqRest_Builders_UriBuilderExtensions_AppendPath_">AppendPath</a>
+method and simply adds the <code>&quot;todos&quot;</code> string to the URL's path while taking care of correctly formatting
+the slashes. This works similar to .NET's <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.path.combine#System_IO_Path_Combine_System_String_System_String_">Path.Combine(string, string)</a>
+method.</p>
+</div>
+<p>At this point, the <code>TodosInterface</code> can be instantiated and thus integrated into the <code>JsonPlaceholderClient</code>:</p>
+<pre><code class="lang-csharp">using System;
+using ReqRest;
+
+public sealed class JsonPlaceholderClient : RestClient
+{
+    // [...]
+
+    public TodosInterface Todos() =&gt;
+        new TodosInterface(this);
+}
+</code></pre>
+<p>Now you can write code like <code>new JsonPlaceholderClient().Todos()</code>, but there is no possibility
+to create any requests with this interface (for example via a <code>Get()</code> method).
+This is going to change now! Add the <code>Get()</code> method below to the <code>TodosInterface</code>.</p>
+<pre><code class="lang-csharp">using System.Collections.Generic;
+using ReqRest;
+using ReqRest.Builders;
+using ReqRest.Serializers.NewtonsoftJson;
+
+public sealed class TodosInterface : RestInterface
+{
+    // [...]
+
+    public ApiRequest&lt;IList&lt;TodoItem&gt;&gt; Get() =&gt;
+        BuildRequest()
+            .Get()
+            .Receive&lt;IList&lt;TodoItem&gt;&gt;().AsJson(forStatusCodes: 200);
+}
+</code></pre>
+<p>Again, a lot is happening here, but ideally the code speaks for itself.</p>
+<p><code>Get()</code> calls the <a class="xref" href="../api/ReqRest.RestInterface.html#ReqRest_RestInterface_BuildRequest">BuildRequest()</a> method and afterwards calls a few methods
+to declare that the request uses the <code>GET</code> HTTP method and will receive a list of <code>TodoItem</code>s
+as JSON if the server sends back a response with the status code <code>200</code>.</p>
+<p>Don't be afraid to use IntelliSense and Visual Studio to see the documentation of the called
+methods above. They will explain in detail what they do exactly.</p>
+<p>At this point, the API client is functional for the first time! Go ahead and try it out:</p>
+<pre><code class="lang-csharp">public static async Task Main(string[] args)
+{
+    var client = new JsonPlaceholderClient();
+    var response = await client.Todos().Get().FetchResponseAsync();
+    var resource = await response.DeserializeResourceAsync();
+
+    // The API may not always return the status code 200.
+    // ReqRest automatically does the checking for you and calls the correct method depending on the actual status code.
+    resource.Match(
+        todoItems =&gt; Console.WriteLine($&quot;Received status code 200. There are {todoItems.Count} items!&quot;),
+        ()        =&gt; Console.WriteLine($&quot;Received an unexpected status code: {response.StatusCode}.&quot;)
+    );
+}
+</code></pre>
+<p>In the table above, you can see that there is another request that can be made to the API - the
+<code>POST /todos</code> request. There is one important difference to the <code>GET</code> request above. When making a
+<code>POST</code> request, it should be possible to pass the data, i.e. the <code>TodoItem</code> to the request.</p>
+<p>In the code, this can easily done via a parameter. This means that the <code>TodosInterface</code> can be
+extended like this:</p>
+<pre><code class="lang-csharp">using System.Collections.Generic;
+using ReqRest;
+using ReqRest.Builders;
+using ReqRest.Serializers.NewtonsoftJson;
+
+public sealed class TodosInterface : RestInterface
+{
+    // [...]
+
+    public ApiRequest&lt;TodoItem&gt; Post(TodoItem? todoItem) =&gt;
+        BuildRequest()
+            .PostJson(todoItem)
+            .Receive&lt;TodoItem&gt;().AsJson(forStatusCodes: 201);
+}
+</code></pre>
+<p>This new method can be used like this:</p>
+<pre><code class="lang-csharp">public static async Task Main(string[] args)
+{
+    var client = new JsonPlaceholderClient();
+    var itemToPost = new TodoItem() { Title = &quot;Try out the new POST method!&quot; };
+    var (response, resource) = await client.Todos().Post(itemToPost).FetchAsync();
+
+    resource.Match(
+        createdItem =&gt; Console.WriteLine($&quot;Created the item. It has the ID {createdItem.Id}.&quot;),
+        ()          =&gt; Console.WriteLine($&quot;POSTing failed with status code: {response.StatusCode}.&quot;)
+    );
+}
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The <code>FetchAsync()</code> method in the example above is nothing else but a shortcut for the following:</p>
+<pre><code class="lang-csharp">var response = await client.Todos().Post(itemToPost).FetchResponseAsync();
+var resource = await response.DeserializeResponseAsync();
+</code></pre>
+</div>
+<p>At this point, the <code>TodosInterface</code> is entirely done. It is now possible to create and make every
+single request to the <code>/todos</code> endpoint using the <code>JsonPlaceholderClient</code>!</p>
+<h2 id="creating-the-todointerface">Creating the <code>TodoInterface</code></h2>
+<p>The next interface to be created is the <code>/todos/{id}</code> interface for interacting with a single
+<code>TodoItem</code>.</p>
+<p>This works similarly to the creation of the <code>TodosInterface</code>, but has a few twists:</p>
+<pre><code class="lang-csharp">using ReqRest;
+using ReqRest.Builders;
+using ReqRest.Serializers.NewtonsoftJson;
+using ReqRest.Http;
+
+public sealed class TodoInterface : RestInterface
+{
+    private int _id;
+
+    internal TodoInterface(int id, RestClient restClient) 
+        : base(restClient)
+    {
+        _id = id;
+    }
+
+    protected override UrlBuilder BuildUrl(UrlBuilder baseUrl) =&gt;
+        baseUrl / &quot;todos&quot; / $&quot;{_id}&quot;;
+
+    public ApiRequest&lt;TodoItem&gt; Get() =&gt;
+        BuildRequest()
+            .Get()
+            .Receive&lt;TodoItem&gt;().AsJson(200);
+
+    public ApiRequest&lt;TodoItem&gt; Put(TodoItem? todoItem) =&gt;
+        BuildRequest()
+            .PutJson(todoItem)
+            .Receive&lt;TodoItem&gt;().AsJson(200);
+
+    // This is a little bit special.
+    // The JSON Placeholder API returns an empty object {} when a DELETE request succeeds. 
+    //
+    // For demonstration purposes, this code interprets this as 'NoContent'.
+    // Normally, NoContent should be used when a request returns an empty HTTP content
+    // (which is also typical for a DELETE request).
+    public ApiRequest&lt;NoContent&gt; Delete() =&gt;
+        BuildRequest()
+            .Delete()
+            .ReceiveNoContent(200);
+}
+</code></pre>
+<p>There are two specialties in this code - the first one is how the ID gets transported into the
+class. This is ideally done via the constructor (you will soon see why) and then storing it as a
+field, until it is needed by <code>BuildUrl</code>.</p>
+<p>Furthermore, the <code>Delete()</code> method uses the <a class="xref" href="../api/ReqRest.ApiRequest.html#ReqRest_ApiRequest_ReceiveNoContent_ReqRest_Http_StatusCodeRange___">ReceiveNoContent</a>
+method to declare that it receives the special <a class="xref" href="../api/ReqRest.Http.NoContent.html">NoContent</a> type. As you can see, there
+is no additional method call like <code>AsJson(...)</code> here, because it is not necessary to declare
+which data format &quot;No Content&quot; has.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>There are also other methods similar to <a class="xref" href="../api/ReqRest.ApiRequest.html#ReqRest_ApiRequest_ReceiveNoContent_ReqRest_Http_StatusCodeRange___">ReceiveNoContent</a>
+available, for example <a class="xref" href="../api/ReqRest.ApiRequest.html#ReqRest_ApiRequest_ReceiveString_ReqRest_Http_StatusCodeRange___">ReceiveString</a>
+or <a class="xref" href="../api/ReqRest.ApiRequest.html#ReqRest_ApiRequest_ReceiveByteArray_ReqRest_Http_StatusCodeRange___">ReceiveByteArray</a>.</p>
+</div>
+<p>After creating the <code>TodoInterface</code> class, don't forget to add it to the <code>JsonPlaceholderClient</code>:</p>
+<pre><code class="lang-csharp">using System;
+using ReqRest;
+
+public sealed class JsonPlaceholderClient : RestClient
+{
+    // [...]
+
+    public TodoInterface Todos(int id) =&gt;
+        new TodoInterface(id, this);
+}
+</code></pre>
+<p>Here you can see why the ID should ideally be passed via the constructor - because it allows the
+client to just pass it forward when creating the interface instance.</p>
+<p>When you have two interfaces which interact with the same resource (and a similar endpoint) like in
+this example, it is a good idea to give the two methods the same name by overloading them.
+This allows expressive code like this:</p>
+<pre><code class="lang-csharp">client.Todos().[...]    // for accessing /todos
+client.Todos(123).[...] // for accessing /todos/123
+</code></pre>
+<p>As you can see, the methods exposed by the client can be directly mapped to the endpoint, just in a
+&quot;more C#-ish&quot; way.</p>
+<h2 id="using-the-client">Using the Client</h2>
+<p>First of all, congratulations! You have finished your first, fully functional REST API client with
+ReqRest! Even though it is not complete yet, you can already use it to interact with the APIs
+<code>TodoItem</code> resource.</p>
+<p>Feel free to go ahead and try it out by making some requests and see how it works.</p>
+<p>To show a concrete (and more complex) example of how it can be used, the following code section
+displays a way to delete all items with an ID smaller than 10.
+This example shows how you can use both ReqRest's response type matching and the plain, old
+status code checking.</p>
+<pre><code class="lang-csharp">public static async Task Main(string[] args)
+{
+    var client = new JsonPlaceholderClient();
+    var items = await FetchItemsToUpdate(client);
+
+    foreach (var item in items)
+    {
+        await DeleteItem(client, item);
+    }
+}
+
+static async Task&lt;IEnumerable&lt;TodoItem&gt;&gt; FetchItemsToUpdate(JsonPlaceholderClient client)
+{
+    var resource = await client.Todos().Get().FetchResourceAsync();
+
+    // Let ReqRest do the work of checking what gets returned for which status code.
+    // Note that Match(...) supports returning values inside of the functions.
+    // The result of the function which ultimately gets called also gets returned by Match(...).
+    return resource.Match(
+        items =&gt; items.Where(item =&gt; item.Id &lt; 10),
+        ()    =&gt; throw new Exception(&quot;Failed to fetch any TODOs.&quot;)
+    );
+}
+
+static async Task DeleteItem(JsonPlaceholderClient client, TodoItem item)
+{
+    var id = item.Id.GetValueOrDefault();
+    var response = await client.Todos(id).Delete().FetchResponseAsync();
+    
+    // The response is nothing else but a wrapper around the System.Net.Http.HttpResponseMessage.
+    // As such, we have access to the underlying properties, e.g. the StatusCode.
+    if (response.StatusCode != HttpStatusCode.OK)
+    {
+        throw new Exception($&quot;Failed to delete the item with the ID {id}.&quot;);
+    }
+
+    // Note:
+    // Alternatively to checking the response's status code, you could also
+    // use FetchResource like in the method above.
+    // This leads to a more functional style and lets ReqRest do the status
+    // code checking for you, but it is certainly the more &quot;unusual&quot; style
+    // and may be harder to understand in the beginning.
+    // The code would look like this:
+
+    var result = await client.Todos(id).Delete().FetchResourceAsync();
+    result.Match(
+        noContent =&gt; { /* All good, deleting worked. */ }, 
+        ()        =&gt; throw new Exception($&quot;Failed to delete the item with the ID {id}.&quot;)
+    );
+
+    // Or with an alternative to Match:
+    if (!result.TryGetValue(out NoContent _))
+    {
+        throw new Exception($&quot;Failed to delete the item with the ID {id}.&quot;);
+    }
+
+    // All in all, ReqRest gives you a lot of options to get your task done.
+    // It is up to you to choose which flavor you prefer for which scenario.
+}
+</code></pre>
+<h2 id="next-steps">Next Steps</h2>
+<p>If you got this far, you should have an overview of what ReqRest is capable of.
+If you are still interested in learning more, feel free to check out the guides <a class="xref" href="guides/index.html">here</a>
+or browse the <a class="xref" href="../api/index.html">API documentation</a>.</p>
 </article>
           </div>
           
